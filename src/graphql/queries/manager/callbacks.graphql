@@ -1,0 +1,20 @@
+query Callbacks($sort: [String], $pagination: PaginationArg, $filters: CallbackFiltersInput) {
+  callbacks(sort: $sort, pagination: $pagination, filters: $filters) {
+    data {
+      id
+      attributes {
+        phoneNumber
+        createdAt
+        isCalled
+      }
+    }
+    meta {
+      pagination {
+        total
+        pageSize
+        pageCount
+        page
+      }
+    }
+  }
+}

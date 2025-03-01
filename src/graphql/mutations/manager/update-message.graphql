@@ -1,0 +1,12 @@
+mutation UpdateMessage($updateMessageId: ID!, $data: MessageInput!) {
+  updateMessage(id: $updateMessageId, data: $data) {
+    data {
+      id
+      attributes {
+        isRead
+        message
+        fullName
+      }
+    }
+  }
+}

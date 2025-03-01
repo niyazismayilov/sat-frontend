@@ -1,0 +1,19 @@
+query Subscribers($sort: [String], $pagination: PaginationArg, $filters: SubscriberFiltersInput) {
+  subscribers(sort: $sort, pagination: $pagination, filters: $filters) {
+    data {
+      id
+      attributes {
+        email
+        createdAt
+      }
+    }
+    meta {
+      pagination {
+        total
+        pageSize
+        page
+        pageCount
+      }
+    }
+  }
+}

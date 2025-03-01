@@ -1,0 +1,7 @@
+mutation UpdateEmployee($updateEmployeeId: ID!, $data: EmployeeInput!) {
+  updateEmployee(id: $updateEmployeeId, data: $data) {
+    data {
+      id
+    }
+  }
+}

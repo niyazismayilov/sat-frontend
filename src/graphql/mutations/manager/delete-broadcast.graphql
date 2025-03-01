@@ -1,0 +1,10 @@
+mutation DeleteBroadcast($deleteBroadcastId: ID!) {
+  deleteBroadcast(id: $deleteBroadcastId) {
+    data {
+      id
+      attributes {
+        title
+      }
+    }
+  }
+}

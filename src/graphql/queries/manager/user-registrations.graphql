@@ -1,0 +1,32 @@
+query UsersPermissionsUsers($filters: UsersPermissionsUserFiltersInput, $pagination: PaginationArg, $sort: [String]) {
+  usersPermissionsUsers(filters: $filters, pagination: $pagination, sort: $sort) {
+    meta {
+      pagination {
+        page
+        pageCount
+        pageSize
+        total
+      }
+    }
+    data {
+      id
+      attributes {
+        firstName
+        lastName
+        email
+        gender
+        dateOfBirth
+        phoneNumber
+        confirmed
+        role {
+          data {
+            attributes {
+              name
+            }
+            id
+          }
+        }
+      }
+    }
+  }
+}

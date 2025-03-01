@@ -1,0 +1,23 @@
+query Blog($filters: BlogFiltersInput) {
+  blogs(filters: $filters) {
+    data {
+      id
+      attributes {
+        title
+        body
+        coverImage {
+          data {
+            attributes {
+              name
+              url
+            }
+            id
+          }
+        }
+        category
+        createdAt
+        status
+      }
+    }
+  }
+}

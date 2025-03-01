@@ -1,0 +1,25 @@
+query BlogByAdmin($blogId: ID) {
+  blog(id: $blogId) {
+    data {
+      id
+      attributes {
+        body
+        category
+        coverImage {
+          data {
+            id
+            attributes {
+              name
+              url
+            }
+          }
+        }
+        createdAt
+        slug
+        status
+        title
+        updatedAt
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+query BroadcastSerieByAdmin($broadcastSerieId: ID) {
+  broadcastSerie(id: $broadcastSerieId) {
+    data {
+      id
+      attributes {
+        title
+        status
+        slug
+        createdAt
+        coverImage {
+          data {
+            id
+            attributes {
+              name
+              url
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+mutation DeleteBroadcastSerie($deleteBroadcastSerieId: ID!) {
+  deleteBroadcastSerie(id: $deleteBroadcastSerieId) {
+    data {
+      id
+      attributes {
+        title
+      }
+    }
+  }
+}

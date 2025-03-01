@@ -1,0 +1,7 @@
+mutation UpdateSliderShow($updateSliderShowId: ID!, $data: SliderShowInput!) {
+  updateSliderShow(id: $updateSliderShowId, data: $data) {
+    data {
+      id
+    }
+  }
+}

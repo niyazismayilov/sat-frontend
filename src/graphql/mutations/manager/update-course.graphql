@@ -1,0 +1,10 @@
+mutation UpdateCourse($updateCourseId: ID!, $data: CourseInput!) {
+  updateCourse(id: $updateCourseId, data: $data) {
+    data {
+      id
+      attributes {
+        name
+      }
+    }
+  }
+}

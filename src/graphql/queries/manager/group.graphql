@@ -1,0 +1,22 @@
+query Group($groupId: ID) {
+  group(id: $groupId) {
+    data {
+      id
+      attributes {
+        name
+        startsAt
+        endsAt
+        capacity
+        status
+        course {
+          data {
+            id
+            attributes {
+              name
+            }
+          }
+        }
+      }
+    }
+  }
+}

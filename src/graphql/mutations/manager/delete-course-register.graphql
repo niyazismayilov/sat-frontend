@@ -1,0 +1,7 @@
+mutation DeleteCourseRegister($deleteCourseRegisterId: ID!) {
+ deleteCourseRegister(id: $deleteCourseRegisterId) {
+   data {
+     id
+   }
+ } 
+}

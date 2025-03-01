@@ -1,0 +1,10 @@
+mutation DeleteVideo($deleteVideoId: ID!) {
+  deleteVideo(id: $deleteVideoId) {
+    data {
+      id
+      attributes {
+        title
+      }
+    }
+  }
+}

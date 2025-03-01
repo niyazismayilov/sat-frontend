@@ -1,0 +1,10 @@
+mutation CreateVideo($data: VideoInput!) {
+  createVideo(data: $data) {
+    data {
+      id
+      attributes {
+        title
+      }
+    }
+  }
+}

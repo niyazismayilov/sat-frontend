@@ -1,0 +1,40 @@
+query BroadcastByAdmin($broadcastId: ID) {
+  broadcast(id: $broadcastId) {
+    data {
+      id
+      attributes {
+        title
+        status
+        slug
+        createdAt
+        coverImage {
+          data {
+            id
+            attributes {
+              name
+              url
+            }
+          }
+        }
+        videoId
+        broadcast_sery {
+          data {
+            id
+            attributes {
+              title
+              coverImage {
+                data {
+                  id
+                  attributes {
+                    url
+                    name
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

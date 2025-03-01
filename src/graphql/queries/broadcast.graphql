@@ -1,0 +1,28 @@
+query Broadcast($filters: BroadcastFiltersInput) {
+  broadcasts(filters: $filters) {
+    data {
+      id
+      attributes {
+        title
+        coverImage {
+          data {
+            attributes {
+              url
+            }
+          }
+        }
+        category
+        slug
+        videoId
+        broadcast_sery {
+          data {
+            attributes {
+              slug
+            }
+          }
+        }
+        createdAt
+      }
+    }
+  }
+}

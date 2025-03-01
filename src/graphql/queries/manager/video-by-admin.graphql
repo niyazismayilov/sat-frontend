@@ -1,0 +1,26 @@
+query VideoByAdmin($videoId: ID) {
+  video(id: $videoId) {
+    data {
+      id
+      attributes {
+        body
+        category
+        coverImage {
+          data {
+            id
+            attributes {
+              name
+              url
+            }
+          }
+        }
+        createdAt
+        slug
+        status
+        title
+        videoId
+        viewCount
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+query SliderShow($sliderShowId: ID) {
+  sliderShow(id: $sliderShowId) {
+    data {
+      id
+      attributes {
+        content
+        title
+        coverImage {
+          data {
+            id
+            attributes {
+              url
+              name
+            }
+          }
+        }
+      }
+    }
+  }
+}

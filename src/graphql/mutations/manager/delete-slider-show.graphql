@@ -1,0 +1,7 @@
+mutation DeleteSliderShow($deleteSliderShowId: ID!) {
+  deleteSliderShow(id: $deleteSliderShowId) {
+    data {
+      id
+    }
+  }
+}

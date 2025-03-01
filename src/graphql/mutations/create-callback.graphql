@@ -1,0 +1,10 @@
+mutation CreateCallback($data: CallbackInput!) {
+  createCallback(data: $data) {
+    data {
+      id
+      attributes {
+        phoneNumber
+      }
+    }
+  }
+}

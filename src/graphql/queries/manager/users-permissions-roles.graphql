@@ -1,0 +1,10 @@
+query UsersPermissionsRoles {
+  usersPermissionsRoles {
+    data {
+      id
+      attributes {
+        name
+      }
+    }
+  }
+}

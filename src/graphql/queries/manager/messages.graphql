@@ -1,0 +1,33 @@
+query Messages($sort: [String], $pagination: PaginationArg, $filters: MessageFiltersInput) {
+  messages(sort: $sort, pagination: $pagination, filters: $filters) {
+    meta {
+      pagination {
+        total
+        pageSize
+        pageCount
+        page
+      }
+    }
+    data {
+      id
+      attributes {
+        fullName
+        email
+        createdAt
+        phoneNumber
+        message
+        interestedCourses {
+          data {
+            id
+            attributes {
+              name
+            }
+          }
+        }
+        type
+        isRead
+        interestedConsultings
+      }
+    }
+  }
+}

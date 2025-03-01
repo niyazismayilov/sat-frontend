@@ -1,0 +1,7 @@
+mutation DeleteMessage($deleteMessageId: ID!) {
+  deleteMessage(id: $deleteMessageId) {
+    data {
+      id
+    }
+  }
+}

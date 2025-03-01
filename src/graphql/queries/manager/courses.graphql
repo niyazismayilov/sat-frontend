@@ -1,0 +1,49 @@
+query Courses($filters: CourseFiltersInput, $pagination: PaginationArg, $sort: [String]) {
+  courses(filters: $filters, pagination: $pagination, sort: $sort) {
+    meta {
+      pagination {
+        total
+        page
+        pageSize
+        pageCount
+      }
+    }
+    data {
+      id
+      attributes {
+        isActive
+        name
+        category
+        price
+        capacity
+        groups {
+          data {
+            id
+            attributes {
+              name
+            }
+          }
+        }
+        description
+        availableProficiencies
+        benefits
+        syllabus
+        durationType
+        count
+        duration
+        status
+        createdAt
+        updatedAt 
+        trainers {
+          data {
+            id
+            attributes {
+              firstName
+              lastName
+            }
+          }
+        }
+      }
+    }
+  }
+}

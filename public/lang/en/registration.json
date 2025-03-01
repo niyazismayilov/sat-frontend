@@ -1,0 +1,15 @@
+{
+    "namesMinValidation": "Min 3 hərf olmalıdır",
+    "namesMaxValidation": "Max 25 hərf olmalıdır",
+    "namesValidation": ".,? / @ _-% $ və rəqəmlərdən istifadə etmək olmaz: yalnız ilk hərf böyük olmalıdır",
+    "firstNameRequired": "Ad boş ola bilməz",
+    "lastNameRequired": "Soyad boş ola bilməz",
+    "emailInvalid": "Emaili düzgün yazin: example@gmail.com",
+    "emailRequired": "Email boş ola bilməz",
+    "phoneInvalid": "Nömrə düzgün yazılmayıb",
+    "phoneRequired": "Nömrə boş ola bilməz",
+    "passwordLength": "Şifrə 25 simvoldan artiq ola bilməz",
+    "passwordAndEmailEqual": "Şifrə email ilə eyni ola bilməz",
+    "passwordRequired": "Şifrə daxil edin",
+    "idFinValidation": "Yalnız hərf ve rəqəm yazılmalıdır"
+}

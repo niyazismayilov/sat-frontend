@@ -1,0 +1,10 @@
+mutation CreateBroadcast($data: BroadcastInput!) {
+  createBroadcast(data: $data) {
+    data {
+      id
+      attributes {
+        title
+      }
+    }
+  }
+}

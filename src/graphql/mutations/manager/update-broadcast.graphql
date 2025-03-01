@@ -1,0 +1,10 @@
+mutation UpdateBroadcast($updateBroadcastId: ID!, $data: BroadcastInput!) {
+  updateBroadcast(id: $updateBroadcastId, data: $data) {
+    data {
+      id
+      attributes {
+        title
+      }
+    }
+  }
+}

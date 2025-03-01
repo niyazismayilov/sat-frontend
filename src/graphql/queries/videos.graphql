@@ -1,0 +1,31 @@
+query Videos($pagination: PaginationArg, $sort: [String], $filters: VideoFiltersInput) {
+  videos(pagination: $pagination, sort: $sort, filters: $filters) {
+    data {
+      id
+      attributes {
+        title
+        body
+        coverImage {
+          data {
+            attributes {
+              url
+            }
+            id
+          }
+        }
+        slug
+        status
+        category
+        createdAt
+      }
+    }
+    meta {
+      pagination {
+        pageCount
+        total
+        pageSize
+        page
+      }
+    }
+  }
+}

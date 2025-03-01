@@ -1,0 +1,7 @@
+mutation DeleteEmployee($deleteEmployeeId: ID!) {
+  deleteEmployee(id: $deleteEmployeeId) {
+    data {
+      id
+    }
+  }
+}

@@ -1,0 +1,65 @@
+query CourseRegisters($sort: [String], $pagination: PaginationArg, $filters: CourseRegisterFiltersInput) {
+  courseRegisters(sort: $sort, pagination: $pagination, filters: $filters) {
+    data {
+      id
+      attributes {
+        paymentStatus
+        status
+        user {
+          data {
+            attributes {
+              firstName
+              lastName
+            }
+          }
+        }
+        group {
+          data {
+            attributes {
+              name
+              startsAt
+              endsAt
+              course {
+                data {
+                  attributes {
+                    name
+                    price
+                   duration
+                   durationType
+                   capacity
+                   count
+                   trainers {
+                     data {
+                        id
+                       attributes {
+                         fullName
+                         position
+                         profileImage {
+                           data {
+                             attributes {
+                               url
+                               name
+                             }
+                           }
+                         }
+                       }
+                     }
+                   }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    meta {
+      pagination {
+        total
+        pageSize
+        pageCount
+        page
+      }
+    }
+  }
+}

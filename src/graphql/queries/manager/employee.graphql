@@ -1,0 +1,23 @@
+query Employee($employeeId: ID) {
+  employee(id: $employeeId) {
+    data {
+      id
+      attributes {
+        firstName
+        rank
+        image {
+          data {
+            id
+            attributes {
+              name
+              url
+            }
+          }
+        }
+        lastName
+        position
+        status
+      }
+    }
+  }
+}

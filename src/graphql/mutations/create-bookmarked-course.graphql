@@ -1,0 +1,7 @@
+mutation CreateBookmarkedCourse($data: BookmarkedCourseInput!) {
+ createBookmarkedCourse(data: $data) {
+  data {
+    id
+  }
+} 
+}

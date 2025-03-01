@@ -1,0 +1,23 @@
+version: '3.7'
+
+services:
+    web:
+        image: registry.mediusoft.com/satgroup/satgroup-web:${CI_COMMIT_SHORT_SHA}
+        container_name: satgroup-web-${APP_ENV}
+        restart: unless-stopped
+        networks:
+            - reverse-proxy
+        env_file:
+            - .env
+        environment:
+            - REACT_APP_VERSION=${CI_COMMIT_SHORT_SHA}
+            - APP_ENV=${CI_ENVIRONMENT_NAME}
+        labels:
+            - traefik.enable=true
+            - traefik.http.routers.satgroup-web-${APP_ENV}.rule=Host(`${WEB_HOST}`)
+            - traefik.http.routers.satgroup-web-${APP_ENV}.entrypoints=websecure
+            - traefik.http.routers.satgroup-web-${APP_ENV}.tls.certresolver=leresolver
+
+networks:
+    reverse-proxy:
+        external: true

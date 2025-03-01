@@ -1,0 +1,23 @@
+query Video($filters: VideoFiltersInput) {
+  videos(filters: $filters) {
+    data {
+      id
+      attributes {
+        title
+        body
+        coverImage {
+          data {
+            attributes {
+              url
+            }
+            id
+          }
+        }
+        slug
+        category
+        videoId
+        createdAt
+      }
+    }
+  }
+}

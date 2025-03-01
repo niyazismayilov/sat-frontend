@@ -1,0 +1,7 @@
+mutation CreateSliderShow($data: SliderShowInput!) {
+  createSliderShow(data: $data) {
+    data {
+      id
+    }
+  }
+}

@@ -1,0 +1,7 @@
+mutation DeleteBookmarkedCourse($deleteBookmarkedCourseId: ID!) {
+  deleteBookmarkedCourse(id: $deleteBookmarkedCourseId) {
+    data {
+      id
+    }
+  }
+}

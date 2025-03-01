@@ -1,0 +1,50 @@
+query Transactions($sort: [String], $pagination: PaginationArg, $filters: TransactionFiltersInput) {
+  transactions(sort: $sort, pagination: $pagination, filters: $filters) {
+    data {
+      attributes {
+        user {
+          data {
+            attributes {
+              firstName
+              lastName
+            }
+          }
+        }
+        group {
+          data {
+            attributes {
+              name
+              course {
+                data {
+                  attributes {
+                    name
+                  }
+                }
+              }
+              course_registers {
+                data {
+                  attributes {
+                    paymentStatus
+                  }
+                }
+              }
+            }
+          }
+        }
+        createdAt
+        amount
+        orderId
+        currency
+        status
+      }
+      id
+    }
+    meta {
+      pagination {
+        pageCount
+        pageSize
+        total
+      }
+    }
+  }
+}

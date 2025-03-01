@@ -1,0 +1,11 @@
+mutation UpdateCallback($updateCallbackId: ID!, $data: CallbackInput!) {
+  updateCallback(id: $updateCallbackId, data: $data) {
+    data {
+      id
+      attributes {
+        phoneNumber
+        isCalled
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+query Groups($sort: [String], $pagination: PaginationArg, $filters: GroupFiltersInput) {
+  groups(sort: $sort, pagination: $pagination, filters: $filters) {
+    data {
+      id
+      attributes {
+        name
+        startsAt
+        endsAt
+        isActive
+        course {
+          data {
+            id
+            attributes {
+              price
+              status
+              name
+            }
+          }
+        }
+        capacity
+        status
+        course_registers {
+          data {
+            id
+          }
+        }
+      }
+    }
+    meta {
+      pagination {
+        page
+        pageCount
+        pageSize
+        total
+      }
+    }
+  }
+}

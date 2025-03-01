@@ -1,0 +1,31 @@
+query Employees($filters: EmployeeFiltersInput, $pagination: PaginationArg, $sort: [String]) {
+  employees(filters: $filters, pagination: $pagination, sort: $sort) {
+    data {
+      id
+      attributes {
+        firstName
+        lastName
+        position
+        rank
+        status
+        updatedAt
+        image {
+          data {
+            id
+            attributes {
+              url
+            }
+          }
+        }
+      }
+    }
+    meta {
+      pagination {
+        page
+        pageCount
+        pageSize
+        total
+      }
+    }
+  }
+}

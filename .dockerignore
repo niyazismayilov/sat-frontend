@@ -1,0 +1,17 @@
+.git
+.vscode
+env
+.env
+.dockerignore
+.gitattributes
+.gitignore
+.gitlab-ci.yml
+Dockerfile
+README.md
+codegen.yml
+docker-compose.yml
+graphql.schema.json
+i18next-parser.config.js
+
+build
+node_modules

@@ -1,0 +1,69 @@
+query CourseDetail($courseId: ID) {
+  course(id: $courseId) {
+    data {
+      id
+      attributes {
+        isActive
+        name
+        price
+        category
+        capacity
+        groups {
+          data {
+            id
+            attributes {
+              name
+              isActive
+            }
+          }
+        }
+        description
+        availableProficiencies
+        benefits
+        syllabus
+        duration
+        durationType
+        count
+        trainers {
+        data {
+            attributes {
+              trainerTitle
+              fullName
+              image {
+                data {
+                  id
+                  attributes {
+                    name
+                    url
+                  }
+                }
+              }
+              firstName
+              lastName
+              profileImage {
+                data {
+                  id
+                  attributes {
+                    name
+                    url
+                  }
+                }
+              }
+            }
+          }  
+        }
+        courseImage {
+          data {
+            id
+            attributes {
+              name
+              url
+            }
+          }
+        }
+        includedPayment
+        videoId
+      }
+    }
+  }
+}

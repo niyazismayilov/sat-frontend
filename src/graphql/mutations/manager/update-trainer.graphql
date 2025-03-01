@@ -1,0 +1,11 @@
+mutation UpdateTrainer($updateTrainerId: ID!, $data: TrainerInput!) {
+  updateTrainer(id: $updateTrainerId, data: $data) {
+    data {
+      id
+      attributes {
+        trainerTitle
+        fullName
+      }
+    }
+  }
+}

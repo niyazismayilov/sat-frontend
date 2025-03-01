@@ -1,0 +1,7 @@
+Host: https://example.az
+
+User-agent: *
+
+Disallow: /dashboard
+
+Sitemap: https://api.example.az/sitemap.xml

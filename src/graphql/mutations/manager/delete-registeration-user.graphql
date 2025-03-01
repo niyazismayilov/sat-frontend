@@ -1,0 +1,7 @@
+mutation DeleteUsersPermissionsUser($deleteUsersPermissionsUserId: ID!) {
+  deleteUsersPermissionsUser(id: $deleteUsersPermissionsUserId) {
+    data {
+      id
+    }
+  }
+}

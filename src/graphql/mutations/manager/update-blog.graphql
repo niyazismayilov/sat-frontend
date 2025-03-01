@@ -1,0 +1,10 @@
+mutation UpdateBlog($updateBlogId: ID!, $data: BlogInput!) {
+  updateBlog(id: $updateBlogId, data: $data) {
+    data {
+      id
+      attributes {
+        title
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+query Trainer($trainerId: ID, $filters: CourseFiltersInput, $sort: [String], $pagination: PaginationArg) {
+  trainer(id: $trainerId) {
+    data {
+      id
+      attributes {
+        trainerTitle
+        courses(filters: $filters, sort: $sort, pagination: $pagination) {
+          data {
+            id
+            attributes {
+              name
+              category
+              description
+            }
+          }
+        }
+        fullName
+        email
+        phoneNumber
+        status
+        image {
+          data {
+            attributes {
+              name
+              size
+              url
+            }
+            id
+          }
+        }
+        gender
+        profileImage {
+          data {
+            id
+            attributes {
+              size
+              url
+              name
+            }
+          }
+        }
+        logoImage {
+          data {
+            id
+            attributes {
+              size
+              url
+              name
+            }
+          }
+        }
+        firstName
+        lastName
+        link
+        company
+        position
+        body
+        name
+        surName
+        birthdayDate
+        updatedAt
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+mutation DeleteBlog($deleteBlogId: ID!) {
+  deleteBlog(id: $deleteBlogId) {
+    data {
+      id
+      attributes {
+        body
+      }
+    }
+  }
+}

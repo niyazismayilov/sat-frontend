@@ -1,0 +1,68 @@
+query UsersPermissionsUser($usersPermissionsUserId: ID) {
+  usersPermissionsUser(id: $usersPermissionsUserId) {
+    data {
+      id
+      attributes {
+        confirmed
+        dateOfBirth
+        email
+        firstName
+        gender
+        hasJob
+        jobTitle
+        lastName
+        phoneNumber
+        schoolName
+        studyField
+        trainerTitle
+        username
+        companyName
+        bookmarked_courses {
+         data {
+          id
+           attributes {
+             course {
+                data {
+                id
+                  attributes {
+                    name
+                    price
+                   duration
+                   durationType
+                   capacity
+                   count
+                   trainers {
+                     data {
+                        id
+                       attributes {
+                         fullName
+                         position
+                         profileImage {
+                           data {
+                             attributes {
+                               url
+                               name
+                             }
+                           }
+                         }
+                       }
+                     }
+                   }
+                  }
+                }
+              }
+           }
+         }
+       }
+        role {
+          data {
+            id
+            attributes {
+              name
+            }
+          }
+        }
+      }
+    }
+  }
+}

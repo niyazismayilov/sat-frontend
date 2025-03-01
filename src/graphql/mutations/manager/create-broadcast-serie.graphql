@@ -1,0 +1,11 @@
+mutation CreateBroadcastSerie($data: BroadcastSerieInput!) {
+  createBroadcastSerie(data: $data) {
+    data {
+      id
+      attributes {
+        title
+        slug
+      }
+    }
+  }
+}

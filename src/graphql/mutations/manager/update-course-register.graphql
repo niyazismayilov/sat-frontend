@@ -1,0 +1,7 @@
+mutation UpdateCourseRegister($updateCourseRegisterId: ID!, $data: CourseRegisterInput!) {
+ updateCourseRegister(id: $updateCourseRegisterId, data: $data) {
+  data {
+    id
+  }
+} 
+}

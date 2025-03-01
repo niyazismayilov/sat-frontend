@@ -1,0 +1,20 @@
+query SliderShows($sort: [String]) {
+  sliderShows(sort: $sort) {
+    data {
+      id
+      attributes {
+        title
+        coverImage {
+          data {
+            id
+            attributes {
+              name
+              url
+            }
+          }
+        }
+        content
+      }
+    }
+  }
+}

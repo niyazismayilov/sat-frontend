@@ -1,0 +1,37 @@
+query CourseRegister($courseRegisterId: ID) {
+ courseRegister(id: $courseRegisterId) {
+   data {
+      id
+      attributes {
+        paymentStatus
+        status
+        user {
+          data {
+            id
+            attributes {
+              firstName
+              lastName
+            }
+          }
+        }
+        group {
+          data {
+            id
+            attributes {
+              name
+              startsAt
+              endsAt
+              course {
+                data {
+                  attributes {
+                    name
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+ } 
+}

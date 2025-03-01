@@ -1,0 +1,10 @@
+mutation DeleteSubscriber($deleteSubscriberId: ID!) {
+  deleteSubscriber(id: $deleteSubscriberId) {
+    data {
+      id
+      attributes {
+        email
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+query BroadcastSeries($pagination: PaginationArg, $sort: [String], $broadcastSeriesPagination2: PaginationArg, $filters: BroadcastSerieFiltersInput) {
+    broadcastSeries(sort: $sort, pagination: $broadcastSeriesPagination2, filters: $filters) {
+        data {
+            id
+            attributes {
+                title
+                broadcasts(pagination: $pagination) {
+                    data {
+                        id
+                        attributes {
+                            title
+                            coverImage {
+                                data {
+                                    attributes {
+                                        url
+                                    }
+                                }
+                            }
+                            category
+                            slug
+                            createdAt
+                            status
+                        }
+                    }
+                }
+                slug
+                totalMinutes
+                
+                coverImage {
+                    data {
+                        id
+                        attributes {
+                            url
+                        }
+                    }
+                }
+              status
+              createdAt
+            }
+        }
+        meta {
+            pagination {
+                pageCount
+              page
+              pageSize
+              total
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+mutation DeleteCallback($deleteCallbackId: ID!) {
+  deleteCallback(id: $deleteCallbackId) {
+    data {
+      id
+      attributes {
+        phoneNumber
+      }
+    }
+  }
+}
