@@ -4,7 +4,7 @@ import image23 from 'assets/consulting/image23.png';
 import { styled } from '@mui/styles';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'components';
-//import introduction2 from 'assets/home/introduction2.jpg';
+import introduction2 from 'assets/home/introduction2.jpg';
 
 const Wrapper = styled(Box)(({ theme }: { theme: Theme }) => ({
     width: '100%',
