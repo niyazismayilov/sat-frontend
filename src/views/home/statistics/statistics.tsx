@@ -66,7 +66,7 @@ export const Statistics = () => {
             <BounceInRight duration={0.7}>
                 <Box className="item">
                     <Typography className="title">
-                        10000<span className="plus">+</span>
+                        15000<span className="plus">+</span>
                     </Typography>
                     <Typography className="detail">Tələbə</Typography>
                 </Box>
@@ -75,7 +75,7 @@ export const Statistics = () => {
             <BounceInRight duration={0.8}>
                 <Box className="item">
                     <Typography className="title">
-                        200<span className="plus">+</span>
+                        500<span className="plus">+</span>
                     </Typography>
                     <Typography className="detail">Korporativ layihə</Typography>
                 </Box>
@@ -84,9 +84,27 @@ export const Statistics = () => {
             <BounceInRight duration={0.9}>
                 <Box className="item">
                     <Typography className="title">
-                        70<span className="plus">+</span>
+                        90<span className="plus">+</span>
                     </Typography>
                     <Typography className="detail">Konsaltinq layihəsi</Typography>
+                </Box>
+            </BounceInRight>
+
+            <BounceInRight duration={0.9}>
+                <Box className="item">
+                    <Typography className="title">
+                        15<span className="plus">+</span>
+                    </Typography>
+                    <Typography className="detail">TeamBuilding</Typography>
+                </Box>
+            </BounceInRight>
+
+            <BounceInRight duration={0.9}>
+                <Box className="item">
+                    <Typography className="title">
+                        17<span className="plus">+</span>
+                    </Typography>
+                    <Typography className="detail">Forum</Typography>
                 </Box>
             </BounceInRight>
         </Root>
