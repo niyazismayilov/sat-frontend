@@ -1,6 +1,5 @@
 import { Container, Box, Theme, Grid } from '@mui/material';
 import { styled } from '@mui/styles';
-import { Page, Spinner } from 'components';
 import React from 'react';
 import { GeneralInfo } from './general-info';
 import { useCourseDetailQuery } from 'graphql/generated';
