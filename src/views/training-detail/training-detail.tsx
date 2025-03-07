@@ -20,7 +20,9 @@ export const TrainingDetail: React.FC = () => {
     });
 
     const course = data?.course?.data?.attributes;
-
+    if (loading) {
+        return <Spinner />;
+    }
     return (
         <Page title={course?.name}>
             <Root>
