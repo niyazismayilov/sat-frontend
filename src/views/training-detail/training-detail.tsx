@@ -25,9 +25,7 @@ export const TrainingDetail: React.FC = () => {
 
     const course = data?.course?.data?.attributes;
 
-    if (!course) {
-        return null;
-    }
+  
     if (loading) {
         return <Spinner />;
     }
@@ -45,21 +43,11 @@ export const TrainingDetail: React.FC = () => {
                                 courseImage={course.courseImage}
                                 videoUrl={course?.videoId as string}
                             />
-                            <ForWhom availableProficiencies={course.availableProficiencies} />
-                            <CourseBenefits benefits={course.benefits} />
-                            <CourseProgram syllabus={course.syllabus} />
+                        
                         </Box>
                     </Grid>
                     <Grid item xs={12} md={5}>
-                        <CourseIncludes
-                            includedPayments={course.includedPayment}
-                            trainers={course.trainers}
-                            price={course.price}
-                            duration={course.duration}
-                            durationType={course.durationType}
-                            attendees={course.capacity}
-                            count={course.count}
-                        />
+                   
                     </Grid>
                 </Grid>
             </Root>
