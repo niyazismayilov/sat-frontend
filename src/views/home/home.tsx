@@ -7,13 +7,18 @@ import { Advantages } from './advantages';
 import { Customers } from './customers';
 import { Profit } from './profit';
 import { Callback } from './callback';
+import { GeneralInfo } from './general-info';
 
 export const Home: React.FC = () => {
     const { t } = useTranslation();
     return (
         <Page title={t('home:homePage')}>
+            <GeneralInfo />
             <Introduction />
             <Statistics />
+            {/* //esger// */}
+            <Statistics />
+            {/* //esger// */}
             <Services />
             <Advantages />
             <Customers />
