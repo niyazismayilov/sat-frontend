@@ -1,6 +1,6 @@
 import { Container, Box, Theme, Grid } from '@mui/material';
 import { styled } from '@mui/styles';
-import { Page} from 'components';
+import { Page } from 'components';
 import React from 'react';
 import { GeneralInfo } from './general-info';
 import { useCourseDetailQuery } from 'graphql/generated';
@@ -15,7 +15,7 @@ export const TrainingDetail: React.FC = () => {
     const { slug } = useParams<{ slug: string }>();
     const splitted = slug.split('-');
     const id = splitted[splitted.length - 1];
-    const { data} = useCourseDetailQuery({
+    const { data } = useCourseDetailQuery({
         variables: { courseId: id },
     });
 
