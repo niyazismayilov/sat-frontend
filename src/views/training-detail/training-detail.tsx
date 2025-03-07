@@ -46,9 +46,6 @@ export const TrainingDetail: React.FC = () => {
                         
                         </Box>
                     </Grid>
-                    <Grid item xs={12} md={5}>
-                   
-                    </Grid>
                 </Grid>
             </Root>
         </Page>
