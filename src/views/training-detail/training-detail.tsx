@@ -28,10 +28,10 @@ export const TrainingDetail: React.FC = () => {
                     <Grid item xs={12} md={7}>
                         <Box>
                             <GeneralInfo
-                                category={course.category}
-                                title={course.name}
-                                description={course.description}
-                                courseImage={course.courseImage}
+                                category={course?.category}
+                                title={course?.name}
+                                description={course?.description}
+                                courseImage={course?.courseImage}
                                 videoUrl={course?.videoId as string}
                             />
                         </Box>
