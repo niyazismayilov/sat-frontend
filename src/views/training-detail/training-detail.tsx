@@ -25,29 +25,9 @@ export const TrainingDetail: React.FC = () => {
 
     const course = data?.course?.data?.attributes;
 
-  
-    if (loading) {
-        return <Spinner />;
-    }
-
     return (
         <Page title={course?.name}>
-            <Root>
-                <Grid container spacing={3}>
-                    <Grid item xs={12} md={7}>
-                        <Box>
-                            <GeneralInfo
-                                category={course.category}
-                                title={course.name}
-                                description={course.description}
-                                courseImage={course.courseImage}
-                                videoUrl={course?.videoId as string}
-                            />
-                        
-                        </Box>
-                    </Grid>
-                </Grid>
-            </Root>
+           
         </Page>
     );
 };
