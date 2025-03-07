@@ -2,11 +2,7 @@ import { Container, Box, Theme, Grid } from '@mui/material';
 import { styled } from '@mui/styles';
 import { Page, Spinner } from 'components';
 import React from 'react';
-import { ForWhom } from './for-whom';
 import { GeneralInfo } from './general-info';
-import { CourseIncludes } from './course-includes';
-import { CourseBenefits } from './course-benefits';
-import { CourseProgram } from './course-program';
 import { useCourseDetailQuery } from 'graphql/generated';
 import { useParams } from 'react-router';
 
