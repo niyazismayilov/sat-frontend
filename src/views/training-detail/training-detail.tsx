@@ -25,9 +25,44 @@ export const TrainingDetail: React.FC = () => {
 
     const course = data?.course?.data?.attributes;
 
+    if (!course) {
+        return null;
+    }
+    if (loading) {
+        return <Spinner />;
+    }
+
     return (
         <Page title={course?.name}>
-           
+            <Root>
+                <Grid container spacing={3}>
+                    <Grid item xs={12} md={7}>
+                        <Box>
+                            <GeneralInfo
+                                category={course.category}
+                                title={course.name}
+                                description={course.description}
+                                courseImage={course.courseImage}
+                                videoUrl={course?.videoId as string}
+                            />
+                            <ForWhom availableProficiencies={course.availableProficiencies} />
+                            <CourseBenefits benefits={course.benefits} />
+                            <CourseProgram syllabus={course.syllabus} />
+                        </Box>
+                    </Grid>
+                    <Grid item xs={12} md={5}>
+                        <CourseIncludes
+                            includedPayments={course.includedPayment}
+                            trainers={course.trainers}
+                            price={course.price}
+                            duration={course.duration}
+                            durationType={course.durationType}
+                            attendees={course.capacity}
+                            count={course.count}
+                        />
+                    </Grid>
+                </Grid>
+            </Root>
         </Page>
     );
 };
