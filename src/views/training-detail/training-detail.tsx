@@ -26,7 +26,7 @@ export const TrainingDetail: React.FC = () => {
     const course = data?.course?.data?.attributes;
 
     if (!course) {
-        alert("Course not found or there is an issue with the data.");
+        alert("not");
         return null;
     }
     if (loading) {
