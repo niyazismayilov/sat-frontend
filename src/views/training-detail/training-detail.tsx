@@ -28,7 +28,7 @@ export const TrainingDetail: React.FC = () => {
                     <Grid item xs={12} md={7}>
                         <Box>
                             <GeneralInfo
-                                category={course?.category}
+                                category={course?.category ?? 'default-category'}
                                 title={course?.name}
                                 description={course?.description}
                                 courseImage={course?.courseImage}
