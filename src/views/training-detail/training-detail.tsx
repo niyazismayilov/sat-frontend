@@ -22,7 +22,6 @@ export const TrainingDetail: React.FC = () => {
     const course = data?.course?.data?.attributes;
 
     if (!course) {
-        alert('not');
         return null;
     }
     if (loading) {
