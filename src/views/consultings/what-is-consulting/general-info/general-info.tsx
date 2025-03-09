@@ -168,17 +168,17 @@ export const GeneralInfo: React.FC = () => {
         <>
             <Wrapper>
                 <Box className="details-wrapper">
-                <Slider {...settings} className="slider">
-                            <Box className="image-wrapper">
-                                <img className="image" src={image23} />
-                            </Box>
-                            <Box className="image-wrapper">
-                                <img className="image" src={image23} />
-                            </Box>
-                            <Box className="image-wrapper">
-                                <img className="image" src={image23} />
-                            </Box>
-                        </Slider>
+                    <Slider {...settings} className="slider">
+                        <Box className="image-wrapper">
+                            <img className="image" src={image23} />
+                        </Box>
+                        <Box className="image-wrapper">
+                            <img className="image" src={image23} />
+                        </Box>
+                        <Box className="image-wrapper">
+                            <img className="image" src={image23} />
+                        </Box>
+                    </Slider>
                 </Box>
             </Wrapper>
             <Root>
