@@ -168,23 +168,17 @@ export const GeneralInfo: React.FC = () => {
         <>
             <Wrapper>
                 <Box className="details-wrapper">
-                    <Typography className="title">
-                        Sənə uyğun olanı <br /> <span style={{ fontWeight: 600 }}>Gəl birlikdə tapaq!</span>
-                    </Typography>
-                    <Box className="hiddenSm">
-                        <Typography className="detail">
-                            SAT Group şirkətinin fəaliyyət istiqaməti satış, marketinq, idarəetmə təlimləri və
-                            biznesiniz inkişafı üçün konsaltinq xidmətləridir.
-                        </Typography>
-                    </Box>
-                    <Link to="/elaqe">
-                        <Button variant="outlined" className="contact-button">
-                            {t('home:contact')}
-                        </Button>
-                    </Link>
-                </Box>
-                <Box style={{ width: '100%', height: '100%' }}>
-                    <img className="image" src={introduction2} />
+                <Slider {...settings} className="slider">
+                            <Box className="image-wrapper">
+                                <img className="image" src={image23} />
+                            </Box>
+                            <Box className="image-wrapper">
+                                <img className="image" src={image23} />
+                            </Box>
+                            <Box className="image-wrapper">
+                                <img className="image" src={image23} />
+                            </Box>
+                        </Slider>
                 </Box>
             </Wrapper>
             <Root>
