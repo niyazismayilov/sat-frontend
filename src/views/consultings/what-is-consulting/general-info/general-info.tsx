@@ -160,7 +160,7 @@ export const GeneralInfo: React.FC = () => {
         arrows: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 1,
+        slidesToShow: 3,
         slidesToScroll: 1,
     };
 
