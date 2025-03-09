@@ -1,8 +1,10 @@
-import { Box, Theme, Container, Typography } from '@mui/material';
+import { Box, Theme, Container, Typography, Button } from '@mui/material';
 import Slider from 'react-slick';
 import image23 from 'assets/consulting/image23.png';
 import { styled } from '@mui/styles';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'components';
+import introduction2 from 'assets/home/introduction2.jpg';
 
 const Wrapper = styled(Box)(({ theme }: { theme: Theme }) => ({
     width: '100%',
@@ -158,7 +160,7 @@ export const GeneralInfo: React.FC = () => {
         arrows: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: 1,
         slidesToScroll: 1,
     };
 
@@ -166,17 +168,23 @@ export const GeneralInfo: React.FC = () => {
         <>
             <Wrapper>
                 <Box className="details-wrapper">
-                    <Slider {...settings} className="slider">
-                        <Box className="image-wrapper">
-                            <img className="image" src={image23} />
-                        </Box>
-                        <Box className="image-wrapper">
-                            <img className="image" src={image23} />
-                        </Box>
-                        <Box className="image-wrapper">
-                            <img className="image" src={image23} />
-                        </Box>
-                    </Slider>
+                    <Typography className="title">
+                        Sənə uyğun olanı <br /> <span style={{ fontWeight: 600 }}>Gəl birlikdə tapaq!</span>
+                    </Typography>
+                    <Box className="hiddenSm">
+                        <Typography className="detail">
+                            SAT Group şirkətinin fəaliyyət istiqaməti satış, marketinq, idarəetmə təlimləri və
+                            biznesiniz inkişafı üçün konsaltinq xidmətləridir.
+                        </Typography>
+                    </Box>
+                    <Link to="/elaqe">
+                        <Button variant="outlined" className="contact-button">
+                            {t('home:contact')}
+                        </Button>
+                    </Link>
+                </Box>
+                <Box style={{ width: '100%', height: '100%' }}>
+                    <img className="image" src={introduction2} />
                 </Box>
             </Wrapper>
             <Root>
