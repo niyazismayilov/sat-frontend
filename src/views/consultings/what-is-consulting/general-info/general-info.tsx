@@ -1,4 +1,4 @@
-import { Box, Theme, Container, Typography, Button } from '@mui/material';
+import { Box, Theme, Container, Typography } from '@mui/material';
 import Slider from 'react-slick';
 import image23 from 'assets/consulting/image23.png';
 import { styled } from '@mui/styles';
