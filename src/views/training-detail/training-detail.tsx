@@ -1,8 +1,12 @@
 import { Container, Box, Theme, Grid } from '@mui/material';
 import { styled } from '@mui/styles';
-import { Page} from 'components';
+import { Page, Spinner } from 'components';
 import React from 'react';
+import { ForWhom } from './for-whom';
 import { GeneralInfo } from './general-info';
+import { CourseIncludes } from './course-includes';
+import { CourseBenefits } from './course-benefits';
+import { CourseProgram } from './course-program';
 import { useCourseDetailQuery } from 'graphql/generated';
 import { useParams } from 'react-router';
 
@@ -15,11 +19,18 @@ export const TrainingDetail: React.FC = () => {
     const { slug } = useParams<{ slug: string }>();
     const splitted = slug.split('-');
     const id = splitted[splitted.length - 1];
-    const { data} = useCourseDetailQuery({
+    const { data, loading } = useCourseDetailQuery({
         variables: { courseId: id },
     });
 
     const course = data?.course?.data?.attributes;
+
+    if (!course) {
+        return null;
+    }
+    if (loading) {
+        return <Spinner />;
+    }
 
     return (
         <Page title={course?.name}>
@@ -34,7 +45,21 @@ export const TrainingDetail: React.FC = () => {
                                 courseImage={course.courseImage}
                                 videoUrl={course?.videoId as string}
                             />
+                            <ForWhom availableProficiencies={course.availableProficiencies} />
+                            <CourseBenefits benefits={course.benefits} />
+                            <CourseProgram syllabus={course.syllabus} />
                         </Box>
+                    </Grid>
+                    <Grid item xs={12} md={5}>
+                        <CourseIncludes
+                            includedPayments={course.includedPayment}
+                            trainers={course.trainers}
+                            price={course.price}
+                            duration={course.duration}
+                            durationType={course.durationType}
+                            attendees={course.capacity}
+                            count={course.count}
+                        />
                     </Grid>
                 </Grid>
             </Root>
