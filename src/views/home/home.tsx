@@ -14,9 +14,6 @@ export const Home: React.FC = () => {
         <Page title={t('home:homePage')}>
             <Introduction />
             <Statistics />
-            {/* //esger// */}
-            <Statistics />
-            {/* //esger// */}
             <Services />
             <Advantages />
             <Customers />
