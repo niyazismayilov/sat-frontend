@@ -632,11 +632,11 @@ export const EditCourse: React.FC = () => {
                                                                                 style={{ maxWidth: '100%' }}
                                                                                 src={
                                                                                     typeof values.courseImage ===
-                                                                                        'string'
+                                                                                    'string'
                                                                                         ? values.courseImage
                                                                                         : URL.createObjectURL(
-                                                                                            values.courseImage,
-                                                                                        )
+                                                                                              values.courseImage,
+                                                                                          )
                                                                                 }
                                                                                 alt={values.courseImage}
                                                                             />
