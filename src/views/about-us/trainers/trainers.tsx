@@ -25,6 +25,7 @@ import trainer20 from 'assets/trainerss/trainer20.png';
 import trainer22 from 'assets/trainerss/trainer22.png';
 import trainer23 from 'assets/trainerss/trainer23.png';
 import trainer24 from 'assets/trainerss/trainer24.png';
+import trainer25 from 'assets/trainerss/trainer25.png';
 import { useState } from 'react';
 import { TrainerItem } from './trainer-item';
 import { BounceInRight } from 'components';
@@ -170,16 +171,16 @@ export const Trainers = () => {
             education: 'satış eksperti, təlimçi',
             business: 'satış eksperti, təlimçi',
         },
-        {
-            image: trainer13,
-            qualification: 'Marketinq',
-            trainerName: 'Ağarəhim Poladov',
-            trainerTitle: 'SMM və rəqəmsal marketinq üzrə mütəxəssis, təlimçi',
-            id: 9,
-            companies: ['SAT Group', 'Kapital bank'],
-            education: 'SMM və rəqəmsal marketinq üzrə mütəxəssis, təlimçi',
-            business: 'SMM və rəqəmsal marketinq üzrə mütəxəssis, təlimçi',
-        },
+        // {
+        //     image: trainer13,
+        //     qualification: 'Marketinq',
+        //     trainerName: 'Ağarəhim Poladov',
+        //     trainerTitle: 'SMM və rəqəmsal marketinq üzrə mütəxəssis, təlimçi',
+        //     id: 9,
+        //     companies: ['SAT Group', 'Kapital bank'],
+        //     education: 'SMM və rəqəmsal marketinq üzrə mütəxəssis, təlimçi',
+        //     business: 'SMM və rəqəmsal marketinq üzrə mütəxəssis, təlimçi',
+        // },
         //{
         //    image: trainer14,
         //    qualification: 'Marketinq',
@@ -200,26 +201,26 @@ export const Trainers = () => {
             education: 'Biznes təlimçi, Biznes konsultant',
             business: 'Biznes təlimçi, Biznes konsultant',
         },
-        {
-            image: trainer16,
-            qualification: 'Marketinq',
-            trainerName: 'Tural Rüstəmli',
-            trainerTitle: 'SMM və rəqəmsal marketinq üzrə mütəxəssis, təlimçi',
-            id: 9,
-            companies: ['SAT Group', 'Kapital bank'],
-            education: 'Biznes təlimçi, Biznes konsultant',
-            business: 'Biznes təlimçi, Biznes konsultant',
-        },
-        {
-            image: trainer17,
-            qualification: 'Marketinq',
-            trainerName: 'Elvin Batıyev',
-            trainerTitle: 'SMM və rəqəmsal marketinq üzrə mütəxəssis, təlimçi',
-            id: 9,
-            companies: ['SAT Group', 'Kapital bank'],
-            education: 'Biznes təlimçi, Biznes konsultant',
-            business: 'Biznes təlimçi, Biznes konsultant',
-        },
+        // {
+        //     image: trainer16,
+        //     qualification: 'Marketinq',
+        //     trainerName: 'Tural Rüstəmli',
+        //     trainerTitle: 'SMM və rəqəmsal marketinq üzrə mütəxəssis, təlimçi',
+        //     id: 9,
+        //     companies: ['SAT Group', 'Kapital bank'],
+        //     education: 'Biznes təlimçi, Biznes konsultant',
+        //     business: 'Biznes təlimçi, Biznes konsultant',
+        // },
+        // {
+        //     image: trainer17,
+        //     qualification: 'Marketinq',
+        //     trainerName: 'Elvin Batıyev',
+        //     trainerTitle: 'SMM və rəqəmsal marketinq üzrə mütəxəssis, təlimçi',
+        //     id: 9,
+        //     companies: ['SAT Group', 'Kapital bank'],
+        //     education: 'Biznes təlimçi, Biznes konsultant',
+        //     business: 'Biznes təlimçi, Biznes konsultant',
+        // },
         // {
         //     image: trainer18,
         //     qualification: 'Satış',
@@ -285,6 +286,16 @@ export const Trainers = () => {
             qualification: 'İdarəçilik',
             trainerName: 'Cabir Süleymanlı',
             trainerTitle: 'SMM və rəqəmsal marketinq üzrə mütəxəssis, təlimçi',
+            id: 9,
+            companies: ['SAT Group', 'Kapital bank'],
+            education: 'Biznes təlimçi, Biznes konsultant',
+            business: 'Biznes təlimçi, Biznes konsultant',
+        },
+        {
+            image: trainer25,
+            qualification: 'Marketinq',
+            trainerName: 'Şəmsi Bayramzadə',
+            trainerTitle: 'null',
             id: 9,
             companies: ['SAT Group', 'Kapital bank'],
             education: 'Biznes təlimçi, Biznes konsultant',
