@@ -26,6 +26,9 @@ import trainer22 from 'assets/trainerss/trainer22.png';
 import trainer23 from 'assets/trainerss/trainer23.png';
 import trainer24 from 'assets/trainerss/trainer24.png';
 import trainer25 from 'assets/trainerss/trainer25.png';
+import trainer26 from 'assets/trainerss/trainer26.png';
+import trainer27 from 'assets/trainerss/trainer27.png';
+import trainer28 from 'assets/trainerss/trainer28.png';
 import { useState } from 'react';
 import { TrainerItem } from './trainer-item';
 import { BounceInRight } from 'components';
@@ -295,6 +298,36 @@ export const Trainers = () => {
             image: trainer25,
             qualification: 'Marketinq',
             trainerName: 'Şəmsi Bayramzadə',
+            trainerTitle: 'null',
+            id: 9,
+            companies: ['SAT Group', 'Kapital bank'],
+            education: 'Biznes təlimçi, Biznes konsultant',
+            business: 'Biznes təlimçi, Biznes konsultant',
+        },
+        {
+            image: trainer26,
+            qualification: 'Idarəetmə',
+            trainerName: 'Kamran Cəbrayılov',
+            trainerTitle: 'null',
+            id: 9,
+            companies: ['SAT Group', 'Kapital bank'],
+            education: 'Biznes təlimçi, Biznes konsultant',
+            business: 'Biznes təlimçi, Biznes konsultant',
+        },
+        {
+            image: trainer27,
+            qualification: 'Marketinq',
+            trainerName: 'Amin Eyvazov',
+            trainerTitle: 'null',
+            id: 9,
+            companies: ['SAT Group', 'Kapital bank'],
+            education: 'Biznes təlimçi, Biznes konsultant',
+            business: 'Biznes təlimçi, Biznes konsultant',
+        },
+        {
+            image: trainer28,
+            qualification: 'Marketinq',
+            trainerName: 'Abdulla Abdullayev',
             trainerTitle: 'null',
             id: 9,
             companies: ['SAT Group', 'Kapital bank'],
