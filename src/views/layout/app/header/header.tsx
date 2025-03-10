@@ -77,7 +77,7 @@ const Root = styled(AppBar)(({ theme }: { theme: Theme }) => ({
 }));
 
 export const Header: React.FC = () => {
-    const [{ isLoggedIn }] = useAuth();
+    // const [{ isLoggedIn }] = useAuth();
 
     const { t } = useTranslation();
     const [scrolledDown, setScrolledDown] = useState(false);
