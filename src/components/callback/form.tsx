@@ -229,7 +229,7 @@ export const Form: React.FC<BoxProps & { courseId?: string; closeDialog?: () => 
                                     </Box>
                                 </Box>
 
-                                <Button variant="contained" type="submit" className="submit-button">
+                                <Button variant="contained" type="submit" className="submit-button" disabled={!isValid}>
                                     {t('home:send')}
                                 </Button>
                             </form>
