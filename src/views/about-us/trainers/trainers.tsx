@@ -11,13 +11,13 @@ import trainer7 from 'assets/trainerss/trainer7.png';
 import trainer8 from 'assets/trainerss/trainer8.png';
 import trainer9 from 'assets/trainerss/trainer9.png';
 import trainer10 from 'assets/trainerss/trainer10.png';
-import trainer11 from 'assets/trainerss/trainer11.png';
+// import trainer11 from 'assets/trainerss/trainer11.png';
 import trainer12 from 'assets/trainerss/trainer12.png';
-import trainer13 from 'assets/trainerss/trainer13.png';
+// import trainer13 from 'assets/trainerss/trainer13.png';
 //import trainer14 from 'assets/trainerss/trainer14.png';
 import trainer15 from 'assets/trainerss/trainer15.png';
-import trainer16 from 'assets/trainerss/trainer16.png';
-import trainer17 from 'assets/trainerss/trainer17.png';
+// import trainer16 from 'assets/trainerss/trainer16.png';
+// import trainer17 from 'assets/trainerss/trainer17.png';
 // import trainer18 from 'assets/trainerss/trainer18.png';
 import trainer19 from 'assets/trainerss/trainer19.png';
 import trainer20 from 'assets/trainerss/trainer20.png';
@@ -151,16 +151,16 @@ export const Trainers = () => {
             education: 'Biznes təlimçi, Biznes konsultant',
             business: 'Biznes təlimçi, Biznes konsultant',
         },
-        {
-            image: trainer11,
-            qualification: 'Marketinq',
-            trainerName: 'Tural Həsənov',
-            trainerTitle: 'Marketoloq və araşdırma üzrə ekspert',
-            id: 9,
-            companies: ['SAT Group', 'Kapital bank'],
-            education: 'Marketoloq və araşdırma üzrə ekspert',
-            business: 'Marketoloq və araşdırma üzrə ekspert',
-        },
+        // {
+        //     image: trainer11,
+        //     qualification: 'Marketinq',
+        //     trainerName: 'Tural Həsənov',
+        //     trainerTitle: 'Marketoloq və araşdırma üzrə ekspert',
+        //     id: 9,
+        //     companies: ['SAT Group', 'Kapital bank'],
+        //     education: 'Marketoloq və araşdırma üzrə ekspert',
+        //     business: 'Marketoloq və araşdırma üzrə ekspert',
+        // },
         {
             image: trainer12,
             qualification: 'Marketinq',
