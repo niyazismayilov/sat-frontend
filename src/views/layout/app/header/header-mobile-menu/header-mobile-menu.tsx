@@ -55,7 +55,7 @@ export const HeaderMobileMenu = () => {
                         </Box>
 
                         {/* <SearchBar mb={4} />           NOT DELETE */}
-                        <Box mb={8}>
+{/*                         <Box mb={8}>
                             <Button
                                 variant="contained"
                                 fullWidth
@@ -77,7 +77,7 @@ export const HeaderMobileMenu = () => {
                             >
                                 {t('auth:login')}
                             </Button>
-                        </Box>
+                        </Box> */}
                         <Box>
                             {menuItems.map((item, i) => {
                                 return item.route ? (
