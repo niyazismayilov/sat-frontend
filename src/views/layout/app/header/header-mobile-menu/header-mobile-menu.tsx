@@ -31,7 +31,6 @@ const Drawer = styled(SwipeableDrawer)(({ theme }: { theme: Theme }) => ({
 export const HeaderMobileMenu = () => {
     const [open, setOpen] = useState(false);
     const { t } = useTranslation();
-    const dispatch = useAuthDispatch();
 
     return (
         <>
