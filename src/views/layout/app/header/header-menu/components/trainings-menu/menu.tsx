@@ -129,6 +129,24 @@ export const Menu: React.FC<{ onClose: () => void }> = ({ onClose }) => {
                             </Box>
                         </Box>
                     </Grid>
+                    <Grid item xs={2.4}>
+                        <Box pl={3} pr={3} sx={{ borderLeft: '1px solid #F4F4F4' }}>
+                            <Box mb={6}>
+                                <Typography className="title">{t(`header:${categories[5]}`)}</Typography>
+                                {courses
+                                    .filter((course) => course.attributes?.category === categories[5])
+                                    .map((course, index) => (
+                                        <ChildMenuItem
+                                            onClose={onClose}
+                                            key={index}
+                                            courseId={course.id}
+                                            courseName={course.attributes?.name}
+                                            sx={{ marginBottom: (theme) => theme.spacing(1.5) }}
+                                        />
+                                    ))}
+                            </Box>
+                        </Box>
+                    </Grid>
 
                     {/* <Grid item xs={2}></Grid> */}
                 </Grid>
