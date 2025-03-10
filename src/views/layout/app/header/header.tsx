@@ -1,4 +1,4 @@
-import { AppBar, Typography, Box, Divider, Container, Theme, ButtonBase, Button } from '@mui/material';
+import { AppBar, Typography, Box, Divider, Container, Theme, ButtonBase } from '@mui/material';
 import { styled } from '@mui/styles';
 import { useEffect, useState } from 'react';
 import { /* LanguageSelector, */ Link, SocialIcons } from 'components';
@@ -8,7 +8,6 @@ import { useTranslation } from 'react-i18next';
 import { useAuthDispatch } from 'context/auth/store';
 import { HeaderMobileMenu } from './header-mobile-menu';
 import { useAuth } from 'context/auth/store';
-import { HeaderProfile } from './header-profile';
 
 const Root = styled(AppBar)(({ theme }: { theme: Theme }) => ({
     '& .header-top': {
@@ -138,7 +137,7 @@ export const Header: React.FC = () => {
                             </Box>
                         </Box>
                     </Box>
-                    <Box display="flex" alignItems="center">
+                    {/* <Box display="flex" alignItems="center">
                         {isLoggedIn ? (
                             <HeaderProfile />
                         ) : (
@@ -163,7 +162,7 @@ export const Header: React.FC = () => {
                                 </Button>
                             </>
                         )}
-                    </Box>
+                    </Box> */}
                 </Container>
             </Box>
         </Root>
