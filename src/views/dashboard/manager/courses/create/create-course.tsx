@@ -236,6 +236,9 @@ export const CreateCourse: React.FC = () => {
                                                         <MenuItem value={Enum_Course_Category.Satacademy}>
                                                             SAT Academy
                                                         </MenuItem>
+                                                        <MenuItem value={Enum_Course_Category.Nartio}>
+                                                            Nartio
+                                                        </MenuItem>
                                                         <MenuItem value={Enum_Course_Category.Others}>Digər</MenuItem>
                                                     </Field>
                                                 </Grid>

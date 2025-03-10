@@ -245,6 +245,9 @@ export const EditCourse: React.FC = () => {
                                                         <MenuItem value={Enum_Course_Category.Satacademy}>
                                                             SAT Academy
                                                         </MenuItem>
+                                                        <MenuItem value={Enum_Course_Category.Nartio}>
+                                                            Nartio
+                                                        </MenuItem>
                                                         <MenuItem value={Enum_Course_Category.Others}>Digər</MenuItem>
                                                     </Field>
                                                 </Grid>
@@ -632,11 +635,11 @@ export const EditCourse: React.FC = () => {
                                                                                 style={{ maxWidth: '100%' }}
                                                                                 src={
                                                                                     typeof values.courseImage ===
-                                                                                    'string'
+                                                                                        'string'
                                                                                         ? values.courseImage
                                                                                         : URL.createObjectURL(
-                                                                                              values.courseImage,
-                                                                                          )
+                                                                                            values.courseImage,
+                                                                                        )
                                                                                 }
                                                                                 alt={values.courseImage}
                                                                             />
