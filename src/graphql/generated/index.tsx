@@ -1,4 +1,3 @@
-// prettier-ignore
 import { gql } from '@apollo/client';
 import * as Apollo from '@apollo/client';
 export type Maybe<T> = T | null;
@@ -2660,8 +2659,8 @@ export type CreateCallbackMutation = { __typename?: 'Mutation' } & {
         { __typename?: 'CallbackEntityResponse' } & {
             data?: Maybe<
                 { __typename?: 'CallbackEntity' } & Pick<CallbackEntity, 'id'> & {
-                    attributes?: Maybe<{ __typename?: 'Callback' } & Pick<Callback, 'phoneNumber'>>;
-                }
+                        attributes?: Maybe<{ __typename?: 'Callback' } & Pick<Callback, 'phoneNumber'>>;
+                    }
             >;
         }
     >;
@@ -2688,8 +2687,8 @@ export type CreateSubscriberMutation = { __typename?: 'Mutation' } & {
         { __typename?: 'SubscriberEntityResponse' } & {
             data?: Maybe<
                 { __typename?: 'SubscriberEntity' } & Pick<SubscriberEntity, 'id'> & {
-                    attributes?: Maybe<{ __typename?: 'Subscriber' } & Pick<Subscriber, 'email' | 'createdAt'>>;
-                }
+                        attributes?: Maybe<{ __typename?: 'Subscriber' } & Pick<Subscriber, 'email' | 'createdAt'>>;
+                    }
             >;
         }
     >;
@@ -2733,11 +2732,11 @@ export type LoginMutationVariables = Exact<{
 
 export type LoginMutation = { __typename?: 'Mutation' } & {
     login: { __typename?: 'UsersPermissionsLoginPayload' } & Pick<UsersPermissionsLoginPayload, 'jwt'> & {
-        user: { __typename?: 'UsersPermissionsMe' } & Pick<
-            UsersPermissionsMe,
-            'id' | 'username' | 'email' | 'confirmed' | 'blocked' | 'firstName' | 'lastName'
-        >;
-    };
+            user: { __typename?: 'UsersPermissionsMe' } & Pick<
+                UsersPermissionsMe,
+                'id' | 'username' | 'email' | 'confirmed' | 'blocked' | 'firstName' | 'lastName'
+            >;
+        };
 };
 
 export type CreateBlogMutationVariables = Exact<{
@@ -2749,8 +2748,8 @@ export type CreateBlogMutation = { __typename?: 'Mutation' } & {
         { __typename?: 'BlogEntityResponse' } & {
             data?: Maybe<
                 { __typename?: 'BlogEntity' } & Pick<BlogEntity, 'id'> & {
-                    attributes?: Maybe<{ __typename?: 'Blog' } & Pick<Blog, 'title'>>;
-                }
+                        attributes?: Maybe<{ __typename?: 'Blog' } & Pick<Blog, 'title'>>;
+                    }
             >;
         }
     >;
@@ -2765,8 +2764,8 @@ export type CreateBroadcastSerieMutation = { __typename?: 'Mutation' } & {
         { __typename?: 'BroadcastSerieEntityResponse' } & {
             data?: Maybe<
                 { __typename?: 'BroadcastSerieEntity' } & Pick<BroadcastSerieEntity, 'id'> & {
-                    attributes?: Maybe<{ __typename?: 'BroadcastSerie' } & Pick<BroadcastSerie, 'title' | 'slug'>>;
-                }
+                        attributes?: Maybe<{ __typename?: 'BroadcastSerie' } & Pick<BroadcastSerie, 'title' | 'slug'>>;
+                    }
             >;
         }
     >;
@@ -2781,8 +2780,8 @@ export type CreateBroadcastMutation = { __typename?: 'Mutation' } & {
         { __typename?: 'BroadcastEntityResponse' } & {
             data?: Maybe<
                 { __typename?: 'BroadcastEntity' } & Pick<BroadcastEntity, 'id'> & {
-                    attributes?: Maybe<{ __typename?: 'Broadcast' } & Pick<Broadcast, 'title'>>;
-                }
+                        attributes?: Maybe<{ __typename?: 'Broadcast' } & Pick<Broadcast, 'title'>>;
+                    }
             >;
         }
     >;
@@ -2833,8 +2832,8 @@ export type CreateGroupMutation = { __typename?: 'Mutation' } & {
         { __typename?: 'GroupEntityResponse' } & {
             data?: Maybe<
                 { __typename?: 'GroupEntity' } & Pick<GroupEntity, 'id'> & {
-                    attributes?: Maybe<{ __typename?: 'Group' } & Pick<Group, 'name'>>;
-                }
+                        attributes?: Maybe<{ __typename?: 'Group' } & Pick<Group, 'name'>>;
+                    }
             >;
         }
     >;
@@ -2873,8 +2872,8 @@ export type CreateVideoMutation = { __typename?: 'Mutation' } & {
         { __typename?: 'VideoEntityResponse' } & {
             data?: Maybe<
                 { __typename?: 'VideoEntity' } & Pick<VideoEntity, 'id'> & {
-                    attributes?: Maybe<{ __typename?: 'Video' } & Pick<Video, 'title'>>;
-                }
+                        attributes?: Maybe<{ __typename?: 'Video' } & Pick<Video, 'title'>>;
+                    }
             >;
         }
     >;
@@ -2889,8 +2888,8 @@ export type DeleteBlogMutation = { __typename?: 'Mutation' } & {
         { __typename?: 'BlogEntityResponse' } & {
             data?: Maybe<
                 { __typename?: 'BlogEntity' } & Pick<BlogEntity, 'id'> & {
-                    attributes?: Maybe<{ __typename?: 'Blog' } & Pick<Blog, 'body'>>;
-                }
+                        attributes?: Maybe<{ __typename?: 'Blog' } & Pick<Blog, 'body'>>;
+                    }
             >;
         }
     >;
@@ -2905,8 +2904,8 @@ export type DeleteBroadcastSerieMutation = { __typename?: 'Mutation' } & {
         { __typename?: 'BroadcastSerieEntityResponse' } & {
             data?: Maybe<
                 { __typename?: 'BroadcastSerieEntity' } & Pick<BroadcastSerieEntity, 'id'> & {
-                    attributes?: Maybe<{ __typename?: 'BroadcastSerie' } & Pick<BroadcastSerie, 'title'>>;
-                }
+                        attributes?: Maybe<{ __typename?: 'BroadcastSerie' } & Pick<BroadcastSerie, 'title'>>;
+                    }
             >;
         }
     >;
@@ -2921,8 +2920,8 @@ export type DeleteBroadcastMutation = { __typename?: 'Mutation' } & {
         { __typename?: 'BroadcastEntityResponse' } & {
             data?: Maybe<
                 { __typename?: 'BroadcastEntity' } & Pick<BroadcastEntity, 'id'> & {
-                    attributes?: Maybe<{ __typename?: 'Broadcast' } & Pick<Broadcast, 'title'>>;
-                }
+                        attributes?: Maybe<{ __typename?: 'Broadcast' } & Pick<Broadcast, 'title'>>;
+                    }
             >;
         }
     >;
@@ -2937,8 +2936,8 @@ export type DeleteCallbackMutation = { __typename?: 'Mutation' } & {
         { __typename?: 'CallbackEntityResponse' } & {
             data?: Maybe<
                 { __typename?: 'CallbackEntity' } & Pick<CallbackEntity, 'id'> & {
-                    attributes?: Maybe<{ __typename?: 'Callback' } & Pick<Callback, 'phoneNumber'>>;
-                }
+                        attributes?: Maybe<{ __typename?: 'Callback' } & Pick<Callback, 'phoneNumber'>>;
+                    }
             >;
         }
     >;
@@ -3011,8 +3010,8 @@ export type DeleteSubscriberMutation = { __typename?: 'Mutation' } & {
         { __typename?: 'SubscriberEntityResponse' } & {
             data?: Maybe<
                 { __typename?: 'SubscriberEntity' } & Pick<SubscriberEntity, 'id'> & {
-                    attributes?: Maybe<{ __typename?: 'Subscriber' } & Pick<Subscriber, 'email'>>;
-                }
+                        attributes?: Maybe<{ __typename?: 'Subscriber' } & Pick<Subscriber, 'email'>>;
+                    }
             >;
         }
     >;
@@ -3039,8 +3038,8 @@ export type DeleteVideoMutation = { __typename?: 'Mutation' } & {
         { __typename?: 'VideoEntityResponse' } & {
             data?: Maybe<
                 { __typename?: 'VideoEntity' } & Pick<VideoEntity, 'id'> & {
-                    attributes?: Maybe<{ __typename?: 'Video' } & Pick<Video, 'title'>>;
-                }
+                        attributes?: Maybe<{ __typename?: 'Video' } & Pick<Video, 'title'>>;
+                    }
             >;
         }
     >;
@@ -3068,8 +3067,8 @@ export type UpdateBlogMutation = { __typename?: 'Mutation' } & {
         { __typename?: 'BlogEntityResponse' } & {
             data?: Maybe<
                 { __typename?: 'BlogEntity' } & Pick<BlogEntity, 'id'> & {
-                    attributes?: Maybe<{ __typename?: 'Blog' } & Pick<Blog, 'title'>>;
-                }
+                        attributes?: Maybe<{ __typename?: 'Blog' } & Pick<Blog, 'title'>>;
+                    }
             >;
         }
     >;
@@ -3085,8 +3084,8 @@ export type UpdateBroadcastMutation = { __typename?: 'Mutation' } & {
         { __typename?: 'BroadcastEntityResponse' } & {
             data?: Maybe<
                 { __typename?: 'BroadcastEntity' } & Pick<BroadcastEntity, 'id'> & {
-                    attributes?: Maybe<{ __typename?: 'Broadcast' } & Pick<Broadcast, 'title'>>;
-                }
+                        attributes?: Maybe<{ __typename?: 'Broadcast' } & Pick<Broadcast, 'title'>>;
+                    }
             >;
         }
     >;
@@ -3102,8 +3101,8 @@ export type UpdateBroadcastSerieMutation = { __typename?: 'Mutation' } & {
         { __typename?: 'BroadcastSerieEntityResponse' } & {
             data?: Maybe<
                 { __typename?: 'BroadcastSerieEntity' } & Pick<BroadcastSerieEntity, 'id'> & {
-                    attributes?: Maybe<{ __typename?: 'BroadcastSerie' } & Pick<BroadcastSerie, 'title'>>;
-                }
+                        attributes?: Maybe<{ __typename?: 'BroadcastSerie' } & Pick<BroadcastSerie, 'title'>>;
+                    }
             >;
         }
     >;
@@ -3119,8 +3118,8 @@ export type UpdateCallbackMutation = { __typename?: 'Mutation' } & {
         { __typename?: 'CallbackEntityResponse' } & {
             data?: Maybe<
                 { __typename?: 'CallbackEntity' } & Pick<CallbackEntity, 'id'> & {
-                    attributes?: Maybe<{ __typename?: 'Callback' } & Pick<Callback, 'phoneNumber' | 'isCalled'>>;
-                }
+                        attributes?: Maybe<{ __typename?: 'Callback' } & Pick<Callback, 'phoneNumber' | 'isCalled'>>;
+                    }
             >;
         }
     >;
@@ -3149,8 +3148,8 @@ export type UpdateCourseMutation = { __typename?: 'Mutation' } & {
         { __typename?: 'CourseEntityResponse' } & {
             data?: Maybe<
                 { __typename?: 'CourseEntity' } & Pick<CourseEntity, 'id'> & {
-                    attributes?: Maybe<{ __typename?: 'Course' } & Pick<Course, 'name'>>;
-                }
+                        attributes?: Maybe<{ __typename?: 'Course' } & Pick<Course, 'name'>>;
+                    }
             >;
         }
     >;
@@ -3179,8 +3178,8 @@ export type UpdateGroupMutation = { __typename?: 'Mutation' } & {
         { __typename?: 'GroupEntityResponse' } & {
             data?: Maybe<
                 { __typename?: 'GroupEntity' } & Pick<GroupEntity, 'id'> & {
-                    attributes?: Maybe<{ __typename?: 'Group' } & Pick<Group, 'name'>>;
-                }
+                        attributes?: Maybe<{ __typename?: 'Group' } & Pick<Group, 'name'>>;
+                    }
             >;
         }
     >;
@@ -3196,10 +3195,10 @@ export type UpdateMessageMutation = { __typename?: 'Mutation' } & {
         { __typename?: 'MessageEntityResponse' } & {
             data?: Maybe<
                 { __typename?: 'MessageEntity' } & Pick<MessageEntity, 'id'> & {
-                    attributes?: Maybe<
-                        { __typename?: 'Message' } & Pick<Message, 'isRead' | 'message' | 'fullName'>
-                    >;
-                }
+                        attributes?: Maybe<
+                            { __typename?: 'Message' } & Pick<Message, 'isRead' | 'message' | 'fullName'>
+                        >;
+                    }
             >;
         }
     >;
@@ -3214,10 +3213,10 @@ export type UpdateUsersPermissionsUserMutation = { __typename?: 'Mutation' } & {
     updateUsersPermissionsUser: { __typename?: 'UsersPermissionsUserEntityResponse' } & {
         data?: Maybe<
             { __typename?: 'UsersPermissionsUserEntity' } & Pick<UsersPermissionsUserEntity, 'id'> & {
-                attributes?: Maybe<
-                    { __typename?: 'UsersPermissionsUser' } & Pick<UsersPermissionsUser, 'firstName'>
-                >;
-            }
+                    attributes?: Maybe<
+                        { __typename?: 'UsersPermissionsUser' } & Pick<UsersPermissionsUser, 'firstName'>
+                    >;
+                }
         >;
     };
 };
@@ -3245,8 +3244,8 @@ export type UpdateTrainerMutation = { __typename?: 'Mutation' } & {
         { __typename?: 'TrainerEntityResponse' } & {
             data?: Maybe<
                 { __typename?: 'TrainerEntity' } & Pick<TrainerEntity, 'id'> & {
-                    attributes?: Maybe<{ __typename?: 'Trainer' } & Pick<Trainer, 'trainerTitle' | 'fullName'>>;
-                }
+                        attributes?: Maybe<{ __typename?: 'Trainer' } & Pick<Trainer, 'trainerTitle' | 'fullName'>>;
+                    }
             >;
         }
     >;
@@ -3262,8 +3261,8 @@ export type UpdateVideoMutation = { __typename?: 'Mutation' } & {
         { __typename?: 'VideoEntityResponse' } & {
             data?: Maybe<
                 { __typename?: 'VideoEntity' } & Pick<VideoEntity, 'id'> & {
-                    attributes?: Maybe<{ __typename?: 'Video' } & Pick<Video, 'title'>>;
-                }
+                        attributes?: Maybe<{ __typename?: 'Video' } & Pick<Video, 'title'>>;
+                    }
             >;
         }
     >;
@@ -3275,8 +3274,8 @@ export type RegisterMutationVariables = Exact<{
 
 export type RegisterMutation = { __typename?: 'Mutation' } & {
     register: { __typename?: 'UsersPermissionsLoginPayload' } & Pick<UsersPermissionsLoginPayload, 'jwt'> & {
-        user: { __typename?: 'UsersPermissionsMe' } & Pick<UsersPermissionsMe, 'id' | 'username'>;
-    };
+            user: { __typename?: 'UsersPermissionsMe' } & Pick<UsersPermissionsMe, 'id' | 'username'>;
+        };
 };
 
 export type ResetPasswordMutationVariables = Exact<{
@@ -3298,28 +3297,28 @@ export type BlogQuery = { __typename?: 'Query' } & {
         { __typename?: 'BlogEntityResponseCollection' } & {
             data: Array<
                 { __typename?: 'BlogEntity' } & Pick<BlogEntity, 'id'> & {
-                    attributes?: Maybe<
-                        { __typename?: 'Blog' } & Pick<
-                            Blog,
-                            'title' | 'body' | 'category' | 'createdAt' | 'status'
-                        > & {
-                            coverImage?: Maybe<
-                                { __typename?: 'UploadFileEntityResponse' } & {
-                                    data?: Maybe<
-                                        { __typename?: 'UploadFileEntity' } & Pick<UploadFileEntity, 'id'> & {
-                                            attributes?: Maybe<
-                                                { __typename?: 'UploadFile' } & Pick<
-                                                    UploadFile,
-                                                    'name' | 'url'
-                                                >
+                        attributes?: Maybe<
+                            { __typename?: 'Blog' } & Pick<
+                                Blog,
+                                'title' | 'body' | 'category' | 'createdAt' | 'status'
+                            > & {
+                                    coverImage?: Maybe<
+                                        { __typename?: 'UploadFileEntityResponse' } & {
+                                            data?: Maybe<
+                                                { __typename?: 'UploadFileEntity' } & Pick<UploadFileEntity, 'id'> & {
+                                                        attributes?: Maybe<
+                                                            { __typename?: 'UploadFile' } & Pick<
+                                                                UploadFile,
+                                                                'name' | 'url'
+                                                            >
+                                                        >;
+                                                    }
                                             >;
                                         }
                                     >;
                                 }
-                            >;
-                        }
-                    >;
-                }
+                        >;
+                    }
             >;
         }
     >;
@@ -3336,28 +3335,28 @@ export type BlogsQuery = { __typename?: 'Query' } & {
         { __typename?: 'BlogEntityResponseCollection' } & {
             data: Array<
                 { __typename?: 'BlogEntity' } & Pick<BlogEntity, 'id'> & {
-                    attributes?: Maybe<
-                        { __typename?: 'Blog' } & Pick<
-                            Blog,
-                            'title' | 'slug' | 'category' | 'createdAt' | 'body' | 'status'
-                        > & {
-                            coverImage?: Maybe<
-                                { __typename?: 'UploadFileEntityResponse' } & {
-                                    data?: Maybe<
-                                        { __typename?: 'UploadFileEntity' } & Pick<UploadFileEntity, 'id'> & {
-                                            attributes?: Maybe<
-                                                { __typename?: 'UploadFile' } & Pick<
-                                                    UploadFile,
-                                                    'url' | 'name'
-                                                >
+                        attributes?: Maybe<
+                            { __typename?: 'Blog' } & Pick<
+                                Blog,
+                                'title' | 'slug' | 'category' | 'createdAt' | 'body' | 'status'
+                            > & {
+                                    coverImage?: Maybe<
+                                        { __typename?: 'UploadFileEntityResponse' } & {
+                                            data?: Maybe<
+                                                { __typename?: 'UploadFileEntity' } & Pick<UploadFileEntity, 'id'> & {
+                                                        attributes?: Maybe<
+                                                            { __typename?: 'UploadFile' } & Pick<
+                                                                UploadFile,
+                                                                'url' | 'name'
+                                                            >
+                                                        >;
+                                                    }
                                             >;
                                         }
                                     >;
                                 }
-                            >;
-                        }
-                    >;
-                }
+                        >;
+                    }
             >;
             meta: { __typename?: 'ResponseCollectionMeta' } & {
                 pagination: { __typename?: 'Pagination' } & Pick<
@@ -3381,51 +3380,51 @@ export type BroadcastSeriesQuery = { __typename?: 'Query' } & {
         { __typename?: 'BroadcastSerieEntityResponseCollection' } & {
             data: Array<
                 { __typename?: 'BroadcastSerieEntity' } & Pick<BroadcastSerieEntity, 'id'> & {
-                    attributes?: Maybe<
-                        { __typename?: 'BroadcastSerie' } & Pick<
-                            BroadcastSerie,
-                            'title' | 'slug' | 'totalMinutes' | 'status' | 'createdAt'
-                        > & {
-                            broadcasts?: Maybe<
-                                { __typename?: 'BroadcastRelationResponseCollection' } & {
-                                    data: Array<
-                                        { __typename?: 'BroadcastEntity' } & Pick<BroadcastEntity, 'id'> & {
-                                            attributes?: Maybe<
-                                                { __typename?: 'Broadcast' } & Pick<
-                                                    Broadcast,
-                                                    'title' | 'category' | 'slug' | 'createdAt' | 'status'
-                                                > & {
-                                                    coverImage: {
-                                                        __typename?: 'UploadFileEntityResponse';
-                                                    } & {
-                                                        data?: Maybe<
-                                                            { __typename?: 'UploadFileEntity' } & {
-                                                                attributes?: Maybe<
-                                                                    {
-                                                                        __typename?: 'UploadFile';
-                                                                    } & Pick<UploadFile, 'url'>
-                                                                >;
-                                                            }
+                        attributes?: Maybe<
+                            { __typename?: 'BroadcastSerie' } & Pick<
+                                BroadcastSerie,
+                                'title' | 'slug' | 'totalMinutes' | 'status' | 'createdAt'
+                            > & {
+                                    broadcasts?: Maybe<
+                                        { __typename?: 'BroadcastRelationResponseCollection' } & {
+                                            data: Array<
+                                                { __typename?: 'BroadcastEntity' } & Pick<BroadcastEntity, 'id'> & {
+                                                        attributes?: Maybe<
+                                                            { __typename?: 'Broadcast' } & Pick<
+                                                                Broadcast,
+                                                                'title' | 'category' | 'slug' | 'createdAt' | 'status'
+                                                            > & {
+                                                                    coverImage: {
+                                                                        __typename?: 'UploadFileEntityResponse';
+                                                                    } & {
+                                                                        data?: Maybe<
+                                                                            { __typename?: 'UploadFileEntity' } & {
+                                                                                attributes?: Maybe<
+                                                                                    {
+                                                                                        __typename?: 'UploadFile';
+                                                                                    } & Pick<UploadFile, 'url'>
+                                                                                >;
+                                                                            }
+                                                                        >;
+                                                                    };
+                                                                }
                                                         >;
-                                                    };
-                                                }
+                                                    }
                                             >;
                                         }
                                     >;
-                                }
-                            >;
-                            coverImage: { __typename?: 'UploadFileEntityResponse' } & {
-                                data?: Maybe<
-                                    { __typename?: 'UploadFileEntity' } & Pick<UploadFileEntity, 'id'> & {
-                                        attributes?: Maybe<
-                                            { __typename?: 'UploadFile' } & Pick<UploadFile, 'url'>
+                                    coverImage: { __typename?: 'UploadFileEntityResponse' } & {
+                                        data?: Maybe<
+                                            { __typename?: 'UploadFileEntity' } & Pick<UploadFileEntity, 'id'> & {
+                                                    attributes?: Maybe<
+                                                        { __typename?: 'UploadFile' } & Pick<UploadFile, 'url'>
+                                                    >;
+                                                }
                                         >;
-                                    }
-                                >;
-                            };
-                        }
-                    >;
-                }
+                                    };
+                                }
+                        >;
+                    }
             >;
             meta: { __typename?: 'ResponseCollectionMeta' } & {
                 pagination: { __typename?: 'Pagination' } & Pick<
@@ -3446,34 +3445,34 @@ export type BroadcastQuery = { __typename?: 'Query' } & {
         { __typename?: 'BroadcastEntityResponseCollection' } & {
             data: Array<
                 { __typename?: 'BroadcastEntity' } & Pick<BroadcastEntity, 'id'> & {
-                    attributes?: Maybe<
-                        { __typename?: 'Broadcast' } & Pick<
-                            Broadcast,
-                            'title' | 'category' | 'slug' | 'videoId' | 'createdAt'
-                        > & {
-                            coverImage: { __typename?: 'UploadFileEntityResponse' } & {
-                                data?: Maybe<
-                                    { __typename?: 'UploadFileEntity' } & {
-                                        attributes?: Maybe<
-                                            { __typename?: 'UploadFile' } & Pick<UploadFile, 'url'>
+                        attributes?: Maybe<
+                            { __typename?: 'Broadcast' } & Pick<
+                                Broadcast,
+                                'title' | 'category' | 'slug' | 'videoId' | 'createdAt'
+                            > & {
+                                    coverImage: { __typename?: 'UploadFileEntityResponse' } & {
+                                        data?: Maybe<
+                                            { __typename?: 'UploadFileEntity' } & {
+                                                attributes?: Maybe<
+                                                    { __typename?: 'UploadFile' } & Pick<UploadFile, 'url'>
+                                                >;
+                                            }
                                         >;
-                                    }
-                                >;
-                            };
-                            broadcast_sery?: Maybe<
-                                { __typename?: 'BroadcastSerieEntityResponse' } & {
-                                    data?: Maybe<
-                                        { __typename?: 'BroadcastSerieEntity' } & {
-                                            attributes?: Maybe<
-                                                { __typename?: 'BroadcastSerie' } & Pick<BroadcastSerie, 'slug'>
+                                    };
+                                    broadcast_sery?: Maybe<
+                                        { __typename?: 'BroadcastSerieEntityResponse' } & {
+                                            data?: Maybe<
+                                                { __typename?: 'BroadcastSerieEntity' } & {
+                                                    attributes?: Maybe<
+                                                        { __typename?: 'BroadcastSerie' } & Pick<BroadcastSerie, 'slug'>
+                                                    >;
+                                                }
                                             >;
                                         }
                                     >;
                                 }
-                            >;
-                        }
-                    >;
-                }
+                        >;
+                    }
             >;
         }
     >;
@@ -3490,60 +3489,60 @@ export type BroadcastsQuery = { __typename?: 'Query' } & {
         { __typename?: 'BroadcastEntityResponseCollection' } & {
             data: Array<
                 { __typename?: 'BroadcastEntity' } & Pick<BroadcastEntity, 'id'> & {
-                    attributes?: Maybe<
-                        { __typename?: 'Broadcast' } & Pick<
-                            Broadcast,
-                            'title' | 'category' | 'createdAt' | 'slug' | 'status'
-                        > & {
-                            coverImage: { __typename?: 'UploadFileEntityResponse' } & {
-                                data?: Maybe<
-                                    { __typename?: 'UploadFileEntity' } & {
-                                        attributes?: Maybe<
-                                            { __typename?: 'UploadFile' } & Pick<UploadFile, 'url' | 'name'>
+                        attributes?: Maybe<
+                            { __typename?: 'Broadcast' } & Pick<
+                                Broadcast,
+                                'title' | 'category' | 'createdAt' | 'slug' | 'status'
+                            > & {
+                                    coverImage: { __typename?: 'UploadFileEntityResponse' } & {
+                                        data?: Maybe<
+                                            { __typename?: 'UploadFileEntity' } & {
+                                                attributes?: Maybe<
+                                                    { __typename?: 'UploadFile' } & Pick<UploadFile, 'url' | 'name'>
+                                                >;
+                                            }
                                         >;
-                                    }
-                                >;
-                            };
-                            broadcast_sery?: Maybe<
-                                { __typename?: 'BroadcastSerieEntityResponse' } & {
-                                    data?: Maybe<
-                                        { __typename?: 'BroadcastSerieEntity' } & Pick<
-                                            BroadcastSerieEntity,
-                                            'id'
-                                        > & {
-                                            attributes?: Maybe<
-                                                { __typename?: 'BroadcastSerie' } & Pick<
-                                                    BroadcastSerie,
-                                                    'slug' | 'title'
+                                    };
+                                    broadcast_sery?: Maybe<
+                                        { __typename?: 'BroadcastSerieEntityResponse' } & {
+                                            data?: Maybe<
+                                                { __typename?: 'BroadcastSerieEntity' } & Pick<
+                                                    BroadcastSerieEntity,
+                                                    'id'
                                                 > & {
-                                                    coverImage: {
-                                                        __typename?: 'UploadFileEntityResponse';
-                                                    } & {
-                                                        data?: Maybe<
-                                                            { __typename?: 'UploadFileEntity' } & Pick<
-                                                                UploadFileEntity,
-                                                                'id'
+                                                        attributes?: Maybe<
+                                                            { __typename?: 'BroadcastSerie' } & Pick<
+                                                                BroadcastSerie,
+                                                                'slug' | 'title'
                                                             > & {
-                                                                attributes?: Maybe<
-                                                                    {
-                                                                        __typename?: 'UploadFile';
-                                                                    } & Pick<
-                                                                        UploadFile,
-                                                                        'name' | 'url'
-                                                                    >
-                                                                >;
-                                                            }
+                                                                    coverImage: {
+                                                                        __typename?: 'UploadFileEntityResponse';
+                                                                    } & {
+                                                                        data?: Maybe<
+                                                                            { __typename?: 'UploadFileEntity' } & Pick<
+                                                                                UploadFileEntity,
+                                                                                'id'
+                                                                            > & {
+                                                                                    attributes?: Maybe<
+                                                                                        {
+                                                                                            __typename?: 'UploadFile';
+                                                                                        } & Pick<
+                                                                                            UploadFile,
+                                                                                            'name' | 'url'
+                                                                                        >
+                                                                                    >;
+                                                                                }
+                                                                        >;
+                                                                    };
+                                                                }
                                                         >;
-                                                    };
-                                                }
+                                                    }
                                             >;
                                         }
                                     >;
                                 }
-                            >;
-                        }
-                    >;
-                }
+                        >;
+                    }
             >;
             meta: { __typename?: 'ResponseCollectionMeta' } & {
                 pagination: { __typename?: 'Pagination' } & Pick<
@@ -3564,105 +3563,105 @@ export type CourseDetailQuery = { __typename?: 'Query' } & {
         { __typename?: 'CourseEntityResponse' } & {
             data?: Maybe<
                 { __typename?: 'CourseEntity' } & Pick<CourseEntity, 'id'> & {
-                    attributes?: Maybe<
-                        { __typename?: 'Course' } & Pick<
-                            Course,
-                            | 'isActive'
-                            | 'name'
-                            | 'price'
-                            | 'category'
-                            | 'capacity'
-                            | 'description'
-                            | 'availableProficiencies'
-                            | 'benefits'
-                            | 'syllabus'
-                            | 'duration'
-                            | 'durationType'
-                            | 'count'
-                            | 'includedPayment'
-                            | 'videoId'
-                        > & {
-                            groups?: Maybe<
-                                { __typename?: 'GroupRelationResponseCollection' } & {
-                                    data: Array<
-                                        { __typename?: 'GroupEntity' } & Pick<GroupEntity, 'id'> & {
-                                            attributes?: Maybe<
-                                                { __typename?: 'Group' } & Pick<Group, 'name' | 'isActive'>
+                        attributes?: Maybe<
+                            { __typename?: 'Course' } & Pick<
+                                Course,
+                                | 'isActive'
+                                | 'name'
+                                | 'price'
+                                | 'category'
+                                | 'capacity'
+                                | 'description'
+                                | 'availableProficiencies'
+                                | 'benefits'
+                                | 'syllabus'
+                                | 'duration'
+                                | 'durationType'
+                                | 'count'
+                                | 'includedPayment'
+                                | 'videoId'
+                            > & {
+                                    groups?: Maybe<
+                                        { __typename?: 'GroupRelationResponseCollection' } & {
+                                            data: Array<
+                                                { __typename?: 'GroupEntity' } & Pick<GroupEntity, 'id'> & {
+                                                        attributes?: Maybe<
+                                                            { __typename?: 'Group' } & Pick<Group, 'name' | 'isActive'>
+                                                        >;
+                                                    }
                                             >;
                                         }
                                     >;
-                                }
-                            >;
-                            trainers?: Maybe<
-                                { __typename?: 'TrainerRelationResponseCollection' } & {
-                                    data: Array<
-                                        { __typename?: 'TrainerEntity' } & {
-                                            attributes?: Maybe<
-                                                { __typename?: 'Trainer' } & Pick<
-                                                    Trainer,
-                                                    'trainerTitle' | 'fullName' | 'firstName' | 'lastName'
-                                                > & {
-                                                    image?: Maybe<
-                                                        { __typename?: 'UploadFileEntityResponse' } & {
-                                                            data?: Maybe<
-                                                                { __typename?: 'UploadFileEntity' } & Pick<
-                                                                    UploadFileEntity,
-                                                                    'id'
-                                                                > & {
-                                                                    attributes?: Maybe<
-                                                                        {
-                                                                            __typename?: 'UploadFile';
-                                                                        } & Pick<
-                                                                            UploadFile,
-                                                                            'name' | 'url'
-                                                                        >
-                                                                    >;
-                                                                }
-                                                            >;
-                                                        }
-                                                    >;
-                                                    profileImage?: Maybe<
-                                                        { __typename?: 'UploadFileEntityResponse' } & {
-                                                            data?: Maybe<
-                                                                { __typename?: 'UploadFileEntity' } & Pick<
-                                                                    UploadFileEntity,
-                                                                    'id'
-                                                                > & {
-                                                                    attributes?: Maybe<
-                                                                        {
-                                                                            __typename?: 'UploadFile';
-                                                                        } & Pick<
-                                                                            UploadFile,
-                                                                            'name' | 'url'
-                                                                        >
-                                                                    >;
-                                                                }
-                                                            >;
-                                                        }
+                                    trainers?: Maybe<
+                                        { __typename?: 'TrainerRelationResponseCollection' } & {
+                                            data: Array<
+                                                { __typename?: 'TrainerEntity' } & {
+                                                    attributes?: Maybe<
+                                                        { __typename?: 'Trainer' } & Pick<
+                                                            Trainer,
+                                                            'trainerTitle' | 'fullName' | 'firstName' | 'lastName'
+                                                        > & {
+                                                                image?: Maybe<
+                                                                    { __typename?: 'UploadFileEntityResponse' } & {
+                                                                        data?: Maybe<
+                                                                            { __typename?: 'UploadFileEntity' } & Pick<
+                                                                                UploadFileEntity,
+                                                                                'id'
+                                                                            > & {
+                                                                                    attributes?: Maybe<
+                                                                                        {
+                                                                                            __typename?: 'UploadFile';
+                                                                                        } & Pick<
+                                                                                            UploadFile,
+                                                                                            'name' | 'url'
+                                                                                        >
+                                                                                    >;
+                                                                                }
+                                                                        >;
+                                                                    }
+                                                                >;
+                                                                profileImage?: Maybe<
+                                                                    { __typename?: 'UploadFileEntityResponse' } & {
+                                                                        data?: Maybe<
+                                                                            { __typename?: 'UploadFileEntity' } & Pick<
+                                                                                UploadFileEntity,
+                                                                                'id'
+                                                                            > & {
+                                                                                    attributes?: Maybe<
+                                                                                        {
+                                                                                            __typename?: 'UploadFile';
+                                                                                        } & Pick<
+                                                                                            UploadFile,
+                                                                                            'name' | 'url'
+                                                                                        >
+                                                                                    >;
+                                                                                }
+                                                                        >;
+                                                                    }
+                                                                >;
+                                                            }
                                                     >;
                                                 }
                                             >;
                                         }
                                     >;
-                                }
-                            >;
-                            courseImage?: Maybe<
-                                { __typename?: 'UploadFileEntityResponse' } & {
-                                    data?: Maybe<
-                                        { __typename?: 'UploadFileEntity' } & Pick<UploadFileEntity, 'id'> & {
-                                            attributes?: Maybe<
-                                                { __typename?: 'UploadFile' } & Pick<
-                                                    UploadFile,
-                                                    'name' | 'url'
-                                                >
+                                    courseImage?: Maybe<
+                                        { __typename?: 'UploadFileEntityResponse' } & {
+                                            data?: Maybe<
+                                                { __typename?: 'UploadFileEntity' } & Pick<UploadFileEntity, 'id'> & {
+                                                        attributes?: Maybe<
+                                                            { __typename?: 'UploadFile' } & Pick<
+                                                                UploadFile,
+                                                                'name' | 'url'
+                                                            >
+                                                        >;
+                                                    }
                                             >;
                                         }
                                     >;
                                 }
-                            >;
-                        }
-                    >;
-                }
+                        >;
+                    }
             >;
         }
     >;
@@ -3677,67 +3676,67 @@ export type CourseQuery = { __typename?: 'Query' } & {
         { __typename?: 'CourseEntityResponse' } & {
             data?: Maybe<
                 { __typename?: 'CourseEntity' } & Pick<CourseEntity, 'id'> & {
-                    attributes?: Maybe<
-                        { __typename?: 'Course' } & Pick<
-                            Course,
-                            | 'availableProficiencies'
-                            | 'videoId'
-                            | 'benefits'
-                            | 'includedPayment'
-                            | 'capacity'
-                            | 'category'
-                            | 'count'
-                            | 'description'
-                            | 'durationType'
-                            | 'isActive'
-                            | 'name'
-                            | 'price'
-                            | 'status'
-                            | 'syllabus'
-                            | 'duration'
-                        > & {
-                            courseImage?: Maybe<
-                                { __typename?: 'UploadFileEntityResponse' } & {
-                                    data?: Maybe<
-                                        { __typename?: 'UploadFileEntity' } & Pick<UploadFileEntity, 'id'> & {
-                                            attributes?: Maybe<
-                                                { __typename?: 'UploadFile' } & Pick<
-                                                    UploadFile,
-                                                    'size' | 'name' | 'url'
-                                                >
+                        attributes?: Maybe<
+                            { __typename?: 'Course' } & Pick<
+                                Course,
+                                | 'availableProficiencies'
+                                | 'videoId'
+                                | 'benefits'
+                                | 'includedPayment'
+                                | 'capacity'
+                                | 'category'
+                                | 'count'
+                                | 'description'
+                                | 'durationType'
+                                | 'isActive'
+                                | 'name'
+                                | 'price'
+                                | 'status'
+                                | 'syllabus'
+                                | 'duration'
+                            > & {
+                                    courseImage?: Maybe<
+                                        { __typename?: 'UploadFileEntityResponse' } & {
+                                            data?: Maybe<
+                                                { __typename?: 'UploadFileEntity' } & Pick<UploadFileEntity, 'id'> & {
+                                                        attributes?: Maybe<
+                                                            { __typename?: 'UploadFile' } & Pick<
+                                                                UploadFile,
+                                                                'size' | 'name' | 'url'
+                                                            >
+                                                        >;
+                                                    }
+                                            >;
+                                        }
+                                    >;
+                                    groups?: Maybe<
+                                        { __typename?: 'GroupRelationResponseCollection' } & {
+                                            data: Array<
+                                                { __typename?: 'GroupEntity' } & Pick<GroupEntity, 'id'> & {
+                                                        attributes?: Maybe<
+                                                            { __typename?: 'Group' } & Pick<Group, 'name'>
+                                                        >;
+                                                    }
+                                            >;
+                                        }
+                                    >;
+                                    trainers?: Maybe<
+                                        { __typename?: 'TrainerRelationResponseCollection' } & {
+                                            data: Array<
+                                                { __typename?: 'TrainerEntity' } & Pick<TrainerEntity, 'id'> & {
+                                                        attributes?: Maybe<
+                                                            { __typename?: 'Trainer' } & Pick<
+                                                                Trainer,
+                                                                'firstName' | 'lastName'
+                                                            >
+                                                        >;
+                                                    }
                                             >;
                                         }
                                     >;
                                 }
-                            >;
-                            groups?: Maybe<
-                                { __typename?: 'GroupRelationResponseCollection' } & {
-                                    data: Array<
-                                        { __typename?: 'GroupEntity' } & Pick<GroupEntity, 'id'> & {
-                                            attributes?: Maybe<
-                                                { __typename?: 'Group' } & Pick<Group, 'name'>
-                                            >;
-                                        }
-                                    >;
-                                }
-                            >;
-                            trainers?: Maybe<
-                                { __typename?: 'TrainerRelationResponseCollection' } & {
-                                    data: Array<
-                                        { __typename?: 'TrainerEntity' } & Pick<TrainerEntity, 'id'> & {
-                                            attributes?: Maybe<
-                                                { __typename?: 'Trainer' } & Pick<
-                                                    Trainer,
-                                                    'firstName' | 'lastName'
-                                                >
-                                            >;
-                                        }
-                                    >;
-                                }
-                            >;
-                        }
-                    >;
-                }
+                        >;
+                    }
             >;
         }
     >;
@@ -3752,28 +3751,28 @@ export type BlogByAdminQuery = { __typename?: 'Query' } & {
         { __typename?: 'BlogEntityResponse' } & {
             data?: Maybe<
                 { __typename?: 'BlogEntity' } & Pick<BlogEntity, 'id'> & {
-                    attributes?: Maybe<
-                        { __typename?: 'Blog' } & Pick<
-                            Blog,
-                            'body' | 'category' | 'createdAt' | 'slug' | 'status' | 'title' | 'updatedAt'
-                        > & {
-                            coverImage?: Maybe<
-                                { __typename?: 'UploadFileEntityResponse' } & {
-                                    data?: Maybe<
-                                        { __typename?: 'UploadFileEntity' } & Pick<UploadFileEntity, 'id'> & {
-                                            attributes?: Maybe<
-                                                { __typename?: 'UploadFile' } & Pick<
-                                                    UploadFile,
-                                                    'name' | 'url'
-                                                >
+                        attributes?: Maybe<
+                            { __typename?: 'Blog' } & Pick<
+                                Blog,
+                                'body' | 'category' | 'createdAt' | 'slug' | 'status' | 'title' | 'updatedAt'
+                            > & {
+                                    coverImage?: Maybe<
+                                        { __typename?: 'UploadFileEntityResponse' } & {
+                                            data?: Maybe<
+                                                { __typename?: 'UploadFileEntity' } & Pick<UploadFileEntity, 'id'> & {
+                                                        attributes?: Maybe<
+                                                            { __typename?: 'UploadFile' } & Pick<
+                                                                UploadFile,
+                                                                'name' | 'url'
+                                                            >
+                                                        >;
+                                                    }
                                             >;
                                         }
                                     >;
                                 }
-                            >;
-                        }
-                    >;
-                }
+                        >;
+                    }
             >;
         }
     >;
@@ -3788,60 +3787,60 @@ export type BroadcastByAdminQuery = { __typename?: 'Query' } & {
         { __typename?: 'BroadcastEntityResponse' } & {
             data?: Maybe<
                 { __typename?: 'BroadcastEntity' } & Pick<BroadcastEntity, 'id'> & {
-                    attributes?: Maybe<
-                        { __typename?: 'Broadcast' } & Pick<
-                            Broadcast,
-                            'title' | 'status' | 'slug' | 'createdAt' | 'videoId'
-                        > & {
-                            coverImage: { __typename?: 'UploadFileEntityResponse' } & {
-                                data?: Maybe<
-                                    { __typename?: 'UploadFileEntity' } & Pick<UploadFileEntity, 'id'> & {
-                                        attributes?: Maybe<
-                                            { __typename?: 'UploadFile' } & Pick<UploadFile, 'name' | 'url'>
-                                        >;
-                                    }
-                                >;
-                            };
-                            broadcast_sery?: Maybe<
-                                { __typename?: 'BroadcastSerieEntityResponse' } & {
-                                    data?: Maybe<
-                                        { __typename?: 'BroadcastSerieEntity' } & Pick<
-                                            BroadcastSerieEntity,
-                                            'id'
-                                        > & {
-                                            attributes?: Maybe<
-                                                { __typename?: 'BroadcastSerie' } & Pick<
-                                                    BroadcastSerie,
-                                                    'title'
-                                                > & {
-                                                    coverImage: {
-                                                        __typename?: 'UploadFileEntityResponse';
-                                                    } & {
-                                                        data?: Maybe<
-                                                            { __typename?: 'UploadFileEntity' } & Pick<
-                                                                UploadFileEntity,
-                                                                'id'
-                                                            > & {
-                                                                attributes?: Maybe<
-                                                                    {
-                                                                        __typename?: 'UploadFile';
-                                                                    } & Pick<
-                                                                        UploadFile,
-                                                                        'url' | 'name'
-                                                                    >
-                                                                >;
-                                                            }
-                                                        >;
-                                                    };
+                        attributes?: Maybe<
+                            { __typename?: 'Broadcast' } & Pick<
+                                Broadcast,
+                                'title' | 'status' | 'slug' | 'createdAt' | 'videoId'
+                            > & {
+                                    coverImage: { __typename?: 'UploadFileEntityResponse' } & {
+                                        data?: Maybe<
+                                            { __typename?: 'UploadFileEntity' } & Pick<UploadFileEntity, 'id'> & {
+                                                    attributes?: Maybe<
+                                                        { __typename?: 'UploadFile' } & Pick<UploadFile, 'name' | 'url'>
+                                                    >;
                                                 }
+                                        >;
+                                    };
+                                    broadcast_sery?: Maybe<
+                                        { __typename?: 'BroadcastSerieEntityResponse' } & {
+                                            data?: Maybe<
+                                                { __typename?: 'BroadcastSerieEntity' } & Pick<
+                                                    BroadcastSerieEntity,
+                                                    'id'
+                                                > & {
+                                                        attributes?: Maybe<
+                                                            { __typename?: 'BroadcastSerie' } & Pick<
+                                                                BroadcastSerie,
+                                                                'title'
+                                                            > & {
+                                                                    coverImage: {
+                                                                        __typename?: 'UploadFileEntityResponse';
+                                                                    } & {
+                                                                        data?: Maybe<
+                                                                            { __typename?: 'UploadFileEntity' } & Pick<
+                                                                                UploadFileEntity,
+                                                                                'id'
+                                                                            > & {
+                                                                                    attributes?: Maybe<
+                                                                                        {
+                                                                                            __typename?: 'UploadFile';
+                                                                                        } & Pick<
+                                                                                            UploadFile,
+                                                                                            'url' | 'name'
+                                                                                        >
+                                                                                    >;
+                                                                                }
+                                                                        >;
+                                                                    };
+                                                                }
+                                                        >;
+                                                    }
                                             >;
                                         }
                                     >;
                                 }
-                            >;
-                        }
-                    >;
-                }
+                        >;
+                    }
             >;
         }
     >;
@@ -3856,23 +3855,23 @@ export type BroadcastSerieByAdminQuery = { __typename?: 'Query' } & {
         { __typename?: 'BroadcastSerieEntityResponse' } & {
             data?: Maybe<
                 { __typename?: 'BroadcastSerieEntity' } & Pick<BroadcastSerieEntity, 'id'> & {
-                    attributes?: Maybe<
-                        { __typename?: 'BroadcastSerie' } & Pick<
-                            BroadcastSerie,
-                            'title' | 'status' | 'slug' | 'createdAt'
-                        > & {
-                            coverImage: { __typename?: 'UploadFileEntityResponse' } & {
-                                data?: Maybe<
-                                    { __typename?: 'UploadFileEntity' } & Pick<UploadFileEntity, 'id'> & {
-                                        attributes?: Maybe<
-                                            { __typename?: 'UploadFile' } & Pick<UploadFile, 'name' | 'url'>
+                        attributes?: Maybe<
+                            { __typename?: 'BroadcastSerie' } & Pick<
+                                BroadcastSerie,
+                                'title' | 'status' | 'slug' | 'createdAt'
+                            > & {
+                                    coverImage: { __typename?: 'UploadFileEntityResponse' } & {
+                                        data?: Maybe<
+                                            { __typename?: 'UploadFileEntity' } & Pick<UploadFileEntity, 'id'> & {
+                                                    attributes?: Maybe<
+                                                        { __typename?: 'UploadFile' } & Pick<UploadFile, 'name' | 'url'>
+                                                    >;
+                                                }
                                         >;
-                                    }
-                                >;
-                            };
-                        }
-                    >;
-                }
+                                    };
+                                }
+                        >;
+                    }
             >;
         }
     >;
@@ -3889,10 +3888,10 @@ export type CallbacksQuery = { __typename?: 'Query' } & {
         { __typename?: 'CallbackEntityResponseCollection' } & {
             data: Array<
                 { __typename?: 'CallbackEntity' } & Pick<CallbackEntity, 'id'> & {
-                    attributes?: Maybe<
-                        { __typename?: 'Callback' } & Pick<Callback, 'phoneNumber' | 'createdAt' | 'isCalled'>
-                    >;
-                }
+                        attributes?: Maybe<
+                            { __typename?: 'Callback' } & Pick<Callback, 'phoneNumber' | 'createdAt' | 'isCalled'>
+                        >;
+                    }
             >;
             meta: { __typename?: 'ResponseCollectionMeta' } & {
                 pagination: { __typename?: 'Pagination' } & Pick<
@@ -3913,56 +3912,56 @@ export type CourseRegisterQuery = { __typename?: 'Query' } & {
         { __typename?: 'CourseRegisterEntityResponse' } & {
             data?: Maybe<
                 { __typename?: 'CourseRegisterEntity' } & Pick<CourseRegisterEntity, 'id'> & {
-                    attributes?: Maybe<
-                        { __typename?: 'CourseRegister' } & Pick<CourseRegister, 'paymentStatus' | 'status'> & {
-                            user?: Maybe<
-                                { __typename?: 'UsersPermissionsUserEntityResponse' } & {
-                                    data?: Maybe<
-                                        { __typename?: 'UsersPermissionsUserEntity' } & Pick<
-                                            UsersPermissionsUserEntity,
-                                            'id'
-                                        > & {
-                                            attributes?: Maybe<
-                                                { __typename?: 'UsersPermissionsUser' } & Pick<
-                                                    UsersPermissionsUser,
-                                                    'firstName' | 'lastName'
-                                                >
+                        attributes?: Maybe<
+                            { __typename?: 'CourseRegister' } & Pick<CourseRegister, 'paymentStatus' | 'status'> & {
+                                    user?: Maybe<
+                                        { __typename?: 'UsersPermissionsUserEntityResponse' } & {
+                                            data?: Maybe<
+                                                { __typename?: 'UsersPermissionsUserEntity' } & Pick<
+                                                    UsersPermissionsUserEntity,
+                                                    'id'
+                                                > & {
+                                                        attributes?: Maybe<
+                                                            { __typename?: 'UsersPermissionsUser' } & Pick<
+                                                                UsersPermissionsUser,
+                                                                'firstName' | 'lastName'
+                                                            >
+                                                        >;
+                                                    }
                                             >;
                                         }
                                     >;
-                                }
-                            >;
-                            group?: Maybe<
-                                { __typename?: 'GroupEntityResponse' } & {
-                                    data?: Maybe<
-                                        { __typename?: 'GroupEntity' } & Pick<GroupEntity, 'id'> & {
-                                            attributes?: Maybe<
-                                                { __typename?: 'Group' } & Pick<
-                                                    Group,
-                                                    'name' | 'startsAt' | 'endsAt'
-                                                > & {
-                                                    course?: Maybe<
-                                                        { __typename?: 'CourseEntityResponse' } & {
-                                                            data?: Maybe<
-                                                                { __typename?: 'CourseEntity' } & {
-                                                                    attributes?: Maybe<
-                                                                        {
-                                                                            __typename?: 'Course';
-                                                                        } & Pick<Course, 'name'>
+                                    group?: Maybe<
+                                        { __typename?: 'GroupEntityResponse' } & {
+                                            data?: Maybe<
+                                                { __typename?: 'GroupEntity' } & Pick<GroupEntity, 'id'> & {
+                                                        attributes?: Maybe<
+                                                            { __typename?: 'Group' } & Pick<
+                                                                Group,
+                                                                'name' | 'startsAt' | 'endsAt'
+                                                            > & {
+                                                                    course?: Maybe<
+                                                                        { __typename?: 'CourseEntityResponse' } & {
+                                                                            data?: Maybe<
+                                                                                { __typename?: 'CourseEntity' } & {
+                                                                                    attributes?: Maybe<
+                                                                                        {
+                                                                                            __typename?: 'Course';
+                                                                                        } & Pick<Course, 'name'>
+                                                                                    >;
+                                                                                }
+                                                                            >;
+                                                                        }
                                                                     >;
                                                                 }
-                                                            >;
-                                                        }
-                                                    >;
-                                                }
+                                                        >;
+                                                    }
                                             >;
                                         }
                                     >;
                                 }
-                            >;
-                        }
-                    >;
-                }
+                        >;
+                    }
             >;
         }
     >;
@@ -3979,106 +3978,106 @@ export type CourseRegistersQuery = { __typename?: 'Query' } & {
         { __typename?: 'CourseRegisterEntityResponseCollection' } & {
             data: Array<
                 { __typename?: 'CourseRegisterEntity' } & Pick<CourseRegisterEntity, 'id'> & {
-                    attributes?: Maybe<
-                        { __typename?: 'CourseRegister' } & Pick<CourseRegister, 'paymentStatus' | 'status'> & {
-                            user?: Maybe<
-                                { __typename?: 'UsersPermissionsUserEntityResponse' } & {
-                                    data?: Maybe<
-                                        { __typename?: 'UsersPermissionsUserEntity' } & {
-                                            attributes?: Maybe<
-                                                { __typename?: 'UsersPermissionsUser' } & Pick<
-                                                    UsersPermissionsUser,
-                                                    'firstName' | 'lastName'
-                                                >
+                        attributes?: Maybe<
+                            { __typename?: 'CourseRegister' } & Pick<CourseRegister, 'paymentStatus' | 'status'> & {
+                                    user?: Maybe<
+                                        { __typename?: 'UsersPermissionsUserEntityResponse' } & {
+                                            data?: Maybe<
+                                                { __typename?: 'UsersPermissionsUserEntity' } & {
+                                                    attributes?: Maybe<
+                                                        { __typename?: 'UsersPermissionsUser' } & Pick<
+                                                            UsersPermissionsUser,
+                                                            'firstName' | 'lastName'
+                                                        >
+                                                    >;
+                                                }
                                             >;
                                         }
                                     >;
-                                }
-                            >;
-                            group?: Maybe<
-                                { __typename?: 'GroupEntityResponse' } & {
-                                    data?: Maybe<
-                                        { __typename?: 'GroupEntity' } & {
-                                            attributes?: Maybe<
-                                                { __typename?: 'Group' } & Pick<
-                                                    Group,
-                                                    'name' | 'startsAt' | 'endsAt'
-                                                > & {
-                                                    course?: Maybe<
-                                                        { __typename?: 'CourseEntityResponse' } & {
-                                                            data?: Maybe<
-                                                                { __typename?: 'CourseEntity' } & {
-                                                                    attributes?: Maybe<
-                                                                        { __typename?: 'Course' } & Pick<
-                                                                            Course,
-                                                                            | 'name'
-                                                                            | 'price'
-                                                                            | 'duration'
-                                                                            | 'durationType'
-                                                                            | 'capacity'
-                                                                            | 'count'
-                                                                        > & {
-                                                                            trainers?: Maybe<
-                                                                                {
-                                                                                    __typename?: 'TrainerRelationResponseCollection';
-                                                                                } & {
-                                                                                    data: Array<
-                                                                                        {
-                                                                                            __typename?: 'TrainerEntity';
-                                                                                        } & Pick<
-                                                                                            TrainerEntity,
-                                                                                            'id'
-                                                                                        > & {
-                                                                                            attributes?: Maybe<
+                                    group?: Maybe<
+                                        { __typename?: 'GroupEntityResponse' } & {
+                                            data?: Maybe<
+                                                { __typename?: 'GroupEntity' } & {
+                                                    attributes?: Maybe<
+                                                        { __typename?: 'Group' } & Pick<
+                                                            Group,
+                                                            'name' | 'startsAt' | 'endsAt'
+                                                        > & {
+                                                                course?: Maybe<
+                                                                    { __typename?: 'CourseEntityResponse' } & {
+                                                                        data?: Maybe<
+                                                                            { __typename?: 'CourseEntity' } & {
+                                                                                attributes?: Maybe<
+                                                                                    { __typename?: 'Course' } & Pick<
+                                                                                        Course,
+                                                                                        | 'name'
+                                                                                        | 'price'
+                                                                                        | 'duration'
+                                                                                        | 'durationType'
+                                                                                        | 'capacity'
+                                                                                        | 'count'
+                                                                                    > & {
+                                                                                            trainers?: Maybe<
                                                                                                 {
-                                                                                                    __typename?: 'Trainer';
-                                                                                                } & Pick<
-                                                                                                    Trainer,
-                                                                                                    | 'fullName'
-                                                                                                    | 'position'
-                                                                                                > & {
-                                                                                                    profileImage?: Maybe<
+                                                                                                    __typename?: 'TrainerRelationResponseCollection';
+                                                                                                } & {
+                                                                                                    data: Array<
                                                                                                         {
-                                                                                                            __typename?: 'UploadFileEntityResponse';
-                                                                                                        } & {
-                                                                                                            data?: Maybe<
-                                                                                                                {
-                                                                                                                    __typename?: 'UploadFileEntity';
-                                                                                                                } & {
-                                                                                                                    attributes?: Maybe<
-                                                                                                                        {
-                                                                                                                            __typename?: 'UploadFile';
-                                                                                                                        } & Pick<
-                                                                                                                            UploadFile,
-                                                                                                                            | 'url'
-                                                                                                                            | 'name'
-                                                                                                                        >
-                                                                                                                    >;
-                                                                                                                }
-                                                                                                            >;
-                                                                                                        }
+                                                                                                            __typename?: 'TrainerEntity';
+                                                                                                        } & Pick<
+                                                                                                            TrainerEntity,
+                                                                                                            'id'
+                                                                                                        > & {
+                                                                                                                attributes?: Maybe<
+                                                                                                                    {
+                                                                                                                        __typename?: 'Trainer';
+                                                                                                                    } & Pick<
+                                                                                                                        Trainer,
+                                                                                                                        | 'fullName'
+                                                                                                                        | 'position'
+                                                                                                                    > & {
+                                                                                                                            profileImage?: Maybe<
+                                                                                                                                {
+                                                                                                                                    __typename?: 'UploadFileEntityResponse';
+                                                                                                                                } & {
+                                                                                                                                    data?: Maybe<
+                                                                                                                                        {
+                                                                                                                                            __typename?: 'UploadFileEntity';
+                                                                                                                                        } & {
+                                                                                                                                            attributes?: Maybe<
+                                                                                                                                                {
+                                                                                                                                                    __typename?: 'UploadFile';
+                                                                                                                                                } & Pick<
+                                                                                                                                                    UploadFile,
+                                                                                                                                                    | 'url'
+                                                                                                                                                    | 'name'
+                                                                                                                                                >
+                                                                                                                                            >;
+                                                                                                                                        }
+                                                                                                                                    >;
+                                                                                                                                }
+                                                                                                                            >;
+                                                                                                                        }
+                                                                                                                >;
+                                                                                                            }
                                                                                                     >;
                                                                                                 }
                                                                                             >;
                                                                                         }
-                                                                                    >;
-                                                                                }
-                                                                            >;
-                                                                        }
-                                                                    >;
-                                                                }
-                                                            >;
-                                                        }
+                                                                                >;
+                                                                            }
+                                                                        >;
+                                                                    }
+                                                                >;
+                                                            }
                                                     >;
                                                 }
                                             >;
                                         }
                                     >;
                                 }
-                            >;
-                        }
-                    >;
-                }
+                        >;
+                    }
             >;
             meta: { __typename?: 'ResponseCollectionMeta' } & {
                 pagination: { __typename?: 'Pagination' } & Pick<
@@ -4107,53 +4106,53 @@ export type CoursesQuery = { __typename?: 'Query' } & {
             };
             data: Array<
                 { __typename?: 'CourseEntity' } & Pick<CourseEntity, 'id'> & {
-                    attributes?: Maybe<
-                        { __typename?: 'Course' } & Pick<
-                            Course,
-                            | 'isActive'
-                            | 'name'
-                            | 'category'
-                            | 'price'
-                            | 'capacity'
-                            | 'description'
-                            | 'availableProficiencies'
-                            | 'benefits'
-                            | 'syllabus'
-                            | 'durationType'
-                            | 'count'
-                            | 'duration'
-                            | 'status'
-                            | 'createdAt'
-                            | 'updatedAt'
-                        > & {
-                            groups?: Maybe<
-                                { __typename?: 'GroupRelationResponseCollection' } & {
-                                    data: Array<
-                                        { __typename?: 'GroupEntity' } & Pick<GroupEntity, 'id'> & {
-                                            attributes?: Maybe<
-                                                { __typename?: 'Group' } & Pick<Group, 'name'>
+                        attributes?: Maybe<
+                            { __typename?: 'Course' } & Pick<
+                                Course,
+                                | 'isActive'
+                                | 'name'
+                                | 'category'
+                                | 'price'
+                                | 'capacity'
+                                | 'description'
+                                | 'availableProficiencies'
+                                | 'benefits'
+                                | 'syllabus'
+                                | 'durationType'
+                                | 'count'
+                                | 'duration'
+                                | 'status'
+                                | 'createdAt'
+                                | 'updatedAt'
+                            > & {
+                                    groups?: Maybe<
+                                        { __typename?: 'GroupRelationResponseCollection' } & {
+                                            data: Array<
+                                                { __typename?: 'GroupEntity' } & Pick<GroupEntity, 'id'> & {
+                                                        attributes?: Maybe<
+                                                            { __typename?: 'Group' } & Pick<Group, 'name'>
+                                                        >;
+                                                    }
+                                            >;
+                                        }
+                                    >;
+                                    trainers?: Maybe<
+                                        { __typename?: 'TrainerRelationResponseCollection' } & {
+                                            data: Array<
+                                                { __typename?: 'TrainerEntity' } & Pick<TrainerEntity, 'id'> & {
+                                                        attributes?: Maybe<
+                                                            { __typename?: 'Trainer' } & Pick<
+                                                                Trainer,
+                                                                'firstName' | 'lastName'
+                                                            >
+                                                        >;
+                                                    }
                                             >;
                                         }
                                     >;
                                 }
-                            >;
-                            trainers?: Maybe<
-                                { __typename?: 'TrainerRelationResponseCollection' } & {
-                                    data: Array<
-                                        { __typename?: 'TrainerEntity' } & Pick<TrainerEntity, 'id'> & {
-                                            attributes?: Maybe<
-                                                { __typename?: 'Trainer' } & Pick<
-                                                    Trainer,
-                                                    'firstName' | 'lastName'
-                                                >
-                                            >;
-                                        }
-                                    >;
-                                }
-                            >;
-                        }
-                    >;
-                }
+                        >;
+                    }
             >;
         }
     >;
@@ -4180,28 +4179,28 @@ export type EmployeeQuery = { __typename?: 'Query' } & {
         { __typename?: 'EmployeeEntityResponse' } & {
             data?: Maybe<
                 { __typename?: 'EmployeeEntity' } & Pick<EmployeeEntity, 'id'> & {
-                    attributes?: Maybe<
-                        { __typename?: 'Employee' } & Pick<
-                            Employee,
-                            'firstName' | 'rank' | 'lastName' | 'position' | 'status'
-                        > & {
-                            image?: Maybe<
-                                { __typename?: 'UploadFileEntityResponse' } & {
-                                    data?: Maybe<
-                                        { __typename?: 'UploadFileEntity' } & Pick<UploadFileEntity, 'id'> & {
-                                            attributes?: Maybe<
-                                                { __typename?: 'UploadFile' } & Pick<
-                                                    UploadFile,
-                                                    'name' | 'url'
-                                                >
+                        attributes?: Maybe<
+                            { __typename?: 'Employee' } & Pick<
+                                Employee,
+                                'firstName' | 'rank' | 'lastName' | 'position' | 'status'
+                            > & {
+                                    image?: Maybe<
+                                        { __typename?: 'UploadFileEntityResponse' } & {
+                                            data?: Maybe<
+                                                { __typename?: 'UploadFileEntity' } & Pick<UploadFileEntity, 'id'> & {
+                                                        attributes?: Maybe<
+                                                            { __typename?: 'UploadFile' } & Pick<
+                                                                UploadFile,
+                                                                'name' | 'url'
+                                                            >
+                                                        >;
+                                                    }
                                             >;
                                         }
                                     >;
                                 }
-                            >;
-                        }
-                    >;
-                }
+                        >;
+                    }
             >;
         }
     >;
@@ -4218,25 +4217,25 @@ export type EmployeesQuery = { __typename?: 'Query' } & {
         { __typename?: 'EmployeeEntityResponseCollection' } & {
             data: Array<
                 { __typename?: 'EmployeeEntity' } & Pick<EmployeeEntity, 'id'> & {
-                    attributes?: Maybe<
-                        { __typename?: 'Employee' } & Pick<
-                            Employee,
-                            'firstName' | 'lastName' | 'position' | 'rank' | 'status' | 'updatedAt'
-                        > & {
-                            image?: Maybe<
-                                { __typename?: 'UploadFileEntityResponse' } & {
-                                    data?: Maybe<
-                                        { __typename?: 'UploadFileEntity' } & Pick<UploadFileEntity, 'id'> & {
-                                            attributes?: Maybe<
-                                                { __typename?: 'UploadFile' } & Pick<UploadFile, 'url'>
+                        attributes?: Maybe<
+                            { __typename?: 'Employee' } & Pick<
+                                Employee,
+                                'firstName' | 'lastName' | 'position' | 'rank' | 'status' | 'updatedAt'
+                            > & {
+                                    image?: Maybe<
+                                        { __typename?: 'UploadFileEntityResponse' } & {
+                                            data?: Maybe<
+                                                { __typename?: 'UploadFileEntity' } & Pick<UploadFileEntity, 'id'> & {
+                                                        attributes?: Maybe<
+                                                            { __typename?: 'UploadFile' } & Pick<UploadFile, 'url'>
+                                                        >;
+                                                    }
                                             >;
                                         }
                                     >;
                                 }
-                            >;
-                        }
-                    >;
-                }
+                        >;
+                    }
             >;
             meta: { __typename?: 'ResponseCollectionMeta' } & {
                 pagination: { __typename?: 'Pagination' } & Pick<
@@ -4257,25 +4256,25 @@ export type GroupQuery = { __typename?: 'Query' } & {
         { __typename?: 'GroupEntityResponse' } & {
             data?: Maybe<
                 { __typename?: 'GroupEntity' } & Pick<GroupEntity, 'id'> & {
-                    attributes?: Maybe<
-                        { __typename?: 'Group' } & Pick<
-                            Group,
-                            'name' | 'startsAt' | 'endsAt' | 'capacity' | 'status'
-                        > & {
-                            course?: Maybe<
-                                { __typename?: 'CourseEntityResponse' } & {
-                                    data?: Maybe<
-                                        { __typename?: 'CourseEntity' } & Pick<CourseEntity, 'id'> & {
-                                            attributes?: Maybe<
-                                                { __typename?: 'Course' } & Pick<Course, 'name'>
+                        attributes?: Maybe<
+                            { __typename?: 'Group' } & Pick<
+                                Group,
+                                'name' | 'startsAt' | 'endsAt' | 'capacity' | 'status'
+                            > & {
+                                    course?: Maybe<
+                                        { __typename?: 'CourseEntityResponse' } & {
+                                            data?: Maybe<
+                                                { __typename?: 'CourseEntity' } & Pick<CourseEntity, 'id'> & {
+                                                        attributes?: Maybe<
+                                                            { __typename?: 'Course' } & Pick<Course, 'name'>
+                                                        >;
+                                                    }
                                             >;
                                         }
                                     >;
                                 }
-                            >;
-                        }
-                    >;
-                }
+                        >;
+                    }
             >;
         }
     >;
@@ -4292,38 +4291,38 @@ export type GroupsQuery = { __typename?: 'Query' } & {
         { __typename?: 'GroupEntityResponseCollection' } & {
             data: Array<
                 { __typename?: 'GroupEntity' } & Pick<GroupEntity, 'id'> & {
-                    attributes?: Maybe<
-                        { __typename?: 'Group' } & Pick<
-                            Group,
-                            'name' | 'startsAt' | 'endsAt' | 'isActive' | 'capacity' | 'status'
-                        > & {
-                            course?: Maybe<
-                                { __typename?: 'CourseEntityResponse' } & {
-                                    data?: Maybe<
-                                        { __typename?: 'CourseEntity' } & Pick<CourseEntity, 'id'> & {
-                                            attributes?: Maybe<
-                                                { __typename?: 'Course' } & Pick<
-                                                    Course,
-                                                    'price' | 'status' | 'name'
+                        attributes?: Maybe<
+                            { __typename?: 'Group' } & Pick<
+                                Group,
+                                'name' | 'startsAt' | 'endsAt' | 'isActive' | 'capacity' | 'status'
+                            > & {
+                                    course?: Maybe<
+                                        { __typename?: 'CourseEntityResponse' } & {
+                                            data?: Maybe<
+                                                { __typename?: 'CourseEntity' } & Pick<CourseEntity, 'id'> & {
+                                                        attributes?: Maybe<
+                                                            { __typename?: 'Course' } & Pick<
+                                                                Course,
+                                                                'price' | 'status' | 'name'
+                                                            >
+                                                        >;
+                                                    }
+                                            >;
+                                        }
+                                    >;
+                                    course_registers?: Maybe<
+                                        { __typename?: 'CourseRegisterRelationResponseCollection' } & {
+                                            data: Array<
+                                                { __typename?: 'CourseRegisterEntity' } & Pick<
+                                                    CourseRegisterEntity,
+                                                    'id'
                                                 >
                                             >;
                                         }
                                     >;
                                 }
-                            >;
-                            course_registers?: Maybe<
-                                { __typename?: 'CourseRegisterRelationResponseCollection' } & {
-                                    data: Array<
-                                        { __typename?: 'CourseRegisterEntity' } & Pick<
-                                            CourseRegisterEntity,
-                                            'id'
-                                        >
-                                    >;
-                                }
-                            >;
-                        }
-                    >;
-                }
+                        >;
+                    }
             >;
             meta: { __typename?: 'ResponseCollectionMeta' } & {
                 pagination: { __typename?: 'Pagination' } & Pick<
@@ -4352,32 +4351,32 @@ export type MessagesQuery = { __typename?: 'Query' } & {
             };
             data: Array<
                 { __typename?: 'MessageEntity' } & Pick<MessageEntity, 'id'> & {
-                    attributes?: Maybe<
-                        { __typename?: 'Message' } & Pick<
-                            Message,
-                            | 'fullName'
-                            | 'email'
-                            | 'createdAt'
-                            | 'phoneNumber'
-                            | 'message'
-                            | 'type'
-                            | 'isRead'
-                            | 'interestedConsultings'
-                        > & {
-                            interestedCourses?: Maybe<
-                                { __typename?: 'CourseRelationResponseCollection' } & {
-                                    data: Array<
-                                        { __typename?: 'CourseEntity' } & Pick<CourseEntity, 'id'> & {
-                                            attributes?: Maybe<
-                                                { __typename?: 'Course' } & Pick<Course, 'name'>
+                        attributes?: Maybe<
+                            { __typename?: 'Message' } & Pick<
+                                Message,
+                                | 'fullName'
+                                | 'email'
+                                | 'createdAt'
+                                | 'phoneNumber'
+                                | 'message'
+                                | 'type'
+                                | 'isRead'
+                                | 'interestedConsultings'
+                            > & {
+                                    interestedCourses?: Maybe<
+                                        { __typename?: 'CourseRelationResponseCollection' } & {
+                                            data: Array<
+                                                { __typename?: 'CourseEntity' } & Pick<CourseEntity, 'id'> & {
+                                                        attributes?: Maybe<
+                                                            { __typename?: 'Course' } & Pick<Course, 'name'>
+                                                        >;
+                                                    }
                                             >;
                                         }
                                     >;
                                 }
-                            >;
-                        }
-                    >;
-                }
+                        >;
+                    }
             >;
         }
     >;
@@ -4392,20 +4391,20 @@ export type SliderShowQuery = { __typename?: 'Query' } & {
         { __typename?: 'SliderShowEntityResponse' } & {
             data?: Maybe<
                 { __typename?: 'SliderShowEntity' } & Pick<SliderShowEntity, 'id'> & {
-                    attributes?: Maybe<
-                        { __typename?: 'SliderShow' } & Pick<SliderShow, 'content' | 'title'> & {
-                            coverImage: { __typename?: 'UploadFileEntityResponse' } & {
-                                data?: Maybe<
-                                    { __typename?: 'UploadFileEntity' } & Pick<UploadFileEntity, 'id'> & {
-                                        attributes?: Maybe<
-                                            { __typename?: 'UploadFile' } & Pick<UploadFile, 'url' | 'name'>
+                        attributes?: Maybe<
+                            { __typename?: 'SliderShow' } & Pick<SliderShow, 'content' | 'title'> & {
+                                    coverImage: { __typename?: 'UploadFileEntityResponse' } & {
+                                        data?: Maybe<
+                                            { __typename?: 'UploadFileEntity' } & Pick<UploadFileEntity, 'id'> & {
+                                                    attributes?: Maybe<
+                                                        { __typename?: 'UploadFile' } & Pick<UploadFile, 'url' | 'name'>
+                                                    >;
+                                                }
                                         >;
-                                    }
-                                >;
-                            };
-                        }
-                    >;
-                }
+                                    };
+                                }
+                        >;
+                    }
             >;
         }
     >;
@@ -4420,20 +4419,20 @@ export type SliderShowsQuery = { __typename?: 'Query' } & {
         { __typename?: 'SliderShowEntityResponseCollection' } & {
             data: Array<
                 { __typename?: 'SliderShowEntity' } & Pick<SliderShowEntity, 'id'> & {
-                    attributes?: Maybe<
-                        { __typename?: 'SliderShow' } & Pick<SliderShow, 'title' | 'content'> & {
-                            coverImage: { __typename?: 'UploadFileEntityResponse' } & {
-                                data?: Maybe<
-                                    { __typename?: 'UploadFileEntity' } & Pick<UploadFileEntity, 'id'> & {
-                                        attributes?: Maybe<
-                                            { __typename?: 'UploadFile' } & Pick<UploadFile, 'name' | 'url'>
+                        attributes?: Maybe<
+                            { __typename?: 'SliderShow' } & Pick<SliderShow, 'title' | 'content'> & {
+                                    coverImage: { __typename?: 'UploadFileEntityResponse' } & {
+                                        data?: Maybe<
+                                            { __typename?: 'UploadFileEntity' } & Pick<UploadFileEntity, 'id'> & {
+                                                    attributes?: Maybe<
+                                                        { __typename?: 'UploadFile' } & Pick<UploadFile, 'name' | 'url'>
+                                                    >;
+                                                }
                                         >;
-                                    }
-                                >;
-                            };
-                        }
-                    >;
-                }
+                                    };
+                                }
+                        >;
+                    }
             >;
         }
     >;
@@ -4450,8 +4449,8 @@ export type SubscribersQuery = { __typename?: 'Query' } & {
         { __typename?: 'SubscriberEntityResponseCollection' } & {
             data: Array<
                 { __typename?: 'SubscriberEntity' } & Pick<SubscriberEntity, 'id'> & {
-                    attributes?: Maybe<{ __typename?: 'Subscriber' } & Pick<Subscriber, 'email' | 'createdAt'>>;
-                }
+                        attributes?: Maybe<{ __typename?: 'Subscriber' } & Pick<Subscriber, 'email' | 'createdAt'>>;
+                    }
             >;
             meta: { __typename?: 'ResponseCollectionMeta' } & {
                 pagination: { __typename?: 'Pagination' } & Pick<
@@ -4475,85 +4474,85 @@ export type TrainerQuery = { __typename?: 'Query' } & {
         { __typename?: 'TrainerEntityResponse' } & {
             data?: Maybe<
                 { __typename?: 'TrainerEntity' } & Pick<TrainerEntity, 'id'> & {
-                    attributes?: Maybe<
-                        { __typename?: 'Trainer' } & Pick<
-                            Trainer,
-                            | 'trainerTitle'
-                            | 'fullName'
-                            | 'email'
-                            | 'phoneNumber'
-                            | 'status'
-                            | 'gender'
-                            | 'firstName'
-                            | 'lastName'
-                            | 'link'
-                            | 'company'
-                            | 'position'
-                            | 'body'
-                            | 'name'
-                            | 'surName'
-                            | 'birthdayDate'
-                            | 'updatedAt'
-                        > & {
-                            courses?: Maybe<
-                                { __typename?: 'CourseRelationResponseCollection' } & {
-                                    data: Array<
-                                        { __typename?: 'CourseEntity' } & Pick<CourseEntity, 'id'> & {
-                                            attributes?: Maybe<
-                                                { __typename?: 'Course' } & Pick<
-                                                    Course,
-                                                    'name' | 'category' | 'description'
-                                                >
+                        attributes?: Maybe<
+                            { __typename?: 'Trainer' } & Pick<
+                                Trainer,
+                                | 'trainerTitle'
+                                | 'fullName'
+                                | 'email'
+                                | 'phoneNumber'
+                                | 'status'
+                                | 'gender'
+                                | 'firstName'
+                                | 'lastName'
+                                | 'link'
+                                | 'company'
+                                | 'position'
+                                | 'body'
+                                | 'name'
+                                | 'surName'
+                                | 'birthdayDate'
+                                | 'updatedAt'
+                            > & {
+                                    courses?: Maybe<
+                                        { __typename?: 'CourseRelationResponseCollection' } & {
+                                            data: Array<
+                                                { __typename?: 'CourseEntity' } & Pick<CourseEntity, 'id'> & {
+                                                        attributes?: Maybe<
+                                                            { __typename?: 'Course' } & Pick<
+                                                                Course,
+                                                                'name' | 'category' | 'description'
+                                                            >
+                                                        >;
+                                                    }
+                                            >;
+                                        }
+                                    >;
+                                    image?: Maybe<
+                                        { __typename?: 'UploadFileEntityResponse' } & {
+                                            data?: Maybe<
+                                                { __typename?: 'UploadFileEntity' } & Pick<UploadFileEntity, 'id'> & {
+                                                        attributes?: Maybe<
+                                                            { __typename?: 'UploadFile' } & Pick<
+                                                                UploadFile,
+                                                                'name' | 'size' | 'url'
+                                                            >
+                                                        >;
+                                                    }
+                                            >;
+                                        }
+                                    >;
+                                    profileImage?: Maybe<
+                                        { __typename?: 'UploadFileEntityResponse' } & {
+                                            data?: Maybe<
+                                                { __typename?: 'UploadFileEntity' } & Pick<UploadFileEntity, 'id'> & {
+                                                        attributes?: Maybe<
+                                                            { __typename?: 'UploadFile' } & Pick<
+                                                                UploadFile,
+                                                                'size' | 'url' | 'name'
+                                                            >
+                                                        >;
+                                                    }
+                                            >;
+                                        }
+                                    >;
+                                    logoImage?: Maybe<
+                                        { __typename?: 'UploadFileEntityResponse' } & {
+                                            data?: Maybe<
+                                                { __typename?: 'UploadFileEntity' } & Pick<UploadFileEntity, 'id'> & {
+                                                        attributes?: Maybe<
+                                                            { __typename?: 'UploadFile' } & Pick<
+                                                                UploadFile,
+                                                                'size' | 'url' | 'name'
+                                                            >
+                                                        >;
+                                                    }
                                             >;
                                         }
                                     >;
                                 }
-                            >;
-                            image?: Maybe<
-                                { __typename?: 'UploadFileEntityResponse' } & {
-                                    data?: Maybe<
-                                        { __typename?: 'UploadFileEntity' } & Pick<UploadFileEntity, 'id'> & {
-                                            attributes?: Maybe<
-                                                { __typename?: 'UploadFile' } & Pick<
-                                                    UploadFile,
-                                                    'name' | 'size' | 'url'
-                                                >
-                                            >;
-                                        }
-                                    >;
-                                }
-                            >;
-                            profileImage?: Maybe<
-                                { __typename?: 'UploadFileEntityResponse' } & {
-                                    data?: Maybe<
-                                        { __typename?: 'UploadFileEntity' } & Pick<UploadFileEntity, 'id'> & {
-                                            attributes?: Maybe<
-                                                { __typename?: 'UploadFile' } & Pick<
-                                                    UploadFile,
-                                                    'size' | 'url' | 'name'
-                                                >
-                                            >;
-                                        }
-                                    >;
-                                }
-                            >;
-                            logoImage?: Maybe<
-                                { __typename?: 'UploadFileEntityResponse' } & {
-                                    data?: Maybe<
-                                        { __typename?: 'UploadFileEntity' } & Pick<UploadFileEntity, 'id'> & {
-                                            attributes?: Maybe<
-                                                { __typename?: 'UploadFile' } & Pick<
-                                                    UploadFile,
-                                                    'size' | 'url' | 'name'
-                                                >
-                                            >;
-                                        }
-                                    >;
-                                }
-                            >;
-                        }
-                    >;
-                }
+                        >;
+                    }
             >;
         }
     >;
@@ -4570,45 +4569,45 @@ export type TrainersQuery = { __typename?: 'Query' } & {
         { __typename?: 'TrainerEntityResponseCollection' } & {
             data: Array<
                 { __typename?: 'TrainerEntity' } & Pick<TrainerEntity, 'id'> & {
-                    attributes?: Maybe<
-                        { __typename?: 'Trainer' } & Pick<
-                            Trainer,
-                            | 'trainerTitle'
-                            | 'fullName'
-                            | 'phoneNumber'
-                            | 'firstName'
-                            | 'lastName'
-                            | 'email'
-                            | 'birthdayDate'
-                            | 'status'
-                            | 'position'
-                            | 'body'
-                        > & {
-                            courses?: Maybe<
-                                { __typename?: 'CourseRelationResponseCollection' } & {
-                                    data: Array<
-                                        { __typename?: 'CourseEntity' } & Pick<CourseEntity, 'id'> & {
-                                            attributes?: Maybe<
-                                                { __typename?: 'Course' } & Pick<Course, 'name'>
+                        attributes?: Maybe<
+                            { __typename?: 'Trainer' } & Pick<
+                                Trainer,
+                                | 'trainerTitle'
+                                | 'fullName'
+                                | 'phoneNumber'
+                                | 'firstName'
+                                | 'lastName'
+                                | 'email'
+                                | 'birthdayDate'
+                                | 'status'
+                                | 'position'
+                                | 'body'
+                            > & {
+                                    courses?: Maybe<
+                                        { __typename?: 'CourseRelationResponseCollection' } & {
+                                            data: Array<
+                                                { __typename?: 'CourseEntity' } & Pick<CourseEntity, 'id'> & {
+                                                        attributes?: Maybe<
+                                                            { __typename?: 'Course' } & Pick<Course, 'name'>
+                                                        >;
+                                                    }
+                                            >;
+                                        }
+                                    >;
+                                    profileImage?: Maybe<
+                                        { __typename?: 'UploadFileEntityResponse' } & {
+                                            data?: Maybe<
+                                                { __typename?: 'UploadFileEntity' } & Pick<UploadFileEntity, 'id'> & {
+                                                        attributes?: Maybe<
+                                                            { __typename?: 'UploadFile' } & Pick<UploadFile, 'url'>
+                                                        >;
+                                                    }
                                             >;
                                         }
                                     >;
                                 }
-                            >;
-                            profileImage?: Maybe<
-                                { __typename?: 'UploadFileEntityResponse' } & {
-                                    data?: Maybe<
-                                        { __typename?: 'UploadFileEntity' } & Pick<UploadFileEntity, 'id'> & {
-                                            attributes?: Maybe<
-                                                { __typename?: 'UploadFile' } & Pick<UploadFile, 'url'>
-                                            >;
-                                        }
-                                    >;
-                                }
-                            >;
-                        }
-                    >;
-                }
+                        >;
+                    }
             >;
             meta: { __typename?: 'ResponseCollectionMeta' } & {
                 pagination: { __typename?: 'Pagination' } & Pick<
@@ -4631,72 +4630,72 @@ export type TransactionsQuery = { __typename?: 'Query' } & {
         { __typename?: 'TransactionEntityResponseCollection' } & {
             data: Array<
                 { __typename?: 'TransactionEntity' } & Pick<TransactionEntity, 'id'> & {
-                    attributes?: Maybe<
-                        { __typename?: 'Transaction' } & Pick<
-                            Transaction,
-                            'createdAt' | 'amount' | 'orderId' | 'currency' | 'status'
-                        > & {
-                            user?: Maybe<
-                                { __typename?: 'UsersPermissionsUserEntityResponse' } & {
-                                    data?: Maybe<
-                                        { __typename?: 'UsersPermissionsUserEntity' } & {
-                                            attributes?: Maybe<
-                                                { __typename?: 'UsersPermissionsUser' } & Pick<
-                                                    UsersPermissionsUser,
-                                                    'firstName' | 'lastName'
-                                                >
+                        attributes?: Maybe<
+                            { __typename?: 'Transaction' } & Pick<
+                                Transaction,
+                                'createdAt' | 'amount' | 'orderId' | 'currency' | 'status'
+                            > & {
+                                    user?: Maybe<
+                                        { __typename?: 'UsersPermissionsUserEntityResponse' } & {
+                                            data?: Maybe<
+                                                { __typename?: 'UsersPermissionsUserEntity' } & {
+                                                    attributes?: Maybe<
+                                                        { __typename?: 'UsersPermissionsUser' } & Pick<
+                                                            UsersPermissionsUser,
+                                                            'firstName' | 'lastName'
+                                                        >
+                                                    >;
+                                                }
                                             >;
                                         }
                                     >;
-                                }
-                            >;
-                            group?: Maybe<
-                                { __typename?: 'GroupEntityResponse' } & {
-                                    data?: Maybe<
-                                        { __typename?: 'GroupEntity' } & {
-                                            attributes?: Maybe<
-                                                { __typename?: 'Group' } & Pick<Group, 'name'> & {
-                                                    course?: Maybe<
-                                                        { __typename?: 'CourseEntityResponse' } & {
-                                                            data?: Maybe<
-                                                                { __typename?: 'CourseEntity' } & {
-                                                                    attributes?: Maybe<
-                                                                        { __typename?: 'Course' } & Pick<
-                                                                            Course,
-                                                                            'name'
-                                                                        >
-                                                                    >;
-                                                                }
-                                                            >;
-                                                        }
-                                                    >;
-                                                    course_registers?: Maybe<
-                                                        {
-                                                            __typename?: 'CourseRegisterRelationResponseCollection';
-                                                        } & {
-                                                            data: Array<
-                                                                { __typename?: 'CourseRegisterEntity' } & {
-                                                                    attributes?: Maybe<
-                                                                        {
-                                                                            __typename?: 'CourseRegister';
-                                                                        } & Pick<
-                                                                            CourseRegister,
-                                                                            'paymentStatus'
-                                                                        >
-                                                                    >;
-                                                                }
-                                                            >;
-                                                        }
+                                    group?: Maybe<
+                                        { __typename?: 'GroupEntityResponse' } & {
+                                            data?: Maybe<
+                                                { __typename?: 'GroupEntity' } & {
+                                                    attributes?: Maybe<
+                                                        { __typename?: 'Group' } & Pick<Group, 'name'> & {
+                                                                course?: Maybe<
+                                                                    { __typename?: 'CourseEntityResponse' } & {
+                                                                        data?: Maybe<
+                                                                            { __typename?: 'CourseEntity' } & {
+                                                                                attributes?: Maybe<
+                                                                                    { __typename?: 'Course' } & Pick<
+                                                                                        Course,
+                                                                                        'name'
+                                                                                    >
+                                                                                >;
+                                                                            }
+                                                                        >;
+                                                                    }
+                                                                >;
+                                                                course_registers?: Maybe<
+                                                                    {
+                                                                        __typename?: 'CourseRegisterRelationResponseCollection';
+                                                                    } & {
+                                                                        data: Array<
+                                                                            { __typename?: 'CourseRegisterEntity' } & {
+                                                                                attributes?: Maybe<
+                                                                                    {
+                                                                                        __typename?: 'CourseRegister';
+                                                                                    } & Pick<
+                                                                                        CourseRegister,
+                                                                                        'paymentStatus'
+                                                                                    >
+                                                                                >;
+                                                                            }
+                                                                        >;
+                                                                    }
+                                                                >;
+                                                            }
                                                     >;
                                                 }
                                             >;
                                         }
                                     >;
                                 }
-                            >;
-                        }
-                    >;
-                }
+                        >;
+                    }
             >;
             meta: { __typename?: 'ResponseCollectionMeta' } & {
                 pagination: { __typename?: 'Pagination' } & Pick<Pagination, 'pageCount' | 'pageSize' | 'total'>;
@@ -4714,130 +4713,130 @@ export type UsersPermissionsUserQuery = { __typename?: 'Query' } & {
         { __typename?: 'UsersPermissionsUserEntityResponse' } & {
             data?: Maybe<
                 { __typename?: 'UsersPermissionsUserEntity' } & Pick<UsersPermissionsUserEntity, 'id'> & {
-                    attributes?: Maybe<
-                        { __typename?: 'UsersPermissionsUser' } & Pick<
-                            UsersPermissionsUser,
-                            | 'confirmed'
-                            | 'dateOfBirth'
-                            | 'email'
-                            | 'firstName'
-                            | 'gender'
-                            | 'hasJob'
-                            | 'jobTitle'
-                            | 'lastName'
-                            | 'phoneNumber'
-                            | 'schoolName'
-                            | 'studyField'
-                            | 'trainerTitle'
-                            | 'username'
-                            | 'companyName'
-                        > & {
-                            bookmarked_courses?: Maybe<
-                                { __typename?: 'BookmarkedCourseRelationResponseCollection' } & {
-                                    data: Array<
-                                        { __typename?: 'BookmarkedCourseEntity' } & Pick<
-                                            BookmarkedCourseEntity,
-                                            'id'
-                                        > & {
-                                            attributes?: Maybe<
-                                                { __typename?: 'BookmarkedCourse' } & {
-                                                    course?: Maybe<
-                                                        { __typename?: 'CourseEntityResponse' } & {
-                                                            data?: Maybe<
-                                                                { __typename?: 'CourseEntity' } & Pick<
-                                                                    CourseEntity,
-                                                                    'id'
-                                                                > & {
-                                                                    attributes?: Maybe<
-                                                                        {
-                                                                            __typename?: 'Course';
-                                                                        } & Pick<
-                                                                            Course,
-                                                                            | 'name'
-                                                                            | 'price'
-                                                                            | 'duration'
-                                                                            | 'durationType'
-                                                                            | 'capacity'
-                                                                            | 'count'
-                                                                        > & {
-                                                                            trainers?: Maybe<
-                                                                                {
-                                                                                    __typename?: 'TrainerRelationResponseCollection';
-                                                                                } & {
-                                                                                    data: Array<
+                        attributes?: Maybe<
+                            { __typename?: 'UsersPermissionsUser' } & Pick<
+                                UsersPermissionsUser,
+                                | 'confirmed'
+                                | 'dateOfBirth'
+                                | 'email'
+                                | 'firstName'
+                                | 'gender'
+                                | 'hasJob'
+                                | 'jobTitle'
+                                | 'lastName'
+                                | 'phoneNumber'
+                                | 'schoolName'
+                                | 'studyField'
+                                | 'trainerTitle'
+                                | 'username'
+                                | 'companyName'
+                            > & {
+                                    bookmarked_courses?: Maybe<
+                                        { __typename?: 'BookmarkedCourseRelationResponseCollection' } & {
+                                            data: Array<
+                                                { __typename?: 'BookmarkedCourseEntity' } & Pick<
+                                                    BookmarkedCourseEntity,
+                                                    'id'
+                                                > & {
+                                                        attributes?: Maybe<
+                                                            { __typename?: 'BookmarkedCourse' } & {
+                                                                course?: Maybe<
+                                                                    { __typename?: 'CourseEntityResponse' } & {
+                                                                        data?: Maybe<
+                                                                            { __typename?: 'CourseEntity' } & Pick<
+                                                                                CourseEntity,
+                                                                                'id'
+                                                                            > & {
+                                                                                    attributes?: Maybe<
                                                                                         {
-                                                                                            __typename?: 'TrainerEntity';
+                                                                                            __typename?: 'Course';
                                                                                         } & Pick<
-                                                                                            TrainerEntity,
-                                                                                            'id'
+                                                                                            Course,
+                                                                                            | 'name'
+                                                                                            | 'price'
+                                                                                            | 'duration'
+                                                                                            | 'durationType'
+                                                                                            | 'capacity'
+                                                                                            | 'count'
                                                                                         > & {
-                                                                                            attributes?: Maybe<
-                                                                                                {
-                                                                                                    __typename?: 'Trainer';
-                                                                                                } & Pick<
-                                                                                                    Trainer,
-                                                                                                    | 'fullName'
-                                                                                                    | 'position'
-                                                                                                > & {
-                                                                                                    profileImage?: Maybe<
-                                                                                                        {
-                                                                                                            __typename?: 'UploadFileEntityResponse';
-                                                                                                        } & {
-                                                                                                            data?: Maybe<
-                                                                                                                {
-                                                                                                                    __typename?: 'UploadFileEntity';
-                                                                                                                } & {
+                                                                                                trainers?: Maybe<
+                                                                                                    {
+                                                                                                        __typename?: 'TrainerRelationResponseCollection';
+                                                                                                    } & {
+                                                                                                        data: Array<
+                                                                                                            {
+                                                                                                                __typename?: 'TrainerEntity';
+                                                                                                            } & Pick<
+                                                                                                                TrainerEntity,
+                                                                                                                'id'
+                                                                                                            > & {
                                                                                                                     attributes?: Maybe<
                                                                                                                         {
-                                                                                                                            __typename?: 'UploadFile';
+                                                                                                                            __typename?: 'Trainer';
                                                                                                                         } & Pick<
-                                                                                                                            UploadFile,
-                                                                                                                            | 'url'
-                                                                                                                            | 'name'
-                                                                                                                        >
+                                                                                                                            Trainer,
+                                                                                                                            | 'fullName'
+                                                                                                                            | 'position'
+                                                                                                                        > & {
+                                                                                                                                profileImage?: Maybe<
+                                                                                                                                    {
+                                                                                                                                        __typename?: 'UploadFileEntityResponse';
+                                                                                                                                    } & {
+                                                                                                                                        data?: Maybe<
+                                                                                                                                            {
+                                                                                                                                                __typename?: 'UploadFileEntity';
+                                                                                                                                            } & {
+                                                                                                                                                attributes?: Maybe<
+                                                                                                                                                    {
+                                                                                                                                                        __typename?: 'UploadFile';
+                                                                                                                                                    } & Pick<
+                                                                                                                                                        UploadFile,
+                                                                                                                                                        | 'url'
+                                                                                                                                                        | 'name'
+                                                                                                                                                    >
+                                                                                                                                                >;
+                                                                                                                                            }
+                                                                                                                                        >;
+                                                                                                                                    }
+                                                                                                                                >;
+                                                                                                                            }
                                                                                                                     >;
                                                                                                                 }
-                                                                                                            >;
-                                                                                                        }
-                                                                                                    >;
-                                                                                                }
-                                                                                            >;
-                                                                                        }
+                                                                                                        >;
+                                                                                                    }
+                                                                                                >;
+                                                                                            }
                                                                                     >;
                                                                                 }
-                                                                            >;
-                                                                        }
-                                                                    >;
-                                                                }
-                                                            >;
-                                                        }
-                                                    >;
-                                                }
+                                                                        >;
+                                                                    }
+                                                                >;
+                                                            }
+                                                        >;
+                                                    }
+                                            >;
+                                        }
+                                    >;
+                                    role?: Maybe<
+                                        { __typename?: 'UsersPermissionsRoleEntityResponse' } & {
+                                            data?: Maybe<
+                                                { __typename?: 'UsersPermissionsRoleEntity' } & Pick<
+                                                    UsersPermissionsRoleEntity,
+                                                    'id'
+                                                > & {
+                                                        attributes?: Maybe<
+                                                            { __typename?: 'UsersPermissionsRole' } & Pick<
+                                                                UsersPermissionsRole,
+                                                                'name'
+                                                            >
+                                                        >;
+                                                    }
                                             >;
                                         }
                                     >;
                                 }
-                            >;
-                            role?: Maybe<
-                                { __typename?: 'UsersPermissionsRoleEntityResponse' } & {
-                                    data?: Maybe<
-                                        { __typename?: 'UsersPermissionsRoleEntity' } & Pick<
-                                            UsersPermissionsRoleEntity,
-                                            'id'
-                                        > & {
-                                            attributes?: Maybe<
-                                                { __typename?: 'UsersPermissionsRole' } & Pick<
-                                                    UsersPermissionsRole,
-                                                    'name'
-                                                >
-                                            >;
-                                        }
-                                    >;
-                                }
-                            >;
-                        }
-                    >;
-                }
+                        >;
+                    }
             >;
         }
     >;
@@ -4860,37 +4859,37 @@ export type UsersPermissionsUsersQuery = { __typename?: 'Query' } & {
             };
             data: Array<
                 { __typename?: 'UsersPermissionsUserEntity' } & Pick<UsersPermissionsUserEntity, 'id'> & {
-                    attributes?: Maybe<
-                        { __typename?: 'UsersPermissionsUser' } & Pick<
-                            UsersPermissionsUser,
-                            | 'firstName'
-                            | 'lastName'
-                            | 'email'
-                            | 'gender'
-                            | 'dateOfBirth'
-                            | 'phoneNumber'
-                            | 'confirmed'
-                        > & {
-                            role?: Maybe<
-                                { __typename?: 'UsersPermissionsRoleEntityResponse' } & {
-                                    data?: Maybe<
-                                        { __typename?: 'UsersPermissionsRoleEntity' } & Pick<
-                                            UsersPermissionsRoleEntity,
-                                            'id'
-                                        > & {
-                                            attributes?: Maybe<
-                                                { __typename?: 'UsersPermissionsRole' } & Pick<
-                                                    UsersPermissionsRole,
-                                                    'name'
-                                                >
+                        attributes?: Maybe<
+                            { __typename?: 'UsersPermissionsUser' } & Pick<
+                                UsersPermissionsUser,
+                                | 'firstName'
+                                | 'lastName'
+                                | 'email'
+                                | 'gender'
+                                | 'dateOfBirth'
+                                | 'phoneNumber'
+                                | 'confirmed'
+                            > & {
+                                    role?: Maybe<
+                                        { __typename?: 'UsersPermissionsRoleEntityResponse' } & {
+                                            data?: Maybe<
+                                                { __typename?: 'UsersPermissionsRoleEntity' } & Pick<
+                                                    UsersPermissionsRoleEntity,
+                                                    'id'
+                                                > & {
+                                                        attributes?: Maybe<
+                                                            { __typename?: 'UsersPermissionsRole' } & Pick<
+                                                                UsersPermissionsRole,
+                                                                'name'
+                                                            >
+                                                        >;
+                                                    }
                                             >;
                                         }
                                     >;
                                 }
-                            >;
-                        }
-                    >;
-                }
+                        >;
+                    }
             >;
         }
     >;
@@ -4903,10 +4902,10 @@ export type UsersPermissionsRolesQuery = { __typename?: 'Query' } & {
         { __typename?: 'UsersPermissionsRoleEntityResponseCollection' } & {
             data: Array<
                 { __typename?: 'UsersPermissionsRoleEntity' } & Pick<UsersPermissionsRoleEntity, 'id'> & {
-                    attributes?: Maybe<
-                        { __typename?: 'UsersPermissionsRole' } & Pick<UsersPermissionsRole, 'name'>
-                    >;
-                }
+                        attributes?: Maybe<
+                            { __typename?: 'UsersPermissionsRole' } & Pick<UsersPermissionsRole, 'name'>
+                        >;
+                    }
             >;
         }
     >;
@@ -4921,30 +4920,30 @@ export type VideoByAdminQuery = { __typename?: 'Query' } & {
         { __typename?: 'VideoEntityResponse' } & {
             data?: Maybe<
                 { __typename?: 'VideoEntity' } & Pick<VideoEntity, 'id'> & {
-                    attributes?: Maybe<
-                        { __typename?: 'Video' } & Pick<
-                            Video,
-                            | 'body'
-                            | 'category'
-                            | 'createdAt'
-                            | 'slug'
-                            | 'status'
-                            | 'title'
-                            | 'videoId'
-                            | 'viewCount'
-                        > & {
-                            coverImage: { __typename?: 'UploadFileEntityResponse' } & {
-                                data?: Maybe<
-                                    { __typename?: 'UploadFileEntity' } & Pick<UploadFileEntity, 'id'> & {
-                                        attributes?: Maybe<
-                                            { __typename?: 'UploadFile' } & Pick<UploadFile, 'name' | 'url'>
+                        attributes?: Maybe<
+                            { __typename?: 'Video' } & Pick<
+                                Video,
+                                | 'body'
+                                | 'category'
+                                | 'createdAt'
+                                | 'slug'
+                                | 'status'
+                                | 'title'
+                                | 'videoId'
+                                | 'viewCount'
+                            > & {
+                                    coverImage: { __typename?: 'UploadFileEntityResponse' } & {
+                                        data?: Maybe<
+                                            { __typename?: 'UploadFileEntity' } & Pick<UploadFileEntity, 'id'> & {
+                                                    attributes?: Maybe<
+                                                        { __typename?: 'UploadFile' } & Pick<UploadFile, 'name' | 'url'>
+                                                    >;
+                                                }
                                         >;
-                                    }
-                                >;
-                            };
-                        }
-                    >;
-                }
+                                    };
+                                }
+                        >;
+                    }
             >;
         }
     >;
@@ -4972,13 +4971,13 @@ export type MeQuery = { __typename?: 'Query' } & {
             | 'jobTitle'
             | 'studyField'
         > & {
-            role?: Maybe<
-                { __typename?: 'UsersPermissionsMeRole' } & Pick<
-                    UsersPermissionsMeRole,
-                    'id' | 'name' | 'description' | 'type'
-                >
-            >;
-        }
+                role?: Maybe<
+                    { __typename?: 'UsersPermissionsMeRole' } & Pick<
+                        UsersPermissionsMeRole,
+                        'id' | 'name' | 'description' | 'type'
+                    >
+                >;
+            }
     >;
 };
 
@@ -4991,23 +4990,23 @@ export type VideoQuery = { __typename?: 'Query' } & {
         { __typename?: 'VideoEntityResponseCollection' } & {
             data: Array<
                 { __typename?: 'VideoEntity' } & Pick<VideoEntity, 'id'> & {
-                    attributes?: Maybe<
-                        { __typename?: 'Video' } & Pick<
-                            Video,
-                            'title' | 'body' | 'slug' | 'category' | 'videoId' | 'createdAt'
-                        > & {
-                            coverImage: { __typename?: 'UploadFileEntityResponse' } & {
-                                data?: Maybe<
-                                    { __typename?: 'UploadFileEntity' } & Pick<UploadFileEntity, 'id'> & {
-                                        attributes?: Maybe<
-                                            { __typename?: 'UploadFile' } & Pick<UploadFile, 'url'>
+                        attributes?: Maybe<
+                            { __typename?: 'Video' } & Pick<
+                                Video,
+                                'title' | 'body' | 'slug' | 'category' | 'videoId' | 'createdAt'
+                            > & {
+                                    coverImage: { __typename?: 'UploadFileEntityResponse' } & {
+                                        data?: Maybe<
+                                            { __typename?: 'UploadFileEntity' } & Pick<UploadFileEntity, 'id'> & {
+                                                    attributes?: Maybe<
+                                                        { __typename?: 'UploadFile' } & Pick<UploadFile, 'url'>
+                                                    >;
+                                                }
                                         >;
-                                    }
-                                >;
-                            };
-                        }
-                    >;
-                }
+                                    };
+                                }
+                        >;
+                    }
             >;
         }
     >;
@@ -5024,23 +5023,23 @@ export type VideosQuery = { __typename?: 'Query' } & {
         { __typename?: 'VideoEntityResponseCollection' } & {
             data: Array<
                 { __typename?: 'VideoEntity' } & Pick<VideoEntity, 'id'> & {
-                    attributes?: Maybe<
-                        { __typename?: 'Video' } & Pick<
-                            Video,
-                            'title' | 'body' | 'slug' | 'status' | 'category' | 'createdAt'
-                        > & {
-                            coverImage: { __typename?: 'UploadFileEntityResponse' } & {
-                                data?: Maybe<
-                                    { __typename?: 'UploadFileEntity' } & Pick<UploadFileEntity, 'id'> & {
-                                        attributes?: Maybe<
-                                            { __typename?: 'UploadFile' } & Pick<UploadFile, 'url'>
+                        attributes?: Maybe<
+                            { __typename?: 'Video' } & Pick<
+                                Video,
+                                'title' | 'body' | 'slug' | 'status' | 'category' | 'createdAt'
+                            > & {
+                                    coverImage: { __typename?: 'UploadFileEntityResponse' } & {
+                                        data?: Maybe<
+                                            { __typename?: 'UploadFileEntity' } & Pick<UploadFileEntity, 'id'> & {
+                                                    attributes?: Maybe<
+                                                        { __typename?: 'UploadFile' } & Pick<UploadFile, 'url'>
+                                                    >;
+                                                }
                                         >;
-                                    }
-                                >;
-                            };
-                        }
-                    >;
-                }
+                                    };
+                                }
+                        >;
+                    }
             >;
             meta: { __typename?: 'ResponseCollectionMeta' } & {
                 pagination: { __typename?: 'Pagination' } & Pick<
