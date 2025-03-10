@@ -7,6 +7,7 @@ import { Advantages } from './advantages';
 import { Customers } from './customers';
 import { Profit } from './profit';
 import { Callback } from './callback';
+import { Callback } from './location';
 
 export const Home: React.FC = () => {
     const { t } = useTranslation();
@@ -19,6 +20,7 @@ export const Home: React.FC = () => {
             <Customers />
             <Profit />
             <Callback />
+            <Location />
         </Page>
     );
 };
