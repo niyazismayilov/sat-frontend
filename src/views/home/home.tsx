@@ -7,7 +7,7 @@ import { Advantages } from './advantages';
 import { Customers } from './customers';
 import { Profit } from './profit';
 import { Callback } from './callback';
-import { Location } from './location';
+import { Map } from './map';
 
 export const Home: React.FC = () => {
     const { t } = useTranslation();
@@ -20,7 +20,7 @@ export const Home: React.FC = () => {
             <Customers />
             <Profit />
             <Callback />
-            <Location />
+            <Map />
         </Page>
     );
 };
