@@ -82,7 +82,7 @@ export const Header: React.FC = () => {
     const { t } = useTranslation();
     const [scrolledDown, setScrolledDown] = useState(false);
 
-    const dispatch = useAuthDispatch();
+    // const dispatch = useAuthDispatch();
 
     const handleScroll = () => {
         if (window.scrollY > 10) {
