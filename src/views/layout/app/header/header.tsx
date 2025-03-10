@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { /* LanguageSelector, */ Link, SocialIcons } from 'components';
 import { HeaderMenu } from './header-menu';
 import { headerTopHeight, logo } from 'config';
-import { useTranslation } from 'react-i18next';
+// import { useTranslation } from 'react-i18next';
 // import { useAuthDispatch } from 'context/auth/store';
 import { HeaderMobileMenu } from './header-mobile-menu';
 // import { useAuth } from 'context/auth/store';
