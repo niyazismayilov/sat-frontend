@@ -230,15 +230,9 @@ export const CreateCourse: React.FC = () => {
                                                             İdarəetmə
                                                         </MenuItem>
                                                         <MenuItem value={Enum_Course_Category.Sales}>Satış</MenuItem>
-                                                        <MenuItem value={Enum_Course_Category.Marketing}>
-                                                            Marketinq
-                                                        </MenuItem>
-                                                        <MenuItem value={Enum_Course_Category.Satacademy}>
-                                                            SAT Academy
-                                                        </MenuItem>
-                                                        <MenuItem value={Enum_Course_Category.Nartio}>
-                                                            Nartio
-                                                        </MenuItem>
+                                                        <MenuItem value={Enum_Course_Category.Marketing}>Marketinq</MenuItem>
+                                                        <MenuItem value={Enum_Course_Category.Satacademy}>SAT Academy</MenuItem>
+                                                        <MenuItem value={Enum_Course_Category.Nartio}>Nartio</MenuItem>
                                                         <MenuItem value={Enum_Course_Category.Others}>Digər</MenuItem>
                                                     </Field>
                                                 </Grid>
