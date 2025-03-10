@@ -1,5 +1,5 @@
 import MenuIcon from '@mui/icons-material/Menu';
-import { SwipeableDrawer, Box, Button, IconButton, Theme, Divider, Typography } from '@mui/material';
+import { SwipeableDrawer, Box, IconButton, Theme, Divider, Typography } from '@mui/material';
 import { useAuthDispatch } from 'context/auth/store';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
