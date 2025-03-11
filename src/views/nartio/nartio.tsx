@@ -1,4 +1,4 @@
-import { Box, Container, Theme } from '@mui/material';
+import { Box, Theme } from '@mui/material';
 import { styled } from '@mui/styles';
 import { Page } from 'components';
 import { useTranslation } from 'react-i18next';
