@@ -184,7 +184,7 @@ export const TrainerItemComponent: React.FC<{
                     <Box className="short-info">
                         <IconButton
                             className="linkedin-icon"
-                            onClick={() => window.open('https://www.linkedin.com', '_blank')}
+                            onClick={() => window.open('trainerUrl', '_blank')}
                         >
                             <LinkedinIcon />
                         </IconButton>

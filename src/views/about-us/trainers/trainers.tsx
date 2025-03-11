@@ -63,6 +63,7 @@ export const Trainers = () => {
             companies: ['SAT Group', 'Kapital bank'],
             education: 'Peşəkar menecer, biznes təlimçi, biznes konsultant',
             business: 'Peşəkar menecer, biznes təlimçi, biznes konsultant',
+            trainerUrl: 'https://www.linkedin.com/in/abayramov/',
         },
         {
             image: trainer2,
@@ -73,6 +74,7 @@ export const Trainers = () => {
             companies: ['SAT Group', 'Kapital bank'],
             education: 'Satış eksperti, təlimçi',
             business: 'Satış eksperti, təlimçi',
+            trainerUrl: 'https://www.linkedin.com/in/azad-gahramanov-485a88101/',
         },
         {
             image: trainer3,
@@ -83,6 +85,7 @@ export const Trainers = () => {
             companies: ['SAT Group', 'Kapital bank'],
             education: 'SMM və rəqəmsal marketinq üzrə mütəxəssis, təlimçi',
             business: 'SMM və rəqəmsal marketinq üzrə mütəxəssis, təlimçi',
+            trainerUrl: 'https://www.linkedin.com/in/edgar-abdullayev-2239351b/',
         },
         // {
         //     image: trainer4,
@@ -113,6 +116,7 @@ export const Trainers = () => {
             companies: ['SAT Group', 'Kapital bank'],
             education: 'Marketoloq, B2B satış mütəxəssisi, təlimçi',
             business: 'Marketoloq, B2B satış mütəxəssisi, təlimçi',
+            trainerUrl: 'https://www.linkedin.com/in/vusalalisoy/',
         },
         {
             image: trainer7,
@@ -123,6 +127,7 @@ export const Trainers = () => {
             companies: ['SAT Group', 'Kapital bank'],
             education: 'SMM və rəqəmsal marketinq üzrə mütəxəssis, təlimçi',
             business: 'SMM və rəqəmsal marketinq üzrə mütəxəssis, təlimçi',
+            trainerUrl: 'https://www.linkedin.com/in/parviz-azimov-047798a9/',
         },
         {
             image: trainer8,
@@ -133,6 +138,7 @@ export const Trainers = () => {
             companies: ['SAT Group', 'Kapital bank'],
             education: 'Biznes təlimçi, Biznes konsultant',
             business: 'Biznes təlimçi, Biznes konsultant',
+            trainerUrl: 'https://www.linkedin.com/in/sarvan-aslanov-120405105/',
         },
         {
             image: trainer9,
@@ -143,6 +149,7 @@ export const Trainers = () => {
             companies: ['SAT Group', 'Kapital bank'],
             education: 'Biznes təlimçi, Biznes konsultant',
             business: 'Biznes təlimçi, Biznes konsultant',
+            trainerUrl: 'https://www.linkedin.com/in/murad-gahramanli-290320106/',
         },
         {
             image: trainer10,
@@ -153,6 +160,7 @@ export const Trainers = () => {
             companies: ['SAT Group', 'Kapital bank'],
             education: 'Biznes təlimçi, Biznes konsultant',
             business: 'Biznes təlimçi, Biznes konsultant',
+            trainerUrl: 'https://www.linkedin.com/in/namiq-bayramov-55367028/',
         },
         // {
         //     image: trainer11,
@@ -173,6 +181,7 @@ export const Trainers = () => {
             companies: ['SAT Group', 'Kapital bank'],
             education: 'satış eksperti, təlimçi',
             business: 'satış eksperti, təlimçi',
+            trainerUrl: 'https://www.linkedin.com/in/c%C9%99lal%C9%99-mustafayeva-23b58b232/',
         },
         // {
         //     image: trainer13,
@@ -203,6 +212,7 @@ export const Trainers = () => {
             companies: ['SAT Group', 'Kapital bank'],
             education: 'Biznes təlimçi, Biznes konsultant',
             business: 'Biznes təlimçi, Biznes konsultant',
+            trainerUrl: 'https://www.linkedin.com/in/samirkarimov/',
         },
         // {
         //     image: trainer16,
@@ -253,6 +263,7 @@ export const Trainers = () => {
             companies: ['SAT Group', 'Kapital bank'],
             education: 'Biznes təlimçi, Biznes konsultant',
             business: 'Biznes təlimçi, Biznes konsultant',
+            trainerUrl: 'https://www.linkedin.com/in/savalan-amirov/',
         },
         // {
         //     image: trainer21,
@@ -273,6 +284,7 @@ export const Trainers = () => {
             companies: ['SAT Group', 'Kapital bank'],
             education: 'Biznes təlimçi, Biznes konsultant',
             business: 'Biznes təlimçi, Biznes konsultant',
+            trainerUrl: 'https://www.linkedin.com/in/shaiq-zamanov-355182170/',
         },
         {
             image: trainer23,
@@ -283,6 +295,7 @@ export const Trainers = () => {
             companies: ['SAT Group', 'Kapital bank'],
             education: 'Biznes təlimçi, Biznes konsultant',
             business: 'Biznes təlimçi, Biznes konsultant',
+            trainerUrl: 'https://www.linkedin.com/in/rovshen-nadirov-9054baa7/',
         },
         {
             image: trainer24,
@@ -293,6 +306,7 @@ export const Trainers = () => {
             companies: ['SAT Group', 'Kapital bank'],
             education: 'Biznes təlimçi, Biznes konsultant',
             business: 'Biznes təlimçi, Biznes konsultant',
+            trainerUrl: 'https://www.linkedin.com/in/jabir-suleymanli/',
         },
         {
             image: trainer25,
@@ -303,6 +317,7 @@ export const Trainers = () => {
             companies: ['SAT Group', 'Kapital bank'],
             education: 'Biznes təlimçi, Biznes konsultant',
             business: 'Biznes təlimçi, Biznes konsultant',
+            trainerUrl: 'https://www.linkedin.com/in/shamsi-bayram-zadeh/',
         },
         {
             image: trainer26,
@@ -313,6 +328,7 @@ export const Trainers = () => {
             companies: ['SAT Group', 'Kapital bank'],
             education: 'Biznes təlimçi, Biznes konsultant',
             business: 'Biznes təlimçi, Biznes konsultant',
+            trainerUrl: 'https://www.linkedin.com/in/kamran-jabrayilov-868b8347/',
         },
         {
             image: trainer27,
@@ -323,6 +339,7 @@ export const Trainers = () => {
             companies: ['SAT Group', 'Kapital bank'],
             education: 'Biznes təlimçi, Biznes konsultant',
             business: 'Biznes təlimçi, Biznes konsultant',
+            trainerUrl: 'https://www.linkedin.com/in/amineyvazov/',
         },
         {
             image: trainer28,
@@ -333,6 +350,7 @@ export const Trainers = () => {
             companies: ['SAT Group', 'Kapital bank'],
             education: 'Biznes təlimçi, Biznes konsultant',
             business: 'Biznes təlimçi, Biznes konsultant',
+            trainerUrl: 'https://www.linkedin.com/in/abdullaads/',
         },
     ];
 
