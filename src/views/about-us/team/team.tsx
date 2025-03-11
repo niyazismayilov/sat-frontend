@@ -66,9 +66,9 @@ export const Team: React.FC = () => {
         <Root>
             <Container>
                 <Box className="header">
-                    <Typography fontSize={36} fontWeight={700} color="primary.main" mb={6}>
+                    {/* <Typography fontSize={36} fontWeight={700} color="primary.main" mb={6}>
                         Komandamız
-                    </Typography>
+                    </Typography> */}
                 </Box>
 
                 <BounceInRight>
