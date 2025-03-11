@@ -644,7 +644,7 @@ export enum Enum_Course_Category {
     Sales = 'SALES',
     Marketing = 'MARKETING',
     Satacademy = 'SATACADEMY',
-    Nartio = 'Nartio',
+    Nartio = 'NARTIO',
     Others = 'OTHERS',
 }
 
