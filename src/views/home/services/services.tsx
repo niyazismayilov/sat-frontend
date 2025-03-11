@@ -2,8 +2,9 @@ import { Box, Container, Grid, Typography, Theme } from '@mui/material';
 import { styled } from '@mui/styles';
 import services1 from 'assets/home/services1.png';
 import services2 from 'assets/home/services2.png';
-import services3 from 'assets/home/services3.png';
+// import services3 from 'assets/home/services3.png';
 import services4 from 'assets/home/services4.png';
+import trainer28 from 'assets/trainerss/trainer28.png';
 import { BounceInRight } from 'components';
 import { ServiceItem } from './service-item';
 
@@ -41,7 +42,7 @@ const services = [
     {
         title: 'Marketinq təlimləri',
         detail: 'Rəqəmsal marketinq peşəkarına çevrilmək üçün fürsətlər',
-        image: services3,
+        image: trainer28,
     },
     {
         title: 'Konsaltinq',

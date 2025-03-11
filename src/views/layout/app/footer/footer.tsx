@@ -218,10 +218,10 @@ export const Footer: React.FC = () => {
                         <a
                             target="_blank"
                             rel="noreferrer"
-                            href="https://morpho.az/"
+                            href="https://chaitech.info/"
                             style={{ textDecoration: 'none', color: '#044AB1', fontWeight: 400 }}
                         >
-                            Morpho.az
+                            Chaitech.info
                         </a>
                     </Typography>
                     <Box className="icons">

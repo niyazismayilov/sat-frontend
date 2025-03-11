@@ -306,7 +306,7 @@ export const Trainers = () => {
         },
         {
             image: trainer26,
-            qualification: 'Idarəetmə',
+            qualification: 'Idarəçilik',
             trainerName: 'Kamran Cəbrayılov',
             trainerTitle: 'null',
             id: 9,
