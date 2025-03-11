@@ -13,6 +13,7 @@ type TrainerProps = {
     business: string;
     companies: string[];
     education: string;
+    trainerUrl: string;
 };
 
 // const Dialog = styled(MUIDialog)(({ theme }: { theme: Theme }) => ({           trainer Detail  not delete
@@ -183,7 +184,7 @@ export const TrainerItemComponent: React.FC<{
                 <img src={trainer.image} className="image-item" />
                 <Box className="trainer-about">
                     <Box className="short-info">
-                        <IconButton className="linkedin-icon" onClick={() => window.open(trainerUrl, '_blank')}>
+                        <IconButton className="linkedin-icon" onClick={() => window.open(trainer.trainerUrl, '_blank')}>
                             <LinkedinIcon />
                         </IconButton>
                     </Box>
