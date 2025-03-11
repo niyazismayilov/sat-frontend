@@ -65,14 +65,14 @@ export const Team: React.FC = () => {
     return (
         <Root>
             <Container>
-                {/* <Box className="header">
+                <Box className="header">
                     <Typography fontSize={36} fontWeight={700} color="primary.main" mb={6}>
                         Komandamız
                     </Typography>
-                </Box> */}
+                </Box>
 
                 <BounceInRight>
-                    {/* <Grid container spacing={3} mb={3}>
+                    <Grid container spacing={3} mb={3}>
                         {employees.map((employee) => {
                             const fullName = employee?.attributes?.firstName + ' ' + employee?.attributes?.lastName;
                             return (
@@ -103,7 +103,7 @@ export const Team: React.FC = () => {
                                 </Box>
                             </Grid>
                         ))} */}
-                    {/* </Grid> */}
+                    </Grid>
                 </BounceInRight>
             </Container>
         </Root>
