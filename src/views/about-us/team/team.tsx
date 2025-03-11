@@ -103,7 +103,7 @@ export const Team: React.FC = () => {
                                 </Box>
                             </Grid>
                         ))} */}
-                    </Grid> */}
+                    {/* </Grid> */} */}
                 </BounceInRight>
             </Container>
         </Root>
