@@ -18,6 +18,10 @@ export const menuItems = [
         matchingRoutes: ['/konsaltinq'],
     },
     {
+        name: 'nartio',
+        matchingRoutes: ['/nartio'],
+    },
+    {
         name: 'events',
         // route: '/events',
         matchingRoutes: ['/tedbirler'],
