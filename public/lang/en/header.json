@@ -3,6 +3,7 @@
     "whyus": "Why us?",
     "trainings": "Trainings",
     "consulting": "Consulting",
+    "nartio":"nartio",
     "events": "Events",
     "projects": "Project",
     "contact": "Contact",
@@ -10,6 +11,5 @@
     "SALES":"Sales training",
     "MARKETING":"Marketing training",
     "OTHERS": "Other trainings",
-    "SATACADEMY":"SAT Academy",
-    "NARTIO":"Nartio"
+    "SATACADEMY":"SAT Academy"
 }

@@ -47,7 +47,7 @@ export const AboutUs = () => {
     const missionRef: any = useRef();
 
     return (
-        <Page title={t('home:whyUs')}>
+        <Page title={t('home:nartio')}>
             <div ref={aboutUsRef}>
                 <GeneralInfo />
             </div>
