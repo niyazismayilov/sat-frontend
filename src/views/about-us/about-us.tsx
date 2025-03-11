@@ -94,14 +94,14 @@ export const AboutUs = () => {
                         Təlimçilərimiz
                     </Typography>
 
-                    <Typography
+                    {/* <Typography
                         className="list-item"
                         onClick={() =>
                             window.scrollTo({ top: teamRef.current.offsetTop - 140, left: 0, behavior: 'smooth' })
                         }
                     >
                         Komanda
-                    </Typography>
+                    </Typography> */}
                     <Typography
                         className="list-item"
                         onClick={() =>

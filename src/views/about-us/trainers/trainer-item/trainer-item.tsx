@@ -182,7 +182,10 @@ export const TrainerItemComponent: React.FC<{
                 <img src={trainer.image} className="image-item" />
                 <Box className="trainer-about">
                     <Box className="short-info">
-                        <IconButton className="linkedin-icon">
+                        <IconButton
+                            className="linkedin-icon"
+                            onClick={() => window.open('https://www.linkedin.com', '_blank')}
+                        >
                             <LinkedinIcon />
                         </IconButton>
                     </Box>
