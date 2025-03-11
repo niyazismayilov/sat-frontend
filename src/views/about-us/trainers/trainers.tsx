@@ -52,7 +52,6 @@ export const Trainers = () => {
     const { t } = useTranslation();
 
     const [count, setCount] = useState(6);
-    const trainerUrl = "some-url";
 
     const trainers = [
         {

@@ -1,6 +1,6 @@
 import { Box, Typography, IconButton, Theme } from '@mui/material';
 import { ReactComponent as LinkedinIcon } from 'assets/social-icons/linkedin.svg';
-import { trainerUrl } from 'views/about-us/trainers/trainers';
+import { Trainers } from 'views/about-us/trainers/trainers';
 // import CloseIcon from '@mui/icons-material/Close';
 import { styled } from '@mui/styles';
 // import { useTranslation } from 'react-i18next';
