@@ -1,5 +1,6 @@
 import { Box, Typography, IconButton, Theme } from '@mui/material';
 import { ReactComponent as LinkedinIcon } from 'assets/social-icons/linkedin.svg';
+import { trainUrl } from 'views/about-us/trainers/trainers';
 // import CloseIcon from '@mui/icons-material/Close';
 import { styled } from '@mui/styles';
 // import { useTranslation } from 'react-i18next';
@@ -184,7 +185,7 @@ export const TrainerItemComponent: React.FC<{
                     <Box className="short-info">
                         <IconButton
                             className="linkedin-icon"
-                            onClick={() => window.open('trainerUrl', '_blank')}
+                            onClick={() => window.open(trainerUrl, '_blank')}
                         >
                             <LinkedinIcon />
                         </IconButton>
