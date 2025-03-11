@@ -46,66 +46,6 @@ export const AboutUs = () => {
             <div ref={aboutUsRef}>
                 <GeneralInfo />
             </div>
-            <Navigation>
-                <Container className="container">
-                    <Typography
-                        className="list-item"
-                        onClick={() => {
-                            window.scrollTo({ top: directorsRef.current.offsetTop - 150, left: 0, behavior: 'smooth' });
-                        }}
-                    >
-                        Direktorun Sözü
-                    </Typography>
-                    <Typography
-                        className="list-item"
-                        onClick={() =>
-                            window.scrollTo({ top: valuesRef.current.offsetTop - 150, left: 0, behavior: 'smooth' })
-                        }
-                    >
-                        Dəyərlərimiz
-                    </Typography>
-                    <Typography
-                        className="list-item"
-                        onClick={() =>
-                            window.scrollTo({ top: visionRef.current.offsetTop - 150, left: 0, behavior: 'smooth' })
-                        }
-                    >
-                        Vizyon
-                    </Typography>
-                    <Typography
-                        className="list-item"
-                        onClick={() =>
-                            window.scrollTo({ top: missionRef.current.offsetTop - 140, left: 0, behavior: 'smooth' })
-                        }
-                    >
-                        Missiyamız
-                    </Typography>
-                    <Typography
-                        className="list-item"
-                        onClick={() =>
-                            window.scrollTo({ top: trainersRef.current.offsetTop - 150, left: 0, behavior: 'smooth' })
-                        }
-                    >
-                        Təlimçilərimiz
-                    </Typography>
-
-                    <Typography
-                        className="list-item"
-                        onClick={() =>
-                            window.scrollTo({ top: teamRef.current.offsetTop - 140, left: 0, behavior: 'smooth' })
-                        }
-                    >
-                        Komanda
-                    </Typography>
-                    <Typography
-                        className="list-item"
-                        onClick={() =>
-                            window.scrollTo({ top: customersRef.current.offsetTop - 140, left: 0, behavior: 'smooth' })
-                        }
-                    >
-                        Müştərilərimiz
-                    </Typography>
-                </Container>
         </Page>
     );
 };
