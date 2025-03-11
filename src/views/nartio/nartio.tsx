@@ -2,7 +2,6 @@ import { Box, Theme } from '@mui/material';
 import { styled } from '@mui/styles';
 import { Page } from 'components';
 import { useTranslation } from 'react-i18next';
-import { Customers } from 'views/home/customers';
 import { GeneralInfo } from './general-info';
 import { useRef } from 'react';
 import { headerHeight, headerTopHeight } from 'config';
