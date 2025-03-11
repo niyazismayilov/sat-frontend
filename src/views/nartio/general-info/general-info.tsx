@@ -119,7 +119,7 @@ export const GeneralInfo: React.FC = () => {
                 <Box className="hiddenMdDown">
                     <Typography className="detail">
                         SAT Group şirkətinin fəaliyyət istiqaməti satış, marketinq, idarəetmə təlimləri və biznesiniz
-                        inkişafı üçün konsaltinq xidmətləridir.
+                        inkişafı üçün konsaltinq xidmətləridirS.
                     </Typography>
                 </Box>
                 <Link to="/elaqe">
