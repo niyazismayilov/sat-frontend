@@ -134,7 +134,7 @@ export const Menu: React.FC<{ onClose: () => void }> = ({ onClose }) => {
                             <Box mb={6}>
                                 <Typography className="title">{t(`header:${categories[5]}`)}</Typography>
                                 {courses
-                                    .filter((course) => course.attributes?.category === categories[5])
+                                    .filter((course) => course.attributes?.category === categories[4])
                                     .map((course, index) => (
                                         <ChildMenuItem
                                             onClose={onClose}
