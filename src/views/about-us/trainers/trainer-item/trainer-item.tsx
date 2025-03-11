@@ -12,7 +12,7 @@ type TrainerProps = {
     business: string;
     companies: string[];
     education: string;
-    trainerUrl: string;
+    trainerUrl?: string;
 };
 
 // const Dialog = styled(MUIDialog)(({ theme }: { theme: Theme }) => ({           trainer Detail  not delete
