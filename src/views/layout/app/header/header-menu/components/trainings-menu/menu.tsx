@@ -129,8 +129,6 @@ export const Menu: React.FC<{ onClose: () => void }> = ({ onClose }) => {
                             </Box>
                         </Box>
                     </Grid>
-                    
-
                     {/* <Grid item xs={2}></Grid> */}
                 </Grid>
             </Container>
