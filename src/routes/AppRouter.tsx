@@ -76,6 +76,7 @@ const AppRouter: React.FC = () => {
             <Route exact path="/customers-referans/:id" component={CustomerReferansPage} />
 
             <Route exact path="/niye-biz" component={AboutUsPage} />
+            <Route exact path="/nartio" component={AboutUsPage} />
 
             {/* <Route exact path="/404" component={NotFoundPage} /> */}
         </Switch>

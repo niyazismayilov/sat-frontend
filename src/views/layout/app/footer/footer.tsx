@@ -164,6 +164,9 @@ export const Footer: React.FC = () => {
                                 <Link to="/niye-biz">
                                     <Typography className="footer-list-item">{t('footer:whyUs')}</Typography>
                                 </Link>
+                                <Link to="/nartio">
+                                    <Typography className="footer-list-item">{t('footer:nartio')}</Typography>
+                                </Link>
                                 <Link to="/telimciler">
                                     <Typography className="footer-list-item">{t('footer:trainers')}</Typography>
                                 </Link>

@@ -19,6 +19,7 @@ export const menuItems = [
     },
     {
         name: 'nartio',
+        route: '/nartio',
         matchingRoutes: ['/nartio'],
     },
     {
