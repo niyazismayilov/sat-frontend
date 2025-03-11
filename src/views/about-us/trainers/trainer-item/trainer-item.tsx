@@ -196,7 +196,6 @@ export const TrainerItemComponent: React.FC<{
                     {/* <Typography className="trainer-title">{trainer.trainerTitle}</Typography>   NOT DELETE */}
                 </Box>
             </TrainerItem>
-
         </>
     );
 };
