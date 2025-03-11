@@ -1,4 +1,4 @@
-import logo from 'assets/logo.svg';
+import logo from 'assets/logo3.svg';
 
 declare global {
     interface Window {
