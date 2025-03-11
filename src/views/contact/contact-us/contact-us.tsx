@@ -65,7 +65,7 @@ export const ContactUs: React.FC = () => {
                                 info@satgroup.az
                             </Button>
                             <Button variant="outlined" startIcon={<LocationIcon />} className="button">
-                                Bakı şəhəri, Şah İsmayıl Xətai prospekti 34, Luxen Plaza
+                                Ağa biznes mərkəzi, 7-ci mərtəbə
                             </Button>
                         </Box>
                     </Grid>
