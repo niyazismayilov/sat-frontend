@@ -4,13 +4,8 @@ import { Page } from 'components';
 import { useTranslation } from 'react-i18next';
 import { Customers } from 'views/home/customers';
 import { GeneralInfo } from './general-info';
-import { Missions } from './missions';
-import { Team } from './team';
-import { Trainers } from './trainers';
 import { useRef } from 'react';
 import { headerHeight, headerTopHeight } from 'config';
-import { Directors } from './Directors';
-import { Vision } from './vision';
 
 const Navigation = styled(Box)(({ theme }: { theme: Theme }) => ({
     backgroundColor: theme.palette.primary.main,
