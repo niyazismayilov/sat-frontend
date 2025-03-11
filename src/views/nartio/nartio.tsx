@@ -29,16 +29,16 @@ import { headerHeight, headerTopHeight } from 'config';
 //     },
 // }));
 
-// export const AboutUs = () => {
-//     const { t } = useTranslation();
-//     const directorsRef: any = useRef();
-//     const aboutUsRef: any = useRef();
-//     const valuesRef: any = useRef();
-//     const trainersRef: any = useRef();
-//     const teamRef: any = useRef();
-//     const customersRef: any = useRef();
-//     const visionRef: any = useRef();
-//     const missionRef: any = useRef();
+export const Nartio = () => {
+    const { t } = useTranslation();
+    const directorsRef: any = useRef();
+    const aboutUsRef: any = useRef();
+    const valuesRef: any = useRef();
+    const trainersRef: any = useRef();
+    const teamRef: any = useRef();
+    const customersRef: any = useRef();
+    const visionRef: any = useRef();
+    const missionRef: any = useRef();
 
     return (
         <Page title={t('home:nartio')}>
