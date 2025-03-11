@@ -1,1 +1,1 @@
-export { AboutUs as default } from './nartio';
+export { Nartio as default } from './nartio';
