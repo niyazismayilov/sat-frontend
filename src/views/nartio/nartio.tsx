@@ -106,25 +106,6 @@ export const AboutUs = () => {
                         Müştərilərimiz
                     </Typography>
                 </Container>
-            </Navigation>
-            <div ref={directorsRef}>
-                <Directors />
-            </div>
-            <div ref={valuesRef}>
-                <Missions />
-            </div>
-            <div ref={visionRef}>
-                <Vision missionRef={missionRef} />
-            </div>
-            <div ref={trainersRef}>
-                <Trainers />
-            </div>
-            <div ref={teamRef}>
-                <Team />
-            </div>
-            <div ref={customersRef}>
-                <Customers />
-            </div>
         </Page>
     );
 };
