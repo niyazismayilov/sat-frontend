@@ -7,6 +7,7 @@ import { ReactComponent as CourseIcon } from 'assets/trainings/course.svg';
 import { ReactComponent as CheckIcon } from 'assets/trainings/check.svg';
 import { headerHeight, headerTopHeight } from 'config';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import { useTranslation } from 'react-i18next';
 import { CallMe } from './call-me';
 import { useParams } from 'react-router';
 import { Enum_Course_Durationtype, TrainerRelationResponseCollection } from 'graphql/generated';
