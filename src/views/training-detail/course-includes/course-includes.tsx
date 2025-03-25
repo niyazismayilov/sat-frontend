@@ -17,6 +17,9 @@ const Root = styled(Box)(({ theme, scrolledDown }: { theme: Theme; scrolledDown:
     border: '1px solid #EEEEEE',
     position: 'sticky',
     top: `${scrolledDown ? headerHeight - headerTopHeight + 16 : headerHeight}px`,
+    width: '100%', // Full width
+    maxWidth: '1200px', // Optional: Set max width for larger screens
+    margin: '0 auto', // Centers the widget on large screens
     '& .buttons': {
         display: 'flex',
         gap: theme.spacing(1),
@@ -36,6 +39,8 @@ const Root = styled(Box)(({ theme, scrolledDown }: { theme: Theme; scrolledDown:
     '& .course-infos': {
         border: '1px solid #EEEEEE',
         borderRadius: '5px',
+        display: 'flex', // Flexbox for better layout control
+        justifyContent: 'space-between', // Space between items
         '& > *:not(:last-child)': {
             borderRight: '1px solid #EEEEEE',
             [theme.breakpoints.only('md')]: {
