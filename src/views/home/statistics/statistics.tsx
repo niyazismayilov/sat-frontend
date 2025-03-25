@@ -13,7 +13,7 @@ const Root = styled(Container)(({ theme }: { theme: Theme }) => ({
         justifyContent: 'center',
     },
     '& .item': {
-        display: 'flex', // Keeping this here
+        display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
         backgroundColor: '#F4F4F4',
@@ -31,20 +31,15 @@ const Root = styled(Container)(({ theme }: { theme: Theme }) => ({
         [theme.breakpoints.down('sm')]: {
             minWidth: 120, // Adjust for smaller screens
         },
-        height: '200px', // Fixed height for all items (no duplicate display here)
-        justifyContent: 'center',
-        alignItems: 'center',
     },
     '& .title': {
         fontSize: '36px', // Reduced font size
         color: theme.palette.primary.main,
         fontWeight: '700',
-        textAlign: 'center', // Center the title
     },
     '& .detail': {
         fontSize: '16px', // Adjusted for better spacing
         color: theme.palette.primary.main,
-        textAlign: 'center', // Center the detail text
     },
     '& .plus': {
         color: theme.palette.secondary.main,
