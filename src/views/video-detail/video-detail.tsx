@@ -78,7 +78,7 @@ export const VideoDetail = () => {
                     {video.videoId && (
                         <iframe
                             width="100%"
-                            height="300"
+                            height="732"
                             src={`https://www.youtube.com/embed/${videoUrlGetID(video?.videoId)}`}
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
