@@ -45,6 +45,13 @@ export const Menu: React.FC<{ onClose: () => void }> = ({ onClose }) => {
         return <Spinner />;
     }
 
+    // Define the course names in a separate variable
+    const specialCourses = [
+        'Praktiki Satış Kursu',
+        'Korporativ Satış Kursu',
+        'Satışa rəhbərlik kursu',
+    ];
+
     return (
         <Root>
             <Container>
@@ -67,11 +74,8 @@ export const Menu: React.FC<{ onClose: () => void }> = ({ onClose }) => {
                                             key={index}
                                             courseId={course.id}
                                             courseName={
-                                                [
-                                                  'Praktiki Satış Kursu',
-                                                  'Korporativ Satış Kursu',
-                                                  'Satışa rəhbərlik kursu',
-                                                ].includes(course.attributes?.name || '') // Fallback added
+                                                // Check if the course name is in the specialCourses list
+                                                specialCourses.includes(course.attributes?.name || '') // Fallback for undefined
                                                     ? `⭐ ${course.attributes?.name}` // Red things get a star
                                                     : course.attributes?.name
                                             }
