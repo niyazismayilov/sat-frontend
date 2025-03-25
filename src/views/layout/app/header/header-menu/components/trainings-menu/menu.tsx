@@ -70,7 +70,7 @@ export const Menu: React.FC<{ onClose: () => void }> = ({ onClose }) => {
                                                 [
                                                   'Praktiki Satış Kursu',
                                                   'Korporativ Satış Kursu',
-                                                  'Satışa rəhbərlik kursu'
+                                                  'Satışa rəhbərlik kursu',
                                                 ].includes(course.attributes?.name)
                                                     ? `⭐ ${course.attributes?.name}` // Red things get a star
                                                     : course.attributes?.name
