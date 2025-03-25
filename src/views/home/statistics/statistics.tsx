@@ -8,7 +8,7 @@ const Root = styled(Container)(({ theme }: { theme: Theme }) => ({
     flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'space-between',
-    gap: theme.spacing(3),
+    gap: theme.spacing(2), // Reduced gap to fit 7 items
     [theme.breakpoints.down('md')]: {
         justifyContent: 'center',
     },
@@ -18,23 +18,27 @@ const Root = styled(Container)(({ theme }: { theme: Theme }) => ({
         justifyContent: 'center',
         backgroundColor: '#F4F4F4',
         border: '1px solid #EEEEEE',
-        padding: theme.spacing(8, 0),
+        padding: theme.spacing(4, 0), // Reduced padding
         borderRadius: '10px',
         flexDirection: 'column',
-        minWidth: 220,
+        minWidth: 140, // Reduced width to fit 7 items
+        flex: '1 1 auto', // Allows flexible resizing
+        maxWidth: '12%', // Ensures 7 items fit in one row
         [theme.breakpoints.down('lg')]: {
-            margin: theme.spacing(3, 0),
-            padding: theme.spacing(12, 0),
-            minWidth: 300,
+            padding: theme.spacing(6, 0),
+            minWidth: 160, // Adjust for responsiveness
+        },
+        [theme.breakpoints.down('sm')]: {
+            minWidth: 120, // Adjust for smaller screens
         },
     },
     '& .title': {
-        fontSize: '54px',
+        fontSize: '36px', // Reduced font size
         color: theme.palette.primary.main,
         fontWeight: '700',
     },
     '& .detail': {
-        fontSize: '18px',
+        fontSize: '16px', // Adjusted for better spacing
         color: theme.palette.primary.main,
     },
     '& .plus': {
