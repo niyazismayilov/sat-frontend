@@ -88,37 +88,46 @@ const Root = styled(Box)(({ theme, scrolledDown }: { theme: Theme; scrolledDown:
     '& .trainer': {
         padding: theme.spacing(2.5),
     },
+
     '& .trainer-about': {
         display: 'flex',
         alignItems: 'center',
         marginBottom: theme.spacing(1.5),
-        width: '100%',
+        width: '100%',  // Ensure the trainer about section takes full width
+        flexWrap: 'wrap',  // Allow content to wrap when necessary
     },
     '& .trainer-image-box': {
-        width: '80px',  // Keep photo width fixed
-        height: '80px', // Keep photo height fixed
+        width: '80px',
+        height: '80px',
         borderRadius: '50%',
         border: '1px solid #CCCCCC',
+        alignItems: 'center',
         display: 'flex',
         justifyContent: 'center',
-        alignItems: 'center',
         overflow: 'hidden',
         marginRight: theme.spacing(2),
-        flexShrink: 0,  // Prevent photo from shrinking
+        flexShrink: 0,  // Prevent image from shrinking
     },
     '& .trainer-image': {
-        width: '100%',  // Ensure image fits within the fixed container
-        height: '100%', // Ensure image fits within the fixed container
-        objectFit: 'cover', // Cover the container, not distorting the image
+        width: '55px',  // Image width
+        height: '55px',  // Image height
+        objectFit: 'cover',  // Ensure image covers the area without distortion
+    },
+    '& .trainer-text': {
+        display: 'flex',
+        flexDirection: 'column',  // Stack text vertically
+        justifyContent: 'center',  // Center text vertically
+        width: 'calc(100% - 80px - 16px)',  // Ensure text takes up remaining space after image
+        wordWrap: 'break-word',  // Break long words
+        overflowWrap: 'break-word',  // Break long unbreakable words onto the next line
+        whiteSpace: 'normal',  // Allow text to wrap
     },
     '& .title': {
         display: 'flex',
         justifyContent: 'space-between',
-        alignItems: 'center',  // Keep items aligned at the center
+        alignItems: 'center',
         marginBottom: theme.spacing(1),
         cursor: 'pointer',
-        width: '100%',
-        flexWrap: 'nowrap', // Prevent wrapping the content
     },
 }));
 
