@@ -90,7 +90,7 @@ export const Statistics = () => {
                     <Typography className="title">
                         90<span className="plus">+</span>
                     </Typography>
-                    <Typography className="detail">Konsaltinq layihəsi</Typography>
+                    <Typography className="detail">Konsaltinq <br /> layihəsi</Typography>
                 </Box>
             </BounceInRight>
 
