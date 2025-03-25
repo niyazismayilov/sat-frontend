@@ -8,7 +8,7 @@ const Root = styled(Container)(({ theme }: { theme: Theme }) => ({
     flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'space-between',
-    gap: theme.spacing(2), // Reduced gap to fit 7 items
+    gap: theme.spacing(2),
     [theme.breakpoints.down('md')]: {
         justifyContent: 'center',
     },
@@ -18,27 +18,28 @@ const Root = styled(Container)(({ theme }: { theme: Theme }) => ({
         justifyContent: 'center',
         backgroundColor: '#F4F4F4',
         border: '1px solid #EEEEEE',
-        padding: theme.spacing(4, 0), // Reduced padding
+        padding: theme.spacing(4, 0),
         borderRadius: '10px',
         flexDirection: 'column',
-        minWidth: 140, // Reduced width to fit 7 items
-        flex: '1 1 auto', // Allows flexible resizing
-        maxWidth: '12%', // Ensures 7 items fit in one row
+        minWidth: 140,
+        flex: '1 1 auto',
+        maxWidth: '12%',
+        height: 180, // Set a fixed height for each box to ensure they are the same size
         [theme.breakpoints.down('lg')]: {
             padding: theme.spacing(6, 0),
-            minWidth: 160, // Adjust for responsiveness
+            minWidth: 160,
         },
         [theme.breakpoints.down('sm')]: {
-            minWidth: 120, // Adjust for smaller screens
+            minWidth: 120,
         },
     },
     '& .title': {
-        fontSize: '36px', // Reduced font size
+        fontSize: '36px',
         color: theme.palette.primary.main,
         fontWeight: '700',
     },
     '& .detail': {
-        fontSize: '16px', // Adjusted for better spacing
+        fontSize: '16px',
         color: theme.palette.primary.main,
     },
     '& .plus': {
