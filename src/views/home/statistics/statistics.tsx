@@ -86,7 +86,7 @@ export const Statistics = () => {
                 </Box>
             </BounceInRight>
 
-            <BounceInRight duration={0.9}>
+            <BounceInRight duration={0.8}>
                 <Box className="item">
                     <Typography className="title">
                         90<span className="plus">+</span>
