@@ -92,10 +92,9 @@ export const Broadcast = () => {
     return (
         <Root>
             <Container>
-                <Box className="video-url">
+                <Box className="video-url" sx={{ position: 'relative', width: '100%', paddingTop: '56.25%' }}>
                     <iframe
-                        width="200%"
-                        height="500"
+                        style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
                         src={`https://www.youtube.com/embed/${videoUrlGetID(broadcast?.videoId)}`}
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
