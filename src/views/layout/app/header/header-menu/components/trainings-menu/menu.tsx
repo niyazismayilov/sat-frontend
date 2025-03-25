@@ -19,6 +19,11 @@ const Root = styled(Box)(({ theme }: { theme: Theme }) => ({
         fontSize: 16,
         fontWeight: 600,
         borderRadius: '3px',
+        marginBottom: theme.spacing(1),
+    },
+    '& .description': {
+        fontSize: 14,
+        color: '#555',
         marginBottom: theme.spacing(3),
     },
 }));
@@ -44,92 +49,36 @@ export const Menu: React.FC<{ onClose: () => void }> = ({ onClose }) => {
         <Root>
             <Container>
                 <Grid container className="grid-container">
-                    <Grid item xs={2.4} className="menu-item">
-                        <Box pl={3} pr={3}>
-                            <Typography className="title">{t(`header:${categories[0]}`)}</Typography>
-                            {courses
-                                .filter((course) => course.attributes?.category === categories[0])
-                                .map((course, index) => (
-                                    <ChildMenuItem
-                                        onClose={onClose}
-                                        key={index}
-                                        courseId={course.id}
-                                        courseName={course.attributes?.name}
-                                        sx={{ marginBottom: (theme) => theme.spacing(1.5) }}
-                                    />
-                                ))}
-                        </Box>
-                    </Grid>
-                    <Grid item xs={2.4} className="menu-item">
-                        <Box pl={3} pr={3} sx={{ borderLeft: '1px solid #F4F4F4' }}>
-                            <Typography className="title">{t(`header:${categories[1]}`)}</Typography>
-                            {courses
-                                .filter((course) => course.attributes?.category === categories[1])
-                                .map((course, index) => (
-                                    <ChildMenuItem
-                                        onClose={onClose}
-                                        key={index}
-                                        courseId={course.id}
-                                        courseName={course.attributes?.name}
-                                        sx={{ marginBottom: (theme) => theme.spacing(1.5) }}
-                                    />
-                                ))}
-                        </Box>
-                    </Grid>
-                    <Grid item xs={2.4} className="menu-item">
-                        <Box pl={3} pr={3} sx={{ borderLeft: '1px solid #F4F4F4' }}>
-                            <Typography className="title">{t(`header:${categories[2]}`)}</Typography>
-                            {courses
-                                .filter((course) => course.attributes?.category === categories[2])
-                                .map((course, index) => (
-                                    <ChildMenuItem
-                                        onClose={onClose}
-                                        key={index}
-                                        courseId={course.id}
-                                        courseName={course.attributes?.name}
-                                        sx={{ marginBottom: (theme) => theme.spacing(1.5) }}
-                                    />
-                                ))}
-                        </Box>
-                    </Grid>
-                    <Grid item xs={2.4} className="menu-item">
-                        <Box pl={3} pr={3} sx={{ borderLeft: '1px solid #F4F4F4' }}>
-                            <Box mb={6}>
-                                <Typography className="title">{t(`header:${categories[3]}`)}</Typography>
-                                {courses
-                                    .filter((course) => course.attributes?.category === categories[3])
-                                    .map((course, index) => (
-                                        <ChildMenuItem
-                                            onClose={onClose}
-                                            key={index}
-                                            courseId={course.id}
-                                            courseName={course.attributes?.name}
-                                            sx={{ marginBottom: (theme) => theme.spacing(1.5) }}
-                                        />
-                                    ))}
-                            </Box>
-                        </Box>
-                    </Grid>
+                    {categories.map((category, categoryIndex) => (
+                        <Grid item xs={2.4} className="menu-item" key={categoryIndex}>
+                            <Box pl={3} pr={3} sx={categoryIndex !== 0 ? { borderLeft: '1px solid #F4F4F4' } : {}}>
+                                {/* Blue Text with Description */}
+                                <Typography className="title">{t(`header:${category}`)}</Typography>
+                                <Typography className="description">
+                                    {t(`description:${category}`) || 'Bu kateqoriyaya aid təlimlər.'}
+                                </Typography>
 
-                    <Grid item xs={2.4}>
-                        <Box pl={3} pr={3} sx={{ borderLeft: '1px solid #F4F4F4' }}>
-                            <Box mb={6}>
-                                <Typography className="title">{t(`header:${categories[4]}`)}</Typography>
+                                {/* Courses List */}
                                 {courses
-                                    .filter((course) => course.attributes?.category === categories[4])
+                                    .filter((course) => course.attributes?.category === category)
                                     .map((course, index) => (
                                         <ChildMenuItem
                                             onClose={onClose}
                                             key={index}
                                             courseId={course.id}
-                                            courseName={course.attributes?.name}
+                                            courseName={
+                                                ['Praktiki Satış Kursu', 'Korporativ Satış Kursu', 'Satışa rəhbərlik kursu'].includes(
+                                                    course.attributes?.name
+                                                )
+                                                    ? `⭐ ${course.attributes?.name}` // Red things get a star
+                                                    : course.attributes?.name
+                                            }
                                             sx={{ marginBottom: (theme) => theme.spacing(1.5) }}
                                         />
                                     ))}
                             </Box>
-                        </Box>
-                    </Grid>
-                    {/* <Grid item xs={2}></Grid> */}
+                        </Grid>
+                    ))}
                 </Grid>
             </Container>
         </Root>
