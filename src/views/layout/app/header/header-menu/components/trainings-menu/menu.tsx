@@ -68,10 +68,10 @@ export const Menu: React.FC<{ onClose: () => void }> = ({ onClose }) => {
                                             courseId={course.id}
                                             courseName={
                                                 [
-                                                    'Praktiki Satış Kursu',
-                                                    'Korporativ Satış Kursu',
-                                                    'Satışa rəhbərlik kursu',
-                                                ].includes(course.attributes?.name)
+                                                  'Praktiki Satış Kursu',
+                                                  'Korporativ Satış Kursu',
+                                                  'Satışa rəhbərlik kursu',
+                                                ].includes(course.attributes?.name || '') // Added fallback
                                                     ? `⭐ ${course.attributes?.name}` // Red things get a star
                                                     : course.attributes?.name
                                             }
