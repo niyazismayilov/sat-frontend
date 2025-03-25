@@ -95,7 +95,7 @@ export const Broadcast = () => {
                 <Box className="video-url">
                     <iframe
                         width="200%"
-                        height="700"
+                        height="500"
                         src={`https://www.youtube.com/embed/${videoUrlGetID(broadcast?.videoId)}`}
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
