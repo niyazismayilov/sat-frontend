@@ -13,7 +13,7 @@ const Root = styled(Container)(({ theme }: { theme: Theme }) => ({
         justifyContent: 'center',
     },
     '& .item': {
-        display: 'flex',
+        display: 'flex', // Keeping this here
         alignItems: 'center',
         justifyContent: 'center',
         backgroundColor: '#F4F4F4',
@@ -31,10 +31,7 @@ const Root = styled(Container)(({ theme }: { theme: Theme }) => ({
         [theme.breakpoints.down('sm')]: {
             minWidth: 120, // Adjust for smaller screens
         },
-        // Add a fixed height to prevent variation in item height
-        height: '200px', // Fixed height for all items
-        display: 'flex',
-        flexDirection: 'column',
+        height: '200px', // Fixed height for all items (no duplicate display here)
         justifyContent: 'center',
         alignItems: 'center',
     },
