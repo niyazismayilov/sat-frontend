@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { styled } from '@mui/styles';
 import { Box, Theme, Typography, Grid, Collapse, Tooltip } from '@mui/material';
+import { useTranslation } from 'react-i18next';
 import { ReactComponent as TimeIcon } from 'assets/trainings/time.svg';
 import { ReactComponent as AttendeesIcon } from 'assets/trainings/attendees.svg';
 import { ReactComponent as CourseIcon } from 'assets/trainings/course.svg';
 import { ReactComponent as CheckIcon } from 'assets/trainings/check.svg';
 import { headerHeight, headerTopHeight } from 'config';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import { useTranslation } from 'react-i18next';
 import { CallMe } from './call-me';
 import { useParams } from 'react-router';
 import { Enum_Course_Durationtype, TrainerRelationResponseCollection } from 'graphql/generated';
@@ -17,11 +17,6 @@ const Root = styled(Box)(({ theme, scrolledDown }: { theme: Theme; scrolledDown:
     border: '1px solid #EEEEEE',
     position: 'sticky',
     top: `${scrolledDown ? headerHeight - headerTopHeight + 16 : headerHeight}px`,
-    width: '100%',
-    maxWidth: '100%',
-    margin: '0 auto',
-    padding: theme.spacing(2),
-    boxSizing: 'border-box',
     '& .buttons': {
         display: 'flex',
         gap: theme.spacing(1),
@@ -41,8 +36,6 @@ const Root = styled(Box)(({ theme, scrolledDown }: { theme: Theme; scrolledDown:
     '& .course-infos': {
         border: '1px solid #EEEEEE',
         borderRadius: '5px',
-        display: 'flex',
-        justifyContent: 'space-between',
         '& > *:not(:last-child)': {
             borderRight: '1px solid #EEEEEE',
             [theme.breakpoints.only('md')]: {
@@ -99,8 +92,6 @@ const Root = styled(Box)(({ theme, scrolledDown }: { theme: Theme; scrolledDown:
         display: 'flex',
         alignItems: 'center',
         marginBottom: theme.spacing(1.5),
-        minHeight: '80px', // Prevent shrinking image size
-        flexShrink: 0, // Prevent shrinking of image
     },
     '& .trainer-image-box': {
         width: '80px',
@@ -122,9 +113,11 @@ const Root = styled(Box)(({ theme, scrolledDown }: { theme: Theme; scrolledDown:
     '& .title': {
         display: 'flex',
         justifyContent: 'space-between',
-        alignItems: 'center',
+        alignItems: 'flex-start', // changed from 'center' to 'flex-start'
         marginBottom: theme.spacing(1),
         cursor: 'pointer',
+        width: '100%', // Ensure that the title takes full width of its parent container
+        flexWrap: 'wrap', // Ensure the contents wrap when the text is long
     },
 }));
 
@@ -135,6 +128,7 @@ type CourseIncludesProps = {
     durationType: Enum_Course_Durationtype;
     attendees: number;
     count: number;
+    // groups: any;
     includedPayments: any;
 };
 
@@ -145,6 +139,7 @@ export const CourseIncludes: React.FC<CourseIncludesProps> = ({
     durationType,
     attendees,
     count,
+    // groups,
     includedPayments,
 }) => {
     const { t } = useTranslation();
