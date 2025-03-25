@@ -369,7 +369,7 @@ export const CreateCourse: React.FC = () => {
                                                         <MenuItem value={Enum_Course_Status.Inactive}>Deaktiv</MenuItem>
                                                     </Field>
                                                 </Grid>
-                                                <Grid item xs={16}>
+                                                <Grid item xs={20}>
                                                     <Field
                                                         name="videoId"
                                                         component={TextField}
