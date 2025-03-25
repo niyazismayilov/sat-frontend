@@ -86,12 +86,17 @@ export const Statistics = () => {
                 </Box>
             </BounceInRight>
 
-            <BounceInRight duration={0.8}>
+            <BounceInRight duration={0.9}>
                 <Box className="item">
                     <Typography className="title">
                         90<span className="plus">+</span>
                     </Typography>
-                    <Typography className="detail">Konsaltinq layihəsi</Typography>
+                    <Typography className="detail" display="block">
+                        Konsaltinq
+                    </Typography>
+                    <Typography className="detail" display="block">
+                        layihəsi
+                    </Typography>
                 </Box>
             </BounceInRight>
 
