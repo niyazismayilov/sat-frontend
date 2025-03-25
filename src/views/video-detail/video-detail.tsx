@@ -85,7 +85,6 @@ export const VideoDetail = () => {
                     />
                 </Box>
 
-
                 <Box className="video-detail-categories">
                     {video?.category?.map((categoryItem, index) => (
                         <Box key={index} className="video-detail-category">
