@@ -99,7 +99,6 @@ export const Statistics = () => {
                 </Box>
             </BounceInRight>
 
-
             <BounceInRight duration={0.9}>
                 <Box className="item">
                     <Typography className="title">
