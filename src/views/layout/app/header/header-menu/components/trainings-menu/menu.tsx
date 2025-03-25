@@ -148,7 +148,7 @@ export const Menu: React.FC<{ onClose: () => void }> = ({ onClose }) => {
                 {/* Text Description at the End of the Container */}
                 <Box mt={6}>
                     <Typography className="description">
-                        {t('description:endOfMenu') || 'This is the end of the menu. Thank you for visiting!'}
+                        {t('description:End of Menu')}
                     </Typography>
                 </Box>
             </Container>
