@@ -45,12 +45,8 @@ export const Menu: React.FC<{ onClose: () => void }> = ({ onClose }) => {
         return <Spinner />;
     }
 
-    // Define the course names in a separate variable
-    const specialCourses = [
-        'Praktiki Satış Kursu',
-        'Korporativ Satış Kursu',
-        'Satışa rəhbərlik kursu',
-    ];
+    // Define the course names in a single line
+    const specialCourses = ['Praktiki Satış Kursu', 'Korporativ Satış Kursu', 'Satışa rəhbərlik kursu'];
 
     return (
         <Root>
