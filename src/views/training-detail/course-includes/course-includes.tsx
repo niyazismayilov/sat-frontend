@@ -88,13 +88,10 @@ const Root = styled(Box)(({ theme, scrolledDown }: { theme: Theme; scrolledDown:
     '& .trainer': {
         padding: theme.spacing(2.5),
     },
-
     '& .trainer-about': {
         display: 'flex',
         alignItems: 'center',
         marginBottom: theme.spacing(1.5),
-        width: '100%',  // Ensure the trainer about section takes full width
-        flexWrap: 'wrap',  // Allow content to wrap when necessary
     },
     '& .trainer-image-box': {
         width: '80px',
@@ -106,22 +103,15 @@ const Root = styled(Box)(({ theme, scrolledDown }: { theme: Theme; scrolledDown:
         justifyContent: 'center',
         overflow: 'hidden',
         marginRight: theme.spacing(2),
-        flexShrink: 0,  // Prevent image from shrinking
+        flexShrink: 0, // Prevent shrinking
     },
+
     '& .trainer-image': {
-        width: '55px',  // Image width
-        height: '55px',  // Image height
-        objectFit: 'cover',  // Ensure image covers the area without distortion
+        width: '100%', // Make the image fill the container
+        height: '100%',
+        objectFit: 'cover', // Ensure the image covers the container
     },
-    '& .trainer-text': {
-        display: 'flex',
-        flexDirection: 'column',  // Stack text vertically
-        justifyContent: 'center',  // Center text vertically
-        width: 'calc(100% - 80px - 16px)',  // Ensure text takes up remaining space after image
-        wordWrap: 'break-word',  // Break long words
-        overflowWrap: 'break-word',  // Break long unbreakable words onto the next line
-        whiteSpace: 'normal',  // Allow text to wrap
-    },
+
     '& .title': {
         display: 'flex',
         justifyContent: 'space-between',
