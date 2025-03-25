@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { styled } from '@mui/styles';
 import { Box, Theme, Typography, Grid, Collapse, Tooltip } from '@mui/material';
-import { useTranslation } from 'react-i18next';
 import { ReactComponent as TimeIcon } from 'assets/trainings/time.svg';
 import { ReactComponent as AttendeesIcon } from 'assets/trainings/attendees.svg';
 import { ReactComponent as CourseIcon } from 'assets/trainings/course.svg';
@@ -17,9 +16,11 @@ const Root = styled(Box)(({ theme, scrolledDown }: { theme: Theme; scrolledDown:
     border: '1px solid #EEEEEE',
     position: 'sticky',
     top: `${scrolledDown ? headerHeight - headerTopHeight + 16 : headerHeight}px`,
-    width: '100%', // Full width
-    maxWidth: '1200px', // Optional: Set max width for larger screens
-    margin: '0 auto', // Centers the widget on large screens
+    width: '100%',
+    maxWidth: '100%',
+    margin: '0 auto',
+    padding: theme.spacing(2),
+    boxSizing: 'border-box',
     '& .buttons': {
         display: 'flex',
         gap: theme.spacing(1),
@@ -39,8 +40,8 @@ const Root = styled(Box)(({ theme, scrolledDown }: { theme: Theme; scrolledDown:
     '& .course-infos': {
         border: '1px solid #EEEEEE',
         borderRadius: '5px',
-        display: 'flex', // Flexbox for better layout control
-        justifyContent: 'space-between', // Space between items
+        display: 'flex',
+        justifyContent: 'space-between',
         '& > *:not(:last-child)': {
             borderRight: '1px solid #EEEEEE',
             [theme.breakpoints.only('md')]: {
@@ -97,6 +98,8 @@ const Root = styled(Box)(({ theme, scrolledDown }: { theme: Theme; scrolledDown:
         display: 'flex',
         alignItems: 'center',
         marginBottom: theme.spacing(1.5),
+        minHeight: '80px', // Prevent shrinking image size
+        flexShrink: 0, // Prevent shrinking of image
     },
     '& .trainer-image-box': {
         width: '80px',
@@ -131,7 +134,6 @@ type CourseIncludesProps = {
     durationType: Enum_Course_Durationtype;
     attendees: number;
     count: number;
-    // groups: any;
     includedPayments: any;
 };
 
@@ -142,7 +144,6 @@ export const CourseIncludes: React.FC<CourseIncludesProps> = ({
     durationType,
     attendees,
     count,
-    // groups,
     includedPayments,
 }) => {
     const { t } = useTranslation();
