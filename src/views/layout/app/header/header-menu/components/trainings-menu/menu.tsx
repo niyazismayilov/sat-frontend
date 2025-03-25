@@ -72,7 +72,7 @@ export const Menu: React.FC<{ onClose: () => void }> = ({ onClose }) => {
                                             courseName={
                                                 // Check if the course name is in the specialCourses list
                                                 specialCourses.includes(course.attributes?.name || '') // Fallback for undefined
-                                                    ? `⭐ ${course.attributes?.name}` // Red things get a star
+                                                    ? `⭐ ${course.attributes?.name} - ${t('specialDescription')}` // Adding description for special courses
                                                     : course.attributes?.name
                                             }
                                             sx={{ marginBottom: (theme) => theme.spacing(1.5) }}
