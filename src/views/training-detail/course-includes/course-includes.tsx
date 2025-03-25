@@ -92,32 +92,33 @@ const Root = styled(Box)(({ theme, scrolledDown }: { theme: Theme; scrolledDown:
         display: 'flex',
         alignItems: 'center',
         marginBottom: theme.spacing(1.5),
+        width: '100%',
     },
     '& .trainer-image-box': {
-        width: '80px',
-        height: '80px',
+        width: '80px',  // Keep photo width fixed
+        height: '80px', // Keep photo height fixed
         borderRadius: '50%',
         border: '1px solid #CCCCCC',
-        alignItems: 'center',
         display: 'flex',
         justifyContent: 'center',
+        alignItems: 'center',
         overflow: 'hidden',
         marginRight: theme.spacing(2),
+        flexShrink: 0,  // Prevent photo from shrinking
     },
-
     '& .trainer-image': {
-        width: '55px',
-        objectFit: 'cover',
+        width: '100%',  // Ensure image fits within the fixed container
+        height: '100%', // Ensure image fits within the fixed container
+        objectFit: 'cover', // Cover the container, not distorting the image
     },
-
     '& .title': {
         display: 'flex',
         justifyContent: 'space-between',
-        alignItems: 'flex-start', // changed from 'center' to 'flex-start'
+        alignItems: 'center',  // Keep items aligned at the center
         marginBottom: theme.spacing(1),
         cursor: 'pointer',
-        width: '100%', // Ensure that the title takes full width of its parent container
-        flexWrap: 'wrap', // Ensure the contents wrap when the text is long
+        width: '100%',
+        flexWrap: 'nowrap', // Prevent wrapping the content
     },
 }));
 
