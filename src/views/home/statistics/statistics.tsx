@@ -31,15 +31,23 @@ const Root = styled(Container)(({ theme }: { theme: Theme }) => ({
         [theme.breakpoints.down('sm')]: {
             minWidth: 120, // Adjust for smaller screens
         },
+        // Add a fixed height to prevent variation in item height
+        height: '200px', // Fixed height for all items
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
     },
     '& .title': {
         fontSize: '36px', // Reduced font size
         color: theme.palette.primary.main,
         fontWeight: '700',
+        textAlign: 'center', // Center the title
     },
     '& .detail': {
         fontSize: '16px', // Adjusted for better spacing
         color: theme.palette.primary.main,
+        textAlign: 'center', // Center the detail text
     },
     '& .plus': {
         color: theme.palette.secondary.main,
