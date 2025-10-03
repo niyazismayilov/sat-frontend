@@ -1,5 +1,5 @@
 import { Box, Theme, Container, Typography } from '@mui/material';
-import marketResearch from 'assets/consulting/marketResearch.png';
+import marketResearch from 'assets/consulting/pm.jpg';
 import { styled } from '@mui/styles';
 import { useTranslation } from 'react-i18next';
 import { BounceInRight } from 'components';
