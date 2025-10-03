@@ -1,6 +1,6 @@
 import { Box, Theme, Container, Typography, Button } from '@mui/material';
 import Slider from 'react-slick';
-import image23 from 'assets/consulting/image23.png';
+import bkn from 'assets/consulting/bkn.jpg';
 import { styled } from '@mui/styles';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'components';
@@ -192,13 +192,13 @@ export const GeneralInfo: React.FC = () => {
                     <Box className="container">
                         <Slider {...settings} className="slider">
                             <Box className="image-wrapper">
-                                <img className="image" src={image23} />
+                                <img className="image" src={bkn} />
                             </Box>
                             <Box className="image-wrapper">
-                                <img className="image" src={image23} />
+                                <img className="image" src={bkn} />
                             </Box>
                             <Box className="image-wrapper">
-                                <img className="image" src={image23} />
+                                <img className="image" src={bkn} />
                             </Box>
                         </Slider>
                         <Box>
