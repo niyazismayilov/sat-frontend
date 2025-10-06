@@ -1,5 +1,5 @@
 import { Box, Theme, Container, Typography, Button } from '@mui/material';
-import Slider from 'react-slick';
+// import Slider from 'react-slick';
 import bkn from 'assets/consulting/bkn.jpg';
 import { styled } from '@mui/styles';
 import { useTranslation } from 'react-i18next';
