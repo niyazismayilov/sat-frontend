@@ -155,14 +155,14 @@ const Root = styled(Box)(({ theme }: { theme: Theme }) => ({
 export const GeneralInfo: React.FC = () => {
     const { t } = useTranslation();
 
-    const settings = {
-        dots: true,
-        arrows: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-    };
+    // const settings = {
+    //     dots: true,
+    //     arrows: false,
+    //     infinite: true,
+    //     speed: 500,
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    // };
 
     return (
         <>
