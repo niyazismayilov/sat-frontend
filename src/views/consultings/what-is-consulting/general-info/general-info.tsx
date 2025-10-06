@@ -1,5 +1,5 @@
 import { Box, Theme, Container, Typography, Button } from '@mui/material';
-// import Slider from 'react-slick';
+import Slider from 'react-slick';
 import bkn from 'assets/consulting/bkn.jpg';
 import { styled } from '@mui/styles';
 import { useTranslation } from 'react-i18next';
@@ -155,14 +155,14 @@ const Root = styled(Box)(({ theme }: { theme: Theme }) => ({
 export const GeneralInfo: React.FC = () => {
     const { t } = useTranslation();
 
-    // const settings = {
-    //     dots: true,
-    //     arrows: false,
-    //     infinite: true,
-    //     speed: 500,
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    // };
+    const settings = {
+        dots: true,
+        arrows: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+    };
 
     return (
         <>
@@ -190,9 +190,17 @@ export const GeneralInfo: React.FC = () => {
             <Root>
                 <Container>
                     <Box className="container">
-                        <Box className="image-wrapper">
-                            <img className="image" src={bkn} />
-                        </Box>
+                        <Slider {...settings} className="slider">
+                            <Box className="image-wrapper">
+                                <img className="image" src={bkn} />
+                            </Box>
+                            <Box className="image-wrapper">
+                                <img className="image" src={bkn} />
+                            </Box>
+                            <Box className="image-wrapper">
+                                <img className="image" src={bkn} />
+                            </Box>
+                        </Slider>
                         <Box>
                             <Box className="info">
                                 <Typography fontSize={18} fontWeight={700} mb={2.5} color="primary.main">
