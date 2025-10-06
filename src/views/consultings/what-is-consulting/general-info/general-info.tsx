@@ -190,17 +190,9 @@ export const GeneralInfo: React.FC = () => {
             <Root>
                 <Container>
                     <Box className="container">
-                        <Slider {...settings} className="slider">
-                            <Box className="image-wrapper">
-                                <img className="image" src={bkn} />
-                            </Box>
-                            <Box className="image-wrapper">
-                                <img className="image" src={bkn} />
-                            </Box>
-                            <Box className="image-wrapper">
-                                <img className="image" src={bkn} />
-                            </Box>
-                        </Slider>
+                        <Box className="image-wrapper">
+                            <img className="image" src={bkn} />
+                        </Box>
                         <Box>
                             <Box className="info">
                                 <Typography fontSize={18} fontWeight={700} mb={2.5} color="primary.main">
