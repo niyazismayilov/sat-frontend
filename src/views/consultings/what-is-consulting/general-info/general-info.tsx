@@ -1,5 +1,4 @@
 import { Box, Theme, Container, Typography, Button } from '@mui/material';
-import Slider from 'react-slick';
 import bkn from 'assets/consulting/bkn.jpg';
 import { styled } from '@mui/styles';
 import { useTranslation } from 'react-i18next';
@@ -112,32 +111,24 @@ const Root = styled(Box)(({ theme }: { theme: Theme }) => ({
         },
     },
     '& .image-wrapper': {
-        width: '100%',
-        position: 'relative',
-        objectFit: 'cover',
-        [theme.breakpoints.up('lg')]: {
-            height: '741px',
-        },
-        [theme.breakpoints.down('lg')]: {
-            height: '80vh',
-            objectPosition: '80% 0',
-        },
-    },
-    '& .slider': {
         width: '50%',
-        height: '100%',
+        position: 'relative',
         [theme.breakpoints.down('lg')]: {
             width: '100%',
             marginBottom: theme.spacing(3),
         },
-    },
-    '& .slick-dots li button:before': {
-        color: '#fff',
-        fontSize: 12,
-        transition: 'all .2s',
-    },
-    '& .slick-dots': {
-        bottom: '24px',
+        '& img': {
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            [theme.breakpoints.up('lg')]: {
+                height: '741px',
+            },
+            [theme.breakpoints.down('lg')]: {
+                height: '80vh',
+                objectPosition: '80% 0',
+            },
+        },
     },
     '& .info': {
         padding: theme.spacing(6, 8),
@@ -154,15 +145,6 @@ const Root = styled(Box)(({ theme }: { theme: Theme }) => ({
 
 export const GeneralInfo: React.FC = () => {
     const { t } = useTranslation();
-
-    const settings = {
-        dots: true,
-        arrows: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-    };
 
     return (
         <>
@@ -184,23 +166,15 @@ export const GeneralInfo: React.FC = () => {
                     </Link>
                 </Box>
                 <Box style={{ width: '100%', height: '100%' }}>
-                    <img className="image" src={introduction2} />
+                    <img className="image" src={introduction2} alt="Introduction" />
                 </Box>
             </Wrapper>
             <Root>
                 <Container>
                     <Box className="container">
-                        <Slider {...settings} className="slider">
-                            <Box className="image-wrapper">
-                                <img className="image" src={bkn} />
-                            </Box>
-                            <Box className="image-wrapper">
-                                <img className="image" src={bkn} />
-                            </Box>
-                            <Box className="image-wrapper">
-                                <img className="image" src={bkn} />
-                            </Box>
-                        </Slider>
+                        <Box className="image-wrapper">
+                            <img src={bkn} alt="Consulting" />
+                        </Box>
                         <Box>
                             <Box className="info">
                                 <Typography fontSize={18} fontWeight={700} mb={2.5} color="primary.main">
