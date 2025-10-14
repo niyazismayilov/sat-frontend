@@ -1,10 +1,10 @@
 import { Box, Container, Grid, Typography, Theme } from '@mui/material';
 import { styled } from '@mui/styles';
-import services1 from 'assets/home/services1.png';
-import services2 from 'assets/home/services2.png';
+import services1 from 'assets/home/services1.jpg';
+import services2 from 'assets/home/services2.jpg';
 // import services3 from 'assets/home/services3.png';
-import services4 from 'assets/home/services4.png';
-import trainer28 from 'assets/trainerss/trainer28.png';
+import services4 from 'assets/home/services4.jpg';
+import trainer28 from 'assets/trainerss/trainer28.jpg';
 import { BounceInRight } from 'components';
 import { ServiceItem } from './service-item';
 
