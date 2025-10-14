@@ -106,36 +106,32 @@ const Root = styled(Box)(({ theme }: { theme: Theme }) => ({
     },
     '& .container': {
         display: 'flex',
+        alignItems: 'stretch', // ✅ ensures equal height
         [theme.breakpoints.down('lg')]: {
             flexDirection: 'column',
             alignItems: 'center',
         },
     },
     '& .image-wrapper': {
-        width: '50%',
+        flex: 1, // ✅ makes image take equal height with text
         position: 'relative',
-        objectFit: 'cover',
-        [theme.breakpoints.up('lg')]: {
-            height: '741px',
+        width: '100%',
+        '& img': {
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
         },
         [theme.breakpoints.down('lg')]: {
-            width: '100%',
-            height: '80vh',
-            objectPosition: '80% 0',
-        },
-    },
-    '& .text-wrapper': {
-        width: '50%',
-        [theme.breakpoints.down('lg')]: {
-            width: '100%',
+            height: '50vh',
         },
     },
     '& .info': {
+        flex: 1, // ✅ same height as image
         padding: theme.spacing(6, 8),
         backgroundColor: '#F4F4F4',
-        [theme.breakpoints.up('lg')]: {
-            height: '735px',
-        },
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
         [theme.breakpoints.down('lg')]: {
             padding: theme.spacing(6, 3),
         },
@@ -172,21 +168,22 @@ export const GeneralInfo: React.FC = () => {
             <Root>
                 <Container>
                     <Box className="container">
+                        {/* Left side image */}
                         <Box className="image-wrapper">
-                            <img className="image" src={bkn} alt="Consulting" />
+                            <img src={bkn} alt="Consulting" />
                         </Box>
-                        <Box className="text-wrapper">
-                            <Box className="info">
-                                <Typography fontSize={18} fontWeight={700} mb={2.5} color="primary.main">
-                                    {t('consulting:whatIsConsulting')}
-                                </Typography>
-                                <Typography fontSize={24} fontWeight={600} mb={3} color="primary.main">
-                                    {t('consulting:body1')}
-                                </Typography>
-                                <Typography fontSize={18} fontWeight={600} color="#374151">
-                                    {t('consulting:body2')}
-                                </Typography>
-                            </Box>
+
+                        {/* Right side text */}
+                        <Box className="info">
+                            <Typography fontSize={18} fontWeight={700} mb={2.5} color="primary.main">
+                                {t('consulting:whatIsConsulting')}
+                            </Typography>
+                            <Typography fontSize={24} fontWeight={600} mb={3} color="primary.main">
+                                {t('consulting:body1')}
+                            </Typography>
+                            <Typography fontSize={18} fontWeight={600} color="#374151">
+                                {t('consulting:body2')}
+                            </Typography>
                         </Box>
                     </Box>
                 </Container>
