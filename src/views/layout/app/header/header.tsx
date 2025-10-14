@@ -55,6 +55,13 @@ const Root = styled(AppBar)(({ theme }: { theme: Theme }) => ({
         [theme.breakpoints.up('md')]: {
             marginTop: theme.spacing(-1),
         },
+        '& img': {
+            height: '40px', // ✅ Make logo smaller
+            width: 'auto',
+            [theme.breakpoints.down('md')]: {
+                height: '35px', // ✅ Even smaller on mobile
+            },
+        },
     },
     '& .auth': {
         padding: theme.spacing(1.5, 5),

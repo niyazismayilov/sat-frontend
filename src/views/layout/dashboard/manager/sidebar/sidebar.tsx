@@ -77,6 +77,10 @@ const Drawer = styled(MuiDrawer)(
                 margin: theme.spacing(6, 0),
                 display: 'flex',
                 justifyContent: 'center',
+                '& img': {
+                    height: '35px', // ✅ Make logo smaller in sidebar
+                    width: 'auto',
+                },
             },
             '& .logout-button': {
                 display: 'flex',
