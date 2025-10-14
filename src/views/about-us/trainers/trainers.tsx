@@ -4,7 +4,6 @@ import { useTranslation } from 'react-i18next';
 import trainer1 from 'assets/trainerss/trainer1.png';
 import trainer2 from 'assets/trainerss/trainer2.png';
 import trainer3 from 'assets/trainerss/trainer3.png';
-//import trainer4 from 'assets/trainerss/trainer4.png';
 //import trainer5 from 'assets/trainerss/trainer5.png';
 import trainer6 from 'assets/trainerss/trainer6.png';
 import trainer7 from 'assets/trainerss/trainer7.png';
@@ -87,16 +86,6 @@ export const Trainers = () => {
             business: 'SMM və rəqəmsal marketinq üzrə mütəxəssis, təlimçi',
             trainerUrl: 'https://www.linkedin.com/in/edgar-abdullayev-2239351b/',
         },
-        // {
-        //     image: trainer4,
-        //     qualification: 'İdarəçilik',
-        //     trainerName: 'Seymur Əhmədov',
-        //     trainerTitle: 'SMM və rəqəmsal marketinq üzrə mütəxəssis, təlimçi',
-        //     id: 4,
-        //     companies: ['SAT Group', 'Kapital bank'],
-        //     education: 'SMM və rəqəmsal marketinq üzrə mütəxəssis, təlimçi',
-        //     business: 'SMM və rəqəmsal marketinq üzrə mütəxəssis, təlimçi',
-        // },
         //{
         //    image: trainer5,
         //    qualification: 'İdarəçilik',

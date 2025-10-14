@@ -2,7 +2,6 @@ import { Box, Theme, Container, Typography, Grid } from '@mui/material';
 import { styled } from '@mui/styles';
 import expert1 from 'assets/home/team/team4.svg';
 import expert2 from 'assets/home/team/team1.svg';
-import expert3 from 'assets/home/team/team5.svg';
 import expert5 from 'assets/home/team/team6.svg';
 import { BounceInRight } from 'components';
 
@@ -60,13 +59,6 @@ export const Experts: React.FC = () => {
                                 <img src={expert2} className="image" />
                                 <Typography className="expert-name">Azad Qəhrəmanov</Typography>
                                 <Typography className="expert-title">Satış eksperti, Təlimçi</Typography>
-                            </Box>
-                        </Grid>
-                        <Grid item xs={12} sm={4} className="expert-item">
-                            <Box>
-                                <img src={expert3} className="image" />
-                                <Typography className="expert-name">Seymur Əhmədov</Typography>
-                                <Typography className="expert-title">HR konsultant</Typography>
                             </Box>
                         </Grid>
                         <Grid item xs={12} sm={4} className="expert-item">
