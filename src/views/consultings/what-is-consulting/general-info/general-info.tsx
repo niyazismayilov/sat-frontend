@@ -105,13 +105,18 @@ const Root = styled(Box)(({ theme }: { theme: Theme }) => ({
     },
     '& .container': {
         display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
+        [theme.breakpoints.down('lg')]: {
+            flexDirection: 'column',
+            alignItems: 'center',
+        },
     },
     '& .image-wrapper': {
-        width: '100%',
+        width: '50%',
         position: 'relative',
-        marginBottom: theme.spacing(3),
+        [theme.breakpoints.down('lg')]: {
+            width: '100%',
+            marginBottom: theme.spacing(3),
+        },
         '& img': {
             width: '100%',
             height: '100%',
@@ -128,8 +133,12 @@ const Root = styled(Box)(({ theme }: { theme: Theme }) => ({
     '& .info': {
         padding: theme.spacing(6, 8),
         backgroundColor: '#F4F4F4',
-        width: '100%',
+        width: '50%',
+        [theme.breakpoints.up('lg')]: {
+            height: '735px',
+        },
         [theme.breakpoints.down('lg')]: {
+            width: '100%',
             padding: theme.spacing(6, 3),
         },
     },
