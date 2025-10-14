@@ -112,15 +112,22 @@ const Root = styled(Box)(({ theme }: { theme: Theme }) => ({
         },
     },
     '& .image-wrapper': {
-        width: '100%',
+        width: '50%',
         position: 'relative',
         objectFit: 'cover',
         [theme.breakpoints.up('lg')]: {
             height: '741px',
         },
         [theme.breakpoints.down('lg')]: {
+            width: '100%',
             height: '80vh',
             objectPosition: '80% 0',
+        },
+    },
+    '& .text-wrapper': {
+        width: '50%',
+        [theme.breakpoints.down('lg')]: {
+            width: '100%',
         },
     },
     '& .info': {
@@ -168,7 +175,7 @@ export const GeneralInfo: React.FC = () => {
                         <Box className="image-wrapper">
                             <img className="image" src={bkn} alt="Consulting" />
                         </Box>
-                        <Box>
+                        <Box className="text-wrapper">
                             <Box className="info">
                                 <Typography fontSize={18} fontWeight={700} mb={2.5} color="primary.main">
                                     {t('consulting:whatIsConsulting')}
