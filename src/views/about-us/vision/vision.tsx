@@ -1,6 +1,6 @@
 import { styled } from '@mui/styles';
 import { Box, Grid, Hidden, Theme, Typography } from '@mui/material';
-import image from '../../../assets/home/vision.svg';
+import image from '../../../assets/home/vision.png';
 
 const Root = styled(Box)(({ theme }: { theme: Theme }) => ({
     background: '#FFFF',
