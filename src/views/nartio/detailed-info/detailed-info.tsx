@@ -70,11 +70,12 @@ const Wrapper = styled(Box)(({ theme }: { theme: Theme }) => ({
     },
     '& .nartio-image': {
         width: '100%',
-        height: 'auto',
+        height: '100%',
         borderRadius: theme.spacing(2),
         objectFit: 'cover',
         [theme.breakpoints.down('md')]: {
             borderRadius: theme.spacing(1),
+            height: 'auto',
         },
     },
 }));
