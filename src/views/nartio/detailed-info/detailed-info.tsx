@@ -78,14 +78,28 @@ export const DetailedInfo: React.FC = () => {
                     <Grid item xs={12} md={7}>
                         <Box className="text-section">
                             <Typography className="title">
-                                Doğru əməkdaş seçimi etmək, vəzifələrə doğru insanları təyin etmək, performansı aşağı olan əməkdaşlarla bağlı qərar vermək, komanda daxilində olan şəxslərin inkişaf etdirilməli səriştələrini düzgün təyin etmək üçün bu alət əvəzsizdir.
+                                Doğru əməkdaş seçimi etmək, vəzifələrə doğru insanları təyin etmək, performansı aşağı
+                                olan əməkdaşlarla bağlı qərar vermək, komanda daxilində olan şəxslərin inkişaf
+                                etdirilməli səriştələrini düzgün təyin etmək üçün bu alət əvəzsizdir.
                             </Typography>
                             <Typography className="description">
-                                Son dövrlərə qədər bu məqsədlə 360 dərəcə qiymətləndirmə, psixometrik və məntiqi testlər, performans qiymətləndirmə kimi üsullar istifadə edilirdi. Data analitikasının, süni zəkanın insan resursları sahəsində aktiv tətbiqi sayəsində bu gün süni zəka əsaslı qiymətləndirmə platformaları vasitəsilə əməkdaşları daha sürətli şəkildə, yüksək dəqiqliklə qiymətləndirmək mümkündür. Həm də bu proses insan əməyi istifadə edilmədiyi üçün əvvəlki üsullara nisbətən xeyli az xərc tələb edir.
-                                <br /><br />
-                                Süni zəka əsaslı qiymətləndirmə platforması Nartio hazırda Türkiyə və Avropa ölkələrində ən geniş istifadə edilən platformalardandır. Asan istifadəsi, yaratdığı geniş imkanları, uyğun qiyməti sayəsində bu platforma beynəlxalq və lokal şirkətlərin sevimli platformasına çevrilmişdir.
-                                <br /><br />
-                                2024-cü ildə SAT Group bu uğurlu platformanın Azərbaycan üzrə yeganə partnyoru olmuşdur. Hazırda SAT Group komandasının dəstəyi ilə şirkətlər Nartio platformasına qoşularaq əməkdaşlarını asanlıqla və yüksək dəqiqliklə qiymətləndirə bilirlər.
+                                Son dövrlərə qədər bu məqsədlə 360 dərəcə qiymətləndirmə, psixometrik və məntiqi
+                                testlər, performans qiymətləndirmə kimi üsullar istifadə edilirdi. Data analitikasının,
+                                süni zəkanın insan resursları sahəsində aktiv tətbiqi sayəsində bu gün süni zəka əsaslı
+                                qiymətləndirmə platformaları vasitəsilə əməkdaşları daha sürətli şəkildə, yüksək
+                                dəqiqliklə qiymətləndirmək mümkündür. Həm də bu proses insan əməyi istifadə edilmədiyi
+                                üçün əvvəlki üsullara nisbətən xeyli az xərc tələb edir.
+                                <br />
+                                <br />
+                                Süni zəka əsaslı qiymətləndirmə platforması Nartio hazırda Türkiyə və Avropa ölkələrində
+                                ən geniş istifadə edilən platformalardandır. Asan istifadəsi, yaratdığı geniş imkanları,
+                                uyğun qiyməti sayəsində bu platforma beynəlxalq və lokal şirkətlərin sevimli
+                                platformasına çevrilmişdir.
+                                <br />
+                                <br />
+                                2024-cü ildə SAT Group bu uğurlu platformanın Azərbaycan üzrə yeganə partnyoru
+                                olmuşdur. Hazırda SAT Group komandasının dəstəyi ilə şirkətlər Nartio platformasına
+                                qoşularaq əməkdaşlarını asanlıqla və yüksək dəqiqliklə qiymətləndirə bilirlər.
                             </Typography>
                         </Box>
                     </Grid>
@@ -99,4 +113,3 @@ export const DetailedInfo: React.FC = () => {
         </Wrapper>
     );
 };
-

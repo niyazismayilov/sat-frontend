@@ -115,7 +115,8 @@ export const GeneralInfo: React.FC = () => {
                 <Typography className="second-title">qiymətləndirilməsi platforması</Typography>
                 <Box className="hiddenMdDown">
                     <Typography className="detail">
-                        Əməkdaşların qabiliyyətlərinin, şəxsi xüsusiyyətlərinin qiymətləndirilməsi uğurlu idarəçilik üçün ən effektli alət
+                        Əməkdaşların qabiliyyətlərinin, şəxsi xüsusiyyətlərinin qiymətləndirilməsi uğurlu idarəçilik
+                        üçün ən effektli alət
                     </Typography>
                 </Box>
                 <Link to="/elaqe">
