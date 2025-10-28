@@ -16,16 +16,13 @@ const Wrapper = styled(Box)(({ theme }: { theme: Theme }) => ({
         bottom: 0,
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'flex-start',
-        paddingLeft: theme.spacing(5),
+        justifyContent: 'flex-end',
+        alignItems: 'center',
+        paddingBottom: theme.spacing(8),
         zIndex: 1,
-        width: '45%',
+        width: '100%',
         [theme.breakpoints.down('md')]: {
-            width: '100%',
-            alignItems: 'center',
-            paddingLeft: 0,
-            justifyContent: 'start',
+            paddingBottom: theme.spacing(4),
         },
     },
     '& .image': {
@@ -56,6 +53,7 @@ const Wrapper = styled(Box)(({ theme }: { theme: Theme }) => ({
         fontSize: '3.6rem',
         color: '#FFFFFF',
         lineHeight: '95px',
+        textAlign: 'center',
         [theme.breakpoints.down('lg')]: {
             fontSize: '2rem',
             lineHeight: '40px',
@@ -71,6 +69,7 @@ const Wrapper = styled(Box)(({ theme }: { theme: Theme }) => ({
         fontWeight: 700,
         lineHeight: '95px',
         marginBottom: theme.spacing(2.5),
+        textAlign: 'center',
         [theme.breakpoints.down('lg')]: {
             fontSize: '2rem',
             lineHeight: '40px',
@@ -88,13 +87,13 @@ const Wrapper = styled(Box)(({ theme }: { theme: Theme }) => ({
         lineHeight: '30px',
         color: '#FFFFFF',
         marginBottom: theme.spacing(6.5),
+        textAlign: 'center',
         [theme.breakpoints.down('lg')]: {
             fontSize: '16px',
             lineHeight: '21px',
             marginBottom: theme.spacing(3.5),
         },
         [theme.breakpoints.down('md')]: {
-            textAlign: 'center',
             fontSize: '14px',
             lineHeight: '16px',
             marginBottom: theme.spacing(3),

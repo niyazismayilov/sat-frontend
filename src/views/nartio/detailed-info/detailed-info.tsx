@@ -4,13 +4,13 @@ import nartioImage from 'assets/home/nartio2.jpg';
 
 const Wrapper = styled(Box)(({ theme }: { theme: Theme }) => ({
     width: '100%',
-    padding: theme.spacing(8, 0),
-    backgroundColor: '#FFFFFF',
+    padding: theme.spacing(10, 0),
+    backgroundColor: '#F9FAFB',
     [theme.breakpoints.down('md')]: {
-        padding: theme.spacing(4, 2),
+        padding: theme.spacing(6, 2),
     },
     '& .content-container': {
-        maxWidth: 1400,
+        maxWidth: 1200,
         margin: '0 auto',
         padding: theme.spacing(0, 4),
         [theme.breakpoints.down('md')]: {
@@ -21,7 +21,7 @@ const Wrapper = styled(Box)(({ theme }: { theme: Theme }) => ({
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
-        paddingRight: theme.spacing(4),
+        paddingRight: theme.spacing(6),
         [theme.breakpoints.down('md')]: {
             paddingRight: 0,
             marginBottom: theme.spacing(4),
@@ -74,8 +74,8 @@ export const DetailedInfo: React.FC = () => {
     return (
         <Wrapper>
             <Box className="content-container">
-                <Grid container spacing={4}>
-                    <Grid item xs={12} md={7}>
+                <Grid container spacing={6} alignItems="center">
+                    <Grid item xs={12} md={6}>
                         <Box className="text-section">
                             <Typography className="title">
                                 Doğru əməkdaş seçimi etmək, vəzifələrə doğru insanları təyin etmək, performansı aşağı
@@ -103,7 +103,7 @@ export const DetailedInfo: React.FC = () => {
                             </Typography>
                         </Box>
                     </Grid>
-                    <Grid item xs={12} md={5}>
+                    <Grid item xs={12} md={6}>
                         <Box className="image-section">
                             <img src={nartioImage} alt="Nartio AI Platform" className="nartio-image" />
                         </Box>
