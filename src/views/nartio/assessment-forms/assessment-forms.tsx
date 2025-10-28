@@ -53,7 +53,6 @@ const Wrapper = styled(Box)(({ theme }: { theme: Theme }) => ({
         color: '#374151',
         lineHeight: '1.75rem',
         textAlign: 'center',
-        marginTop: theme.spacing(6),
         maxWidth: 1000,
         margin: '0 auto',
         marginTop: theme.spacing(6),
