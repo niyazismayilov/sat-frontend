@@ -1,8 +1,7 @@
 import { Box, Button, Theme, Typography } from '@mui/material';
 import { styled } from '@mui/styles';
-import wrapper from 'assets/home/aboutUs-background.jpg';
+import wrapper from 'assets/home/nartio.jpg';
 import { Link } from 'components';
-import { useTranslation } from 'react-i18next';
 
 const Wrapper = styled(Box)(({ theme }: { theme: Theme }) => ({
     width: '100%',
@@ -55,7 +54,7 @@ const Wrapper = styled(Box)(({ theme }: { theme: Theme }) => ({
     },
     '& .title': {
         fontSize: '3.6rem',
-        color: '#111827',
+        color: '#FFFFFF',
         lineHeight: '95px',
         [theme.breakpoints.down('lg')]: {
             fontSize: '2rem',
@@ -67,7 +66,7 @@ const Wrapper = styled(Box)(({ theme }: { theme: Theme }) => ({
         },
     },
     '& .second-title': {
-        color: theme.palette.primary.main,
+        color: '#FFFFFF',
         fontSize: '3.6rem',
         fontWeight: 700,
         lineHeight: '95px',
@@ -87,7 +86,7 @@ const Wrapper = styled(Box)(({ theme }: { theme: Theme }) => ({
         fontSize: '20px',
         fontWeight: 500,
         lineHeight: '30px',
-        color: '#374151',
+        color: '#FFFFFF',
         marginBottom: theme.spacing(6.5),
         [theme.breakpoints.down('lg')]: {
             fontSize: '16px',
@@ -109,22 +108,19 @@ const Wrapper = styled(Box)(({ theme }: { theme: Theme }) => ({
 }));
 
 export const GeneralInfo: React.FC = () => {
-    const { t } = useTranslation();
-
     return (
         <Wrapper>
             <Box className="details-wrapper">
-                <Typography className="title">Sənə uyğun olanı</Typography>
-                <Typography className="second-title">Gəl birlikdə tapaq!</Typography>
+                <Typography className="title">Yumşaq bacarıqların</Typography>
+                <Typography className="second-title">qiymətləndirilməsi platforması</Typography>
                 <Box className="hiddenMdDown">
                     <Typography className="detail">
-                        SAT Group şirkətinin fəaliyyət istiqaməti satış, marketinq, idarəetmə təlimləri və biznesiniz
-                        inkişafı üçün konsaltinq xidmətləridirS.
+                        Əməkdaşların qabiliyyətlərinin, şəxsi xüsusiyyətlərinin qiymətləndirilməsi uğurlu idarəçilik üçün ən effektli alət
                     </Typography>
                 </Box>
                 <Link to="/elaqe">
                     <Button variant="contained" className="contact-button" color="primary">
-                        {t('home:contact')}
+                        Daha ətraflı
                     </Button>
                 </Link>
             </Box>
