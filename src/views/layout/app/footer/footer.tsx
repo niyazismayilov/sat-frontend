@@ -190,11 +190,11 @@ export const Footer: React.FC = () => {
                                 <Link to="/tedbirler/stratejik-hr-forumu">
                                     <Typography className="footer-list-item">{t('footer:strategicHRForum')}</Typography>
                                 </Link>
-                                <Link to="/layiheler/sirketler-liqasi">
+                                {/* <Link to="/layiheler/sirketler-liqasi">
                                     <Typography className="footer-list-item">
                                         {t('footer:leagueOfCompanies')}
                                     </Typography>
-                                </Link>
+                                </Link> */}
                                 <Link to="/tedbirler/master-klass">
                                     <Typography className="footer-list-item">{t('footer:masterClass')}</Typography>
                                 </Link>
