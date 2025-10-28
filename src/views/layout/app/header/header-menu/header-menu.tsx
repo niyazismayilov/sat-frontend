@@ -51,6 +51,8 @@ export const HeaderMenu: React.FC = () => {
                                 key={i}
                                 sx={{
                                     px: { md: 1.5, lg: 2 },
+                                    // Hide projects button
+                                    display: item.name === 'projects' ? 'none' : 'flex',
                                 }}
                             >
                                 <Typography
@@ -66,12 +68,18 @@ export const HeaderMenu: React.FC = () => {
                             </MenuItem>
                         </Link>
                     ) : (
-                        <>
+                        <Box
+                            key={i}
+                            sx={{
+                                // Hide projects button
+                                display: item.name === 'projects' ? 'none' : 'block',
+                            }}
+                        >
                             {item.name === 'trainings' && <TrainingsMenu item={item} />}
                             {item.name === 'consulting' && <ConsultingMenu item={item} />}
                             {item.name === 'events' && <EventsMenu item={item} />}
                             {item.name === 'projects' && <ProjectsMenu item={item} />}
-                        </>
+                        </Box>
                     );
                 })}
             </Menu>

@@ -81,7 +81,7 @@ export const HeaderMobileMenu = () => {
                             {menuItems.map((item, i) => {
                                 return item.route ? (
                                     <Link to={item.route} onClick={() => setOpen(false)} key={i}>
-                                        <Box sx={{ mb: 2 }}>
+                                        <Box sx={{ mb: 2, display: item.name === 'projects' ? 'none' : 'block' }}>
                                             <Typography
                                                 className="menu-item"
                                                 variant="h5"
@@ -98,7 +98,13 @@ export const HeaderMobileMenu = () => {
                                         </Box>
                                     </Link>
                                 ) : (
-                                    <>
+                                    <Box
+                                        key={i}
+                                        sx={{
+                                            // Hide projects button
+                                            display: item.name === 'projects' ? 'none' : 'block',
+                                        }}
+                                    >
                                         {item.name === 'trainings' && (
                                             <TrainingsMenu item={item} onClose={() => setOpen(false)} />
                                         )}
@@ -111,7 +117,7 @@ export const HeaderMobileMenu = () => {
                                         {item.name === 'projects' && (
                                             <ProjectsMenu item={item} onClose={() => setOpen(false)} />
                                         )}
-                                    </>
+                                    </Box>
                                 );
                             })}
                         </Box>
