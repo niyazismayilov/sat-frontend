@@ -98,10 +98,15 @@ export const DetailedInfo: React.FC = () => {
                                 qiymətləndirmə platformaları vasitəsilə əməkdaşları daha sürətli şəkildə, yüksək
                                 dəqiqliklə qiymətləndirmək mümkündür. Həm də bu proses insan əməyi istifadə edilmədiyi
                                 üçün əvvəlki üsullara nisbətən xeyli az xərc tələb edir.
+                                <br />
+                                <br />
                                 Süni zəka əsaslı qiymətləndirmə platforması Nartio hazırda Türkiyə və Avropa ölkələrində
                                 ən geniş istifadə edilən platformalardandır. Asan istifadəsi, yaratdığı geniş imkanları,
                                 uyğun qiyməti sayəsində bu platforma beynəlxalq və lokal şirkətlərin sevimli
-                                platformasına çevrilmişdir. 2024-cü ildə SAT Group bu uğurlu platformanın Azərbaycan üzrə yeganə partnyoru olmuşdur.
+                                platformasına çevrilmişdir.
+                                <br />
+                                <br />
+                                2024-cü ildə SAT Group bu uğurlu platformanın Azərbaycan üzrə yeganə partnyoru olmuşdur.
                                 Hazırda SAT Group komandasının dəstəyi ilə şirkətlər Nartio platformasına qoşularaq
                                 əməkdaşlarını asanlıqla və yüksək dəqiqliklə qiymətləndirə bilirlər.
                             </Typography>
