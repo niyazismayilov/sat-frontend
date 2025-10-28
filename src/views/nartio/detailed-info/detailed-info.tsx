@@ -97,9 +97,9 @@ export const DetailedInfo: React.FC = () => {
                                 platformasına çevrilmişdir.
                                 <br />
                                 <br />
-                                2024-cü ildə SAT Group bu uğurlu platformanın Azərbaycan üzrə yeganə partnyoru
-                                olmuşdur. Hazırda SAT Group komandasının dəstəyi ilə şirkətlər Nartio platformasına
-                                qoşularaq əməkdaşlarını asanlıqla və yüksək dəqiqliklə qiymətləndirə bilirlər.
+                                2024-cü ildə SAT Group bu uğurlu platformanın Azərbaycan üzrə yeganə partnyoru olmuşdur.
+                                Hazırda SAT Group komandasının dəstəyi ilə şirkətlər Nartio platformasına qoşularaq
+                                əməkdaşlarını asanlıqla və yüksək dəqiqliklə qiymətləndirə bilirlər.
                             </Typography>
                         </Box>
                     </Grid>
