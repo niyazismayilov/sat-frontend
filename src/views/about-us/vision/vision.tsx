@@ -1,6 +1,7 @@
 import { styled } from '@mui/styles';
 import { Box, Grid, Hidden, Theme, Typography } from '@mui/material';
-import image from '../../../assets/home/vision.png';
+import visionImage from '../../../assets/home/vision.png';
+import missionImage from '../../../assets/home/mission.png';
 
 const Root = styled(Box)(({ theme }: { theme: Theme }) => ({
     background: '#FFFF',
@@ -70,13 +71,13 @@ export const Vision: React.FC<{ missionRef }> = ({ missionRef }) => {
                 </Grid>
                 <Grid item xs={12} sm={12} md={12} lg={6}>
                     <Box className="image-content">
-                        <img src={image} className="image" />
+                        <img src={image} className="visionImage" />
                     </Box>
                 </Grid>
                 <Hidden lgDown>
                     <Grid item xs={12} sm={12} md={12} lg={6}>
                         <Box>
-                            <img src={image} className="image" />
+                            <img src={image} className="visionImage" />
                         </Box>
                     </Grid>
                 </Hidden>
@@ -94,7 +95,7 @@ export const Vision: React.FC<{ missionRef }> = ({ missionRef }) => {
                 <Hidden lgUp>
                     <Grid item xs={12} sm={12} md={12} lg={6}>
                         <Box>
-                            <img src={image} className="image" />
+                            <img src={image} className="missionImage" />
                         </Box>
                     </Grid>
                 </Hidden>
