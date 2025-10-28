@@ -50,34 +50,34 @@ const Wrapper = styled(Box)(({ theme }: { theme: Theme }) => ({
         },
     },
     '& .title': {
-        fontSize: '3.6rem',
+        fontSize: '3rem',
         color: '#FFFFFF',
-        lineHeight: '95px',
+        lineHeight: '80px',
         textAlign: 'center',
         [theme.breakpoints.down('lg')]: {
-            fontSize: '2rem',
-            lineHeight: '40px',
+            fontSize: '1.75rem',
+            lineHeight: '36px',
         },
         [theme.breakpoints.down('md')]: {
-            fontSize: 20,
-            lineHeight: '24px',
+            fontSize: 18,
+            lineHeight: '22px',
         },
     },
     '& .second-title': {
         color: '#FFFFFF',
-        fontSize: '3.6rem',
+        fontSize: '3rem',
         fontWeight: 700,
-        lineHeight: '95px',
+        lineHeight: '80px',
         marginBottom: theme.spacing(2.5),
         textAlign: 'center',
         [theme.breakpoints.down('lg')]: {
-            fontSize: '2rem',
-            lineHeight: '40px',
+            fontSize: '1.75rem',
+            lineHeight: '36px',
             marginBottom: theme.spacing(2),
         },
         [theme.breakpoints.down('md')]: {
-            fontSize: 20,
-            lineHeight: '24px',
+            fontSize: 18,
+            lineHeight: '22px',
             marginBottom: theme.spacing(1.5),
         },
     },
@@ -114,8 +114,9 @@ export const GeneralInfo: React.FC = () => {
                 <Typography className="second-title">qiymətləndirilməsi platforması</Typography>
                 <Box className="hiddenMdDown">
                     <Typography className="detail">
-                        Əməkdaşların qabiliyyətlərinin, şəxsi xüsusiyyətlərinin qiymətləndirilməsi uğurlu idarəçilik
-                        üçün ən effektli alət
+                        Əməkdaşların qabiliyyətlərinin, şəxsi xüsusiyyətlərinin
+                        <br />
+                        qiymətləndirilməsi uğurlu idarəçilik üçün ən effektli alət
                     </Typography>
                 </Box>
                 <Link to="/elaqe">

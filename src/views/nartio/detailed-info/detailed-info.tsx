@@ -5,7 +5,7 @@ import nartioImage from 'assets/home/nartio2.jpg';
 const Wrapper = styled(Box)(({ theme }: { theme: Theme }) => ({
     width: '100%',
     padding: theme.spacing(10, 0),
-    backgroundColor: '#F9FAFB',
+    backgroundColor: '#FFFFFF',
     [theme.breakpoints.down('md')]: {
         padding: theme.spacing(6, 2),
     },
@@ -24,10 +24,13 @@ const Wrapper = styled(Box)(({ theme }: { theme: Theme }) => ({
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
-        paddingRight: theme.spacing(6),
+        padding: theme.spacing(6),
         height: '100%',
+        backgroundColor: '#F4F4F4',
+        border: '1px solid #EEEEEE',
+        borderRadius: '10px',
         [theme.breakpoints.down('md')]: {
-            paddingRight: 0,
+            padding: theme.spacing(4),
             marginBottom: theme.spacing(4),
             height: 'auto',
         },
@@ -35,7 +38,7 @@ const Wrapper = styled(Box)(({ theme }: { theme: Theme }) => ({
     '& .title': {
         fontSize: '1.5rem',
         fontWeight: 700,
-        color: '#111827',
+        color: theme.palette.primary.main,
         lineHeight: '2rem',
         marginBottom: theme.spacing(3),
         [theme.breakpoints.down('lg')]: {
@@ -95,15 +98,10 @@ export const DetailedInfo: React.FC = () => {
                                 qiymətləndirmə platformaları vasitəsilə əməkdaşları daha sürətli şəkildə, yüksək
                                 dəqiqliklə qiymətləndirmək mümkündür. Həm də bu proses insan əməyi istifadə edilmədiyi
                                 üçün əvvəlki üsullara nisbətən xeyli az xərc tələb edir.
-                                <br />
-                                <br />
                                 Süni zəka əsaslı qiymətləndirmə platforması Nartio hazırda Türkiyə və Avropa ölkələrində
                                 ən geniş istifadə edilən platformalardandır. Asan istifadəsi, yaratdığı geniş imkanları,
                                 uyğun qiyməti sayəsində bu platforma beynəlxalq və lokal şirkətlərin sevimli
-                                platformasına çevrilmişdir.
-                                <br />
-                                <br />
-                                2024-cü ildə SAT Group bu uğurlu platformanın Azərbaycan üzrə yeganə partnyoru olmuşdur.
+                                platformasına çevrilmişdir. 2024-cü ildə SAT Group bu uğurlu platformanın Azərbaycan üzrə yeganə partnyoru olmuşdur.
                                 Hazırda SAT Group komandasının dəstəyi ilə şirkətlər Nartio platformasına qoşularaq
                                 əməkdaşlarını asanlıqla və yüksək dəqiqliklə qiymətləndirə bilirlər.
                             </Typography>
