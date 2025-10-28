@@ -16,30 +16,35 @@ const Wrapper = styled(Box)(({ theme }: { theme: Theme }) => ({
         [theme.breakpoints.down('md')]: {
             padding: theme.spacing(0, 2),
         },
+        '& .MuiGrid-item': {
+            display: 'flex',
+        },
     },
     '& .text-section': {
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
         paddingRight: theme.spacing(6),
+        height: '100%',
         [theme.breakpoints.down('md')]: {
             paddingRight: 0,
             marginBottom: theme.spacing(4),
+            height: 'auto',
         },
     },
     '& .title': {
-        fontSize: '2rem',
+        fontSize: '1.5rem',
         fontWeight: 700,
         color: '#111827',
-        lineHeight: '2.5rem',
+        lineHeight: '2rem',
         marginBottom: theme.spacing(3),
         [theme.breakpoints.down('lg')]: {
-            fontSize: '1.5rem',
-            lineHeight: '2rem',
-        },
-        [theme.breakpoints.down('md')]: {
             fontSize: '1.25rem',
             lineHeight: '1.75rem',
+        },
+        [theme.breakpoints.down('md')]: {
+            fontSize: '1.125rem',
+            lineHeight: '1.5rem',
             marginBottom: theme.spacing(2),
         },
     },
@@ -58,6 +63,7 @@ const Wrapper = styled(Box)(({ theme }: { theme: Theme }) => ({
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
+        height: '100%',
     },
     '& .nartio-image': {
         width: '100%',
@@ -74,7 +80,7 @@ export const DetailedInfo: React.FC = () => {
     return (
         <Wrapper>
             <Box className="content-container">
-                <Grid container spacing={6} alignItems="center">
+                <Grid container spacing={6} alignItems="stretch">
                     <Grid item xs={12} md={6}>
                         <Box className="text-section">
                             <Typography className="title">
