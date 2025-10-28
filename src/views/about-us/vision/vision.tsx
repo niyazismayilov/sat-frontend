@@ -71,13 +71,13 @@ export const Vision: React.FC<{ missionRef }> = ({ missionRef }) => {
                 </Grid>
                 <Grid item xs={12} sm={12} md={12} lg={6}>
                     <Box className="image-content">
-                        <img src={image} className="visionImage" />
+                        <img src={visionImage} className="image" />
                     </Box>
                 </Grid>
                 <Hidden lgDown>
                     <Grid item xs={12} sm={12} md={12} lg={6}>
                         <Box>
-                            <img src={image} className="visionImage" />
+                            <img src={missionImage} className="image" />
                         </Box>
                     </Grid>
                 </Hidden>
@@ -95,7 +95,7 @@ export const Vision: React.FC<{ missionRef }> = ({ missionRef }) => {
                 <Hidden lgUp>
                     <Grid item xs={12} sm={12} md={12} lg={6}>
                         <Box>
-                            <img src={image} className="missionImage" />
+                            <img src={missionImage} className="image" />
                         </Box>
                     </Grid>
                 </Hidden>
