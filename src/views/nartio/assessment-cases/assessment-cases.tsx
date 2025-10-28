@@ -4,7 +4,7 @@ import { styled } from '@mui/styles';
 const Wrapper = styled(Box)(({ theme }: { theme: Theme }) => ({
     width: '100%',
     padding: theme.spacing(10, 0),
-    backgroundColor: '#FFFFFF',
+    backgroundColor: '#F9FAFB',
     [theme.breakpoints.down('md')]: {
         padding: theme.spacing(6, 2),
     },

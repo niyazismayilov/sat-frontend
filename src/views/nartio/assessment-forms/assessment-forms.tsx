@@ -20,7 +20,7 @@ const Wrapper = styled(Box)(({ theme }: { theme: Theme }) => ({
         },
     },
     '& .card': {
-        backgroundColor: '#FFFFFF',
+        backgroundColor: '#F4F4F4',
         border: '1px solid #E5E7EB',
         borderRadius: '12px',
         padding: theme.spacing(4, 3),
