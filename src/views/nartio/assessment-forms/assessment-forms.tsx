@@ -96,4 +96,3 @@ export const AssessmentForms: React.FC = () => {
         </Wrapper>
     );
 };
-

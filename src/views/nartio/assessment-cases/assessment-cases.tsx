@@ -90,14 +90,13 @@ export const AssessmentCases: React.FC = () => {
                     ))}
                 </Grid>
                 <Typography className="description">
-                    Ümumilikdə Nartionun tərtbiqi şirkətdə işəqəbulların effektivliyinin ciddi şəkildə artmasına,
-                    vəzifə artımı ilə bağlı qərarların asanlaşmasına, təlim ehtiyaclarının dəqiq müəyyənləşdirilməsinə
-                    və nəticədə təlimlərin effektivliyinin yüksəlməsinə, şirkətdə ədalət mühitinin inkişafına,
-                    əməkdaşlarda özünü inkişaf həvəsinin, şirkətə bağlılığın güclənməsinə, insan resurslarına çəkilən
-                    xərclərin azalmasına səbəb olur.
+                    Ümumilikdə Nartionun tərtbiqi şirkətdə işəqəbulların effektivliyinin ciddi şəkildə artmasına, vəzifə
+                    artımı ilə bağlı qərarların asanlaşmasına, təlim ehtiyaclarının dəqiq müəyyənləşdirilməsinə və
+                    nəticədə təlimlərin effektivliyinin yüksəlməsinə, şirkətdə ədalət mühitinin inkişafına, əməkdaşlarda
+                    özünü inkişaf həvəsinin, şirkətə bağlılığın güclənməsinə, insan resurslarına çəkilən xərclərin
+                    azalmasına səbəb olur.
                 </Typography>
             </Container>
         </Wrapper>
     );
 };
-
