@@ -1,7 +1,6 @@
 import { Box, Button, Theme, Typography } from '@mui/material';
 import { styled } from '@mui/styles';
 import wrapper from 'assets/home/nartio.jpg';
-import { Link } from 'components';
 
 const Wrapper = styled(Box)(({ theme }: { theme: Theme }) => ({
     width: '100%',
@@ -119,11 +118,11 @@ export const GeneralInfo: React.FC = () => {
                         qiymətləndirilməsi uğurlu idarəçilik üçün ən effektli alət
                     </Typography>
                 </Box>
-                <Link to="/elaqe">
+                <a href="https://nartio.com/" target="_blank" rel="noopener noreferrer">
                     <Button variant="contained" className="contact-button" color="primary">
                         Daha ətraflı
                     </Button>
-                </Link>
+                </a>
             </Box>
             <Box style={{ width: '100%', height: '100%' }}>
                 <img className="image" src={wrapper} />

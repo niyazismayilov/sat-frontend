@@ -89,7 +89,7 @@ export const AssessmentForms: React.FC = () => {
                     ))}
                 </Grid>
                 <Typography className="description">
-                    Nartio platforması ilə əyani tanışlıq üçün SAT Group məsləhətçiləri ilə görüş ala bilərsiniz -
+                    {/* Nartio platforması ilə əyani tanışlıq üçün SAT Group məsləhətçiləri ilə görüş ala bilərsiniz - */}
                 </Typography>
             </Container>
         </Wrapper>
